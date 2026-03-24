@@ -1,348 +1,348 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="airtelxstream.in" lang="en" xmltv_id="JantaTV.in@SD" site_id="LIVETV_LIVETVCHANNEL_JANTA_TV">Janta TV</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVMovies.us@UK" site_id="5ad8d3a31b95267e225e4e09">Pluto TV Movies</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="GordonRamsaysHellsKitchen.us@SD" site_id="5b4e99f4423e067bd6df6903">Gordon Ramsay's Hell's Kitchen</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="GustoTV.ca@SD" site_id="5f8746eabd529300418246d9">GUSTOTV</channel>
-  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="AdventureEarth.de@SD" site_id="931186243466302969">Adventure Earth</channel>
-  <channel site="watch.whaletvplus.com" site_id="1004498718126777092" lang="en" xmltv_id="stingraycozycafe">Stingray Cozy Café</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="XITEHits.nl@NL" site_id="69271b367faaeed71b910ac0">XITE Hits</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="EvolutionEarth" site_id="67291fdbc1edbd1509fb9d11">Evolution Earth</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DDNews.in@SD" site_id="158254">DD News</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="EntertainmentTonight.us@SD" site_id="6578bb741a12778a8550d158">Entertainment Tonight</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="RakutenTVComedyMovies.es@UK" site_id="RAKUTEN1#UK:.Comedy.Movies.-.Rakuten.TV.be">UK: Comedy Movies - Rakuten TV</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="FoxNewsChannel.us@SD" site_id="eb856acf-437e-470f-9161-eabd52e3de02">Fox News Channel</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVStaffPicks.us@SD" site_id="5f4d863b98b41000076cd061">Pluto TV Staff Picks</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="mgmpresentsaction" site_id="689fb42fba3be0bafe349d33">MGM Presents: Action</channel>
-  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="watchmojo" site_id="523509741847643710">WatchMojo</channel>
-  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="AutenticTravel.de@SD" site_id="931186243466302967">Autentic Travel</channel>
-  <channel site="plex.tv" site_id="60d324f59adce5002c41dbc5" lang="en" xmltv_id="StingrayNaturescape.ca@US">Stingray Naturescape</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="DocumentaryPlus.us@UK" site_id="614e286b2bac097ffd6fd6ab">Documentary+</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="CNNNews18.in@SD" site_id="142747">CNN-News18</channel>
-  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="AutenticHistory.de@SD" site_id="931186243466302968">Autentic History</channel>
-  <channel site="watch.whaletvplus.com" site_id="1022125030546936771" lang="en" xmltv_id="bollywood4u">Bollywood 4U</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="MirrorNow.in@SD" site_id="143543">Mirror Now</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVDrama.us@US" site_id="5b4e92e4694c027be6ecece1">Pluto TV Drama</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="sonyonethrillertv" site_id="6920da7250fe592fd6d5b7d3">Sony One | Thriller TV</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="SouthPark.us@CA" site_id="62bdb1c5e25122000798ac79">South Park</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ManoranjanGrand.in@SD" site_id="143302">Manoranjan Grand</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ReporterTV.in@SD" site_id="85096">Reporter</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVSherlock.us@UK" site_id="5dc2c00abfed110009d97243">Pluto TV Sherlock</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeeNews.in@SD" site_id="159298">Zee News</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="Portlandia.us@SD" site_id="61d735fea7b7c7f703418512">Portlandia</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="ComedyCentralPlutoTV.us@CA" site_id="64f8a408bd341e000818fcda">Comedy Central</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="NewsNation.in@SD" site_id="143596">News Nation</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="ShemarooBollywood.us@Plex" site_id="62d1a58e520656fda09e609d">Shemaroo Bollywood</channel>
-  <channel site="distro.tv" lang="en" xmltv_id="WildTV.ca@SD" site_id="139667">Wild TV</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="ViceNews.us@SD" site_id="635ff8bb66f96b46951ab7f3">Vice News</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="WildEarth.uk@SD" site_id="60d4edddb2fdec002c141135">WildEarth</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="universalaction" site_id="654933e253fc970008390114">Universal Action</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="lovepetsus" site_id="63fe7d7eb6312779f56504d3">Love Pets</channel>
-  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="RedBullTV.at@AU" site_id="979187723418476851">Red Bull TV Australia</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="TheAddamsFamily.us@SD" site_id="689fb7110a486aeba3c7917c">The Addams Family</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVMilitary.us@SD" site_id="5bb3fea0f711fd76340eebff">Pluto TV Military</channel>
-  <channel site="airtelxstream.in" lang="en" xmltv_id="9XJalwa.in@SD" site_id="LIVETV_LIVETVCHANNEL_9X_JALWA">9X Jalwa</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="pluto-tv-adventure-ca" site_id="653bdb0fbdf3cf00089cc395">Pluto TV Adventure</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="nbccomedyvault" site_id="150#99951244">NBC Comedy Vault</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeeBharat.in@SD" site_id="144450">Zee Bharat</channel>
-  <channel site="mewatch.sg" lang="en" xmltv_id="foodon" site_id="558273">FoodON</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="RakutenTVDramaMovies.es@UK" site_id="RAKUTEN1#UK:.Drama.Movies.-.Rakuten.TV.be">UK: Drama Movies - Rakuten TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="NDTVIndia.in@SD" site_id="157588">NDTV India</channel>
-  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="JustforLaughsTV" site_id="672540845069111078">Just For Laughs TV</channel>
-  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="discoveringchina" site_id="989293714931712087">Discovering China</channel>
-  <channel site="tataplay.com" lang="en" xmltv_id="B4UKadak.in@SD" site_id="730">B4U Kadak</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="Naruto.us@US" site_id="5da0c85bd2c9c10009370984">Naruto</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="GlobalNews.ca@SD" site_id="62cbef9ebb857100072fc187">Global News National</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="MathrubhumiNews.in@SD" site_id="143309">Mathrubhumi News</channel>
-  <channel site="distro.tv" site_id="27440" lang="en" xmltv_id="NewsmaxTV.us@SD">Newsmax TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="RepublicTV.in@SD" site_id="143723">Republic TV</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="pbsretro" site_id="65fb337f00433c8a0799ce98">PBS Retro</channel>
-  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="AfricanewsEnglish.fr@SD" site_id="756042898482927067">Africanews</channel>
+  <channel site="www3.nhk.or.jp" lang="en" xmltv_id="NHKWorldJapan.jp@SD" site_id="0">NHK World Japan</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="News24.in@SD" site_id="90009">News24</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVScience.us@US" site_id="563a970aa1a1f7fe7c9daad7">Pluto TV Science</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="Mythbusters.us@UK" site_id="65cd278697fb4731f54ecae5">Mythbusters</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="thesherlockholmeschannel" site_id="66ce3fc059062698a13c39e1">The Sherlock Holmes Channel</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="AmericasTestKitchen.us@SD" site_id="5e84f54a82f05300080e6746">America's Test Kitchen</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="PopUp.uk@SD" site_id="665e48c419c3bb1f606d86ab">POP UP</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="CBSNews247.us@SD" site_id="6571f43a1d2aae780d597196">CBS News</channel>
-  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="INWILD.nl@SD" site_id="910031136947176350">INWILD</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="mgmpresents" site_id="6876fa82e50e77c59c8940c2">MGM Presents</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ABPNews.in@SD" site_id="158138">ABP News</channel>
-  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="LoveThePlanet.es@SD" site_id="999420644834214639">Love The Planet</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="sonyoneactionhits" site_id="692111d750fe592fd6d5b7da">Sony One | Action Hits</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="France24.fr@English" site_id="678fe7959407a53556d3e8eb">FRANCE 24</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="ComedyCentralAnimation.us@CA" site_id="64f8a949f5b5e4000862467c">Comedy Central Animation</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="the-pink-panther-gb" site_id="691729bdda5b5095ab1818fd">The Pink Panther</channel>
-  <channel site="distro.tv" lang="en" xmltv_id="BritAsiaTV.uk@SD" site_id="102778">BritAsiaTV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeeBusiness.in@SD" site_id="144439">Zee Business</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="AsianetSuvarnaNews.in@SD" site_id="142682">Asianet Suvarna News</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SansadTV2.in@HD" site_id="143761">Sansad TV 2 HD</channel>
-  <channel site="tataplay.com" lang="en" xmltv_id="SwarajExpressSMBC.in@SD" site_id="577">Swaraj Express SMBC</channel>
-  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="chinatravel" site_id="989293714931712088">China Travel</channel>
-  <channel site="plex.tv" site_id="66a2818ce1a2934adfe851e5" lang="en" xmltv_id="pawsclaws">Paws &amp; Claws</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="ActionHollywoodMovies" site_id="66be944f8711311880995280">Action Hollywood Movies</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="AlJazeera.qa@English" site_id="159135">Al Jazeera English</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="9XM.in@SD" site_id="77447">9XM</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="KartoonChannel.us@SD" site_id="60fb040d4795a6000762fe8f">Kartoon Channel!</channel>
-  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="cgtnglobalbiz" site_id="989293714931712086">Global Biz</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="GoUSATV.us@SD" site_id="654d5db7ff9919cc3e31e961">GoUSA TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="MediaOne.in@SD" site_id="143345">MediaOne</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="TimesNow.in@SD" site_id="144006">Times Now</channel>
-  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="lovewine" site_id="999420644834214638">Love Wine</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="AnimeAllDay.us@CA" site_id="68d25b620a0f3829b116bb6f">Pluto TV Anime</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="Mythbusters.us@US" site_id="66b133a8a9ef8c41ec0841aa">MythBusters</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="NewsMalayalam24x7.in@SD" site_id="166320">News Malayalam 24x7</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="dinos24/7" site_id="673bf05ddaad7f0008ac7a5c">Dinos 24/7</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="CNNOriginals.us@SD" site_id="66ad6025cb5d3b7fb5011c2d">CNN Originals</channel>
-  <channel site="airtelxstream.in" lang="en" xmltv_id="DDNational.in@HD" site_id="LIVETV_LIVETVCHANNEL_DD_NATIONAL_HD">DD National HD</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="CricketGold.au@Plex" site_id="65e0c8c6d899afe817b9d224">Cricket Gold</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DDChandana.in@SD" site_id="142781">DD Chandana</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="pbshistory" site_id="65721f23b10e9d22a882bde0">PBS History</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="KairaliNews.in@SD" site_id="143246">Kairali News</channel>
-  <channel site="airtelxstream.in" lang="en" xmltv_id="BharatSamachar.in@SD" site_id="LIVETV_LIVETVCHANNEL_BHARAT_SAMACHAR">Bharat Samachar</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="hitsitcoms" site_id="66b13b29a9ef8c41ec0841b0">Hit Sitcoms</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVPokemon.us@SD" site_id="6675c7868768aa0008d7f1c7">Pokémon</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="pbstravel" site_id="684c201a3496598cf4003fbc">PBS Travel</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="MissionImpossible.us@SD" site_id="5f77977bd924d80007eee60c">Mission Impossible</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="TED.us@SD" site_id="62ab5aabbb869dd0df6a3487">TED</channel>
-  <channel site="tvhebdo.com" site_id="cnbc/CNBC" lang="fr" xmltv_id="CNBC.us@SD">CNBC</channel>
-  <channel site="plex.tv" site_id="6642a07d0e0ec7b4ce5eb294" lang="en" xmltv_id="stingrayzenlife-us">ZenLIFE by Stingray</channel>
-  <channel site="tataplay.com" lang="en" xmltv_id="Travelxp.in@SD" site_id="55">Travelxp</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="ReutersTV.us@SD" site_id="5eea71d65252710041e0ccbc">Reuters TV</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="ancientaliens" site_id="68161fa001a9a5584ff27e96">Ancient Aliens</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="TinyPop.uk@SD" site_id="664e9fade8824b0c3476278b">Tiny Pop</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SudarshanNews.in@SD" site_id="143870">Sudarshan News</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVThrillers.us@US" site_id="5b4e69e08291147bd04a9fd7">Pluto TV Thrillers</channel>
-  <channel site="i.mjh.nz" site_id="SamsungTVPlus/gb#GBBD230000420" lang="en" xmltv_id="RabbidsInvasion">Rabbids Invasion</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="universalmovies" site_id="0#99991621">Universal Movies</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="BBCNews.uk@NorthAmerica" site_id="646fab0e43d6d6838db81a6a">BBC News (North America)</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="sonyonecomedyhits" site_id="6920d9db5028288613484a78">Sony One | Comedy Hits</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="60minutes" site_id="66b646f9cd0d3100086af83c">60 Minutes</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="KairaliWe.in@SD" site_id="143248">Kairali We</channel>
   <channel site="plex.tv" lang="en" xmltv_id="smurftv" site_id="639b8d803f4612cc150a5721">Smurf TV</channel>
-  <channel site="plex.tv" site_id="6227c215c9f485cc7afe8c41" lang="en" xmltv_id="surfertv">SURFER tv</channel>
-  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="DroneTV" site_id="925710235225102102">Drone TV</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="ParamountMovieChannel.us@SD" site_id="5cb0cae7a461406ffe3f5213">Paramount Movie Channel</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVMilitary.us@SD" site_id="5bb3fea0f711fd76340eebff">Pluto TV Military</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVThrillers.us@US" site_id="5b4e69e08291147bd04a9fd7">Pluto TV Thrillers</channel>
+  <channel site="tataplay.com" lang="en" xmltv_id="FirstIndiaNews.in@SD" site_id="650">First India Rajasthan</channel>
+  <channel site="sky.com" lang="en" xmltv_id="Channel4.uk@UKHD" site_id="1202">Channel 4 HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="TwentyFourNews.in@SD" site_id="144032">Twenty Four</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="StingraySmoothJazz.ca@SD" site_id="62ee784852f7d73061eec493">Smooth Jazz</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="historywarfare" site_id="650b60deb2413c46bf584d86">History &amp; Warfare</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="News18JKLH.in@SD" site_id="143611">News18 Jammu Kashmir Ladakh Himachal Haryana</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="Pop.uk@SD" site_id="664e9f11e8824b0c34762789">POP</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="MediaOne.in@SD" site_id="143345">MediaOne</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="CricketGold.au@Plex" site_id="65e0c8c6d899afe817b9d224">Cricket Gold</channel>
+  <channel site="plex.tv" site_id="61aa97d4113e1e5137fd5325" lang="en" xmltv_id="StingrayGreatestHolidayHits.us@SD">Greatest Holiday Hits</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ManoranjanGrand.in@SD" site_id="143302">Manoranjan Grand</channel>
+  <channel site="airtelxstream.in" lang="en" xmltv_id="9XJalwa.in@SD" site_id="LIVETV_LIVETVCHANNEL_9X_JALWA">9X Jalwa</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="FUELTV.at@SD" site_id="62d15f16001c04178f555e40">FUEL TV</channel>
+  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="travelandfoodtv" site_id="968837716807123414">Travel &amp; Food TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="News18Kannada.in@SD" site_id="143612">News18 Kannada</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="MTVBiggestPop.us@US" site_id="5d14fd1a252d35decbc4080c">MTV Biggest Pop</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="Mythbusters.us@US" site_id="66b133a8a9ef8c41ec0841aa">MythBusters</channel>
+  <channel site="distro.tv" site_id="27440" lang="en" xmltv_id="NewsmaxTV.us@SD">Newsmax TV</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="the-pink-panther-gb" site_id="691729bdda5b5095ab1818fd">The Pink Panther</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="Bharat24.in@SD" site_id="142710">Bharat 24</channel>
+  <channel site="watch.whaletvplus.com" site_id="1004498718126777092" lang="en" xmltv_id="stingraycozycafe">Stingray Cozy Café</channel>
+  <channel site="starhubtvplus.com" site_id="b4554ec6-37d5-4936-943d-229e9df528e8" lang="en" xmltv_id="CGTN.cn@SD">CGTN</channel>
+  <channel site="distro.tv" lang="en" xmltv_id="CartoonClassics.pl@FAST" site_id="136900">Cartoon Classics</channel>
+  <channel site="mewatch.sg" lang="en" xmltv_id="CNA.sg@SD" site_id="97072">CNA</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="snlvault" site_id="5fc70600598c41002da3dd34">SNL Vault</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="AnimeAllDay.us@CA" site_id="68d25b620a0f3829b116bb6f">Pluto TV Anime</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="ancientaliens" site_id="68161fa001a9a5584ff27e96">Ancient Aliens</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="Vevo2K.us@SD" site_id="5fd7bca3e0a4ee0007a38e8c">Vevo 2K</channel>
+  <channel site="rt.com" lang="en" xmltv_id="RT.ru@SD" site_id="news">RT News</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="HumorMill.us@SD" site_id="5fd115b7b7ef8d002dcf1814">Humor Mill</channel>
+  <channel site="airtelxstream.in" lang="en" xmltv_id="BharatSamachar.in@SD" site_id="LIVETV_LIVETVCHANNEL_BHARAT_SAMACHAR">Bharat Samachar</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="PublicTV.in@SD" site_id="143688">Public TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DDNews.in@SD" site_id="158254">DD News</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="HellsKitchen.us@UK" site_id="68dcb9f59beaa3a402966db8">Hell's Kitchen</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="AnimeAllDay.us@US" site_id="5812b7d3249444e05d09cc49">Pluto TV Anime</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DDChandana.in@SD" site_id="142781">DD Chandana</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="IndiaTV.in@SD" site_id="143199">India TV</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="lovepetsus" site_id="63fe7d7eb6312779f56504d3">Love Pets</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ManoramaNews.in@SD" site_id="159016">Manorama News</channel>
+  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="AfricanewsEnglish.fr@SD" site_id="756042898482927067">Africanews</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="EntertainmentTonight.us@SD" site_id="6578bb741a12778a8550d158">Entertainment Tonight</channel>
+  <channel site="plex.tv" site_id="6623c78128a167c6e5b3079c" lang="en" xmltv_id="MovieSphere.us@AU">MOVIESPHERE</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="EvolutionEarth" site_id="67291fdbc1edbd1509fb9d11">Evolution Earth</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SudarshanNews.in@SD" site_id="143870">Sudarshan News</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="MathrubhumiNews.in@SD" site_id="143309">Mathrubhumi News</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="GoodNewsToday.in@SD" site_id="143090">Good News Today</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="YahooFinance.us@SD" site_id="5f170f01b898490041b49dd1">Yahoo Finance</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="GordonRamsaysHellsKitchen.us@SD" site_id="5b4e99f4423e067bd6df6903">Gordon Ramsay's Hell's Kitchen</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="storagewarsbyaande" site_id="67a37720786c8a28ae4965bb">Storage Wars by A&amp;E</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="mgmpresents" site_id="6876fa82e50e77c59c8940c2">MGM Presents</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="RakutenTVThrillers" site_id="RAKUTEN1#UK:.Thrillers.-.Rakuten.TV.be">UK: Thrillers - Rakuten TV</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="RakutenTVSciFi" site_id="RAKUTEN1#UK:.Sci-fi.-.Rakuten.TV.be">UK: Sci-fi - Rakuten TV</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="mgmpresentsaction" site_id="689fb42fba3be0bafe349d33">MGM Presents: Action</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="RealWild.us@SD" site_id="63584a0cf8e2be1350f802a4">Real Wild</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="modernmarvelspresentedbyhistory" site_id="65775d29dfed030008cb3db2">Modern Marvels Presented by HISTORY</channel>
+  <channel site="watch.whaletvplus.com" lang="ko" xmltv_id="travelon" site_id="956148002287389573">Travel ON</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="KartoonChannel.us@SD" site_id="60fb040d4795a6000762fe8f">Kartoon Channel!</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="ActionHollywoodMovies" site_id="66be944f8711311880995280">Action Hollywood Movies</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="RakutenTVComedyMovies.es@UK" site_id="RAKUTEN1#UK:.Comedy.Movies.-.Rakuten.TV.be">UK: Comedy Movies - Rakuten TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ManoranjanTV.in@SD" site_id="143304">Manoranjan TV</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="XITEHits.nl@NL" site_id="69271b367faaeed71b910ac0">XITE Hits</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="News18Kerala.in@SD" site_id="143613">News18 Kerala</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="CNBCTV18.in@SD" site_id="142743">CNBC TV18</channel>
+  <channel site="airtelxstream.in" lang="en" xmltv_id="NHBollyRaga" site_id="RUNNTV_LIVECHANNEL_41">NH BollyRaga</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="NewsNation.in@SD" site_id="143596">News Nation</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="RepublicKannada.in@SD" site_id="142883">R. Kannada</channel>
   <channel site="tataplay.com" lang="en" xmltv_id="News11.in@SD" site_id="415">News 11 Bharat</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="StoriesbyAMC.us@Pluto" site_id="5e8254118601b80007b4b7ae">Stories by AMC</channel>
-  <channel site="tataplay.com" lang="en" xmltv_id="KappaTV.in@SD" site_id="377">Kappa TV</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="00sreplay" site_id="62ba60f059624e000781c436">00s Replay</channel>
-  <channel site="plex.tv" site_id="68826aa6b6b2b3f8bed60007" lang="en" xmltv_id="ctvmovies">CTV Movies</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeeUttarPradeshUttarakhand.in@SD" site_id="144480">Zee Uttar Pradesh Uttarakhand</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="pbsscience" site_id="66469eecdad45e1759c1c06b">PBS Science</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="VevoPop.us@SD" site_id="5d93b635b43dd1a399b39eee">Vevo Pop</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="anime247" site_id="686452b8fbd6d9b449de2be3">Anime 24/7</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVAnimation.us@UK" site_id="612f761008a9e50007984ba0">Pluto TV Animation</channel>
-  <channel site="pluto.tv" site_id="63d91d2560bc8f0008a225e4" lang="en" xmltv_id="FIFAPlus.uk@English">FIFA+</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="OutsideTV.us@SD" site_id="629e522ed1bc5f1b16c6b98d">Outside</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DDSports.in@SD" site_id="158255">DD Sports</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="KairaliNews.in@SD" site_id="143246">Kairali News</channel>
+  <channel site="pluto.tv" lang="da" xmltv_id="key-and-peele-dk" site_id="65cba715dc10a40008034917">Key &amp; Peele</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="9XM.in@SD" site_id="77447">9XM</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="bbccomedy" site_id="65622fb65dbccec83a87b643">BBC Comedy</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ETNow.in@SD" site_id="143021">ET Now</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="DW.de@English" site_id="37494f1f-0748-4150-bfbc-eb24b0bf1a34">DW</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="PBSNature.us@SD" site_id="63506e7747b2355a27e76e7f">PBS Nature</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="MoviesforGamers.us@SD" site_id="6008ddf24ef92b00079d61cf">Movies for Gamers</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="NDTVIndia.in@SD" site_id="157588">NDTV India</channel>
+  <channel site="distro.tv" lang="en" xmltv_id="CGTNDocumentary.cn@SD" site_id="95228">CGTN Documentary</channel>
+  <channel site="plex.tv" site_id="6663510e7ce166787145c6a9" lang="en" xmltv_id="MovieSphere.us@CA">MOVIESPHERE</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="OnePiece.us@SD" site_id="5f7790b3ed0c88000720b241">One Piece</channel>
+  <channel site="airtelxstream.in" lang="en" xmltv_id="NDTVGoodTimes.in@SD" site_id="LIVETV_LIVETVCHANNEL_GOOD_TIMES">GOOD TiMES</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="XITEJustChill.nl@US" site_id="6889467267ddc0ef2cdbf4ff">XITE Just Chill</channel>
+  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="AutenticTravel.de@SD" site_id="931186243466302967">Autentic Travel</channel>
+  <channel site="tv.yandex.ru" lang="ru" xmltv_id="RTDocumentary.ru@English" site_id="1258">RT Doc</channel>
+  <channel site="airtelxstream.in" lang="en" xmltv_id="News9Live.in@SD" site_id="LIVETV_LIVETVCHANNEL_NEWS9">NEWS9</channel>
+  <channel site="plex.tv" site_id="63dea56a2a2abb171ff6dadf" lang="en" xmltv_id="AnimexHIDIVE.us@SD">ANIME x HIDIVE</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVDrama.us@US" site_id="5b4e92e4694c027be6ecece1">Pluto TV Drama</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="TV9Bharatvarsh.in@SD" site_id="144027">TV9 Bharatvarsh</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="ViceNews.us@SD" site_id="635ff8bb66f96b46951ab7f3">Vice News</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="outersphere" site_id="641496bf238e21f260e7844a">OuterSphere by Lionsgate</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="ArirangTV.kr@SD" site_id="4c25cb31-4a19-4d5b-9926-a51a8b289ae5">Arirang TV HD</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="hitsitcoms" site_id="66b13b29a9ef8c41ec0841b0">Hit Sitcoms</channel>
+  <channel site="pluto.tv" lang="fi" xmltv_id="key-and-peele-fi" site_id="65e6d18818036500082911b5">Key &amp; Peele</channel>
   <channel site="airtelxstream.in" site_id="RUNNTV_LIVECHANNEL_94" lang="en" xmltv_id="greengoldtv">Green Gold TV</channel>
   <channel site="plex.tv" site_id="61aaa014784a2161d3caf7fd" lang="en" xmltv_id="StingrayHitList.ca@SD">Hit List</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="storagewarsbyaande" site_id="67a37720786c8a28ae4965bb">Storage Wars by A&amp;E</channel>
-  <channel site="plex.tv" site_id="6663510e7ce166787145c6a9" lang="en" xmltv_id="MovieSphere.us@CA">MOVIESPHERE</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="CNNInternational.us@MENA" site_id="66c45afaa72e7b0008a2b153">CNNi</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="RakutenTVSciFi" site_id="RAKUTEN1#UK:.Sci-fi.-.Rakuten.TV.be">UK: Sci-fi - Rakuten TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SansadTV1.in@SD" site_id="166275">Sansad TV 1 HD</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="IndiaTV.in@SD" site_id="143199">India TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ManoranjanTV.in@SD" site_id="143304">Manoranjan TV</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="modernmarvelspresentedbyhistory" site_id="65775d29dfed030008cb3db2">Modern Marvels Presented by HISTORY</channel>
-  <channel site="sky.com" lang="en" xmltv_id="Channel4.uk@UKHD" site_id="1202">Channel 4 HD</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="XITEHits.nl@UK" site_id="68965bb7e4a79cd0c3f845d8">XITE Hits</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="spongebob-squarepants-ca" site_id="63f87d057533d80008ab9549">SpongeBob SquarePants</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="RetroCrush.us@SD" site_id="5ef4e1b40d9ad000423c442a">RetroCrush</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="sonyonecomedyhits" site_id="6920d9db5028288613484a78">Sony One | Comedy Hits</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="sonyonecomedytv" site_id="6920e0045cbe620c1f9b6bad">Sony One | Comedy TV</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="BloombergTV.us@Asia" site_id="f946f3d4-96c3-4e0f-924d-edac62433fd2">Bloomberg Television HD</channel>
-  <channel site="plex.tv" site_id="606cbf167e9765002c2a6131" lang="en" xmltv_id="MovieSphere.us@UK">MOVIESPHERE</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVPokemon.us@UK" site_id="6683cd71a1d7ad000866ec6a">Pokémon</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="F1Channel.ie@US" site_id="6896595a58a6658b3d6a501a">F1 Channel</channel>
-  <channel site="airtelxstream.in" lang="en" xmltv_id="NDTVGoodTimes.in@SD" site_id="LIVETV_LIVETVCHANNEL_GOOD_TIMES">GOOD TiMES</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="MoviesforGamers.us@SD" site_id="6008ddf24ef92b00079d61cf">Movies for Gamers</channel>
-  <channel site="distro.tv" lang="en" xmltv_id="CartoonClassics.pl@FAST" site_id="136900">Cartoon Classics</channel>
-  <channel site="tataplay.com" lang="en" xmltv_id="B4UMovies.in@India" site_id="7">B4U Movies</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="Zoom.in@SD" site_id="157600">Zoom</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="XITEJustChill.nl@US" site_id="6889467267ddc0ef2cdbf4ff">XITE Just Chill</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="PowerTV.in@SD" site_id="143669">Power TV</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="NickPlutoTV.us@US" site_id="5ca673e0d0bd6c2689c94ce3">Nickelodeon Pluto TV</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="90skids" site_id="6452c814939a590008567a3b">90's Kids</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="ParamountPlusPicks.us@SD" site_id="5ff8c708653d080007361b14">Paramount+ Picks</channel>
-  <channel site="distro.tv" lang="en" xmltv_id="4KTravelTV" site_id="83817">4K TRAVEL TV</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="TVLandSitcoms.us@SD" site_id="61bd0b57872c650008ed2e38">TV Land Sitcoms</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeeDelhiNCRHaryana.in@SD" site_id="144448">Zee Delhi NCR Haryana</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVComedy.us@US" site_id="5a4d3a00ad95e4718ae8d8db">Pluto TV Comedy</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="ABCNewsLive.us@SD" site_id="6508be683a0d700008c534e4">ABC News Live</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="CNBCTV18PrimeHD.in@SD" site_id="142744">CNBC TV18 Prime</channel>
-  <channel site="distro.tv" lang="en" xmltv_id="BloombergTV.us@US" site_id="48682">Bloomberg Television</channel>
-  <channel site="plex.tv" site_id="5fb84bc1b7ad2d002dcb735f" lang="en" xmltv_id="MovieSphere.us@US">MOVIESPHERE</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="PBSNature.us@SD" site_id="63506e7747b2355a27e76e7f">PBS Nature</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVScience.us@US" site_id="563a970aa1a1f7fe7c9daad7">Pluto TV Science</channel>
+  <channel site="pluto.tv" site_id="63d91d2560bc8f0008a225e4" lang="en" xmltv_id="FIFAPlus.uk@English">FIFA+</channel>
+  <channel site="plex.tv" site_id="62ee6eae271f393d2d9f7096" lang="en" xmltv_id="StingrayTodaysKPop.ca@SD">Today's K-Pop</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="grahamnortonshow" site_id="68dcbb869beaa3a402966dba">The Graham Norton Show</channel>
+  <channel site="tataplay.com" lang="en" xmltv_id="B4UKadak.in@SD" site_id="730">B4U Kadak</channel>
+  <channel site="plex.tv" site_id="6642a07d0e0ec7b4ce5eb294" lang="en" xmltv_id="stingrayzenlife-us">ZenLIFE by Stingray</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="discoveryturbotv" site_id="6373bfe48e2036e4410ddb82">Discovery Turbo TV</channel>
   <channel site="webtv.un.org" lang="en" xmltv_id="UNWebTV.us@SD" site_id="#">UN Web TV</channel>
   <channel site="sky.com" lang="en" xmltv_id="TRTWorld.tr@SD" site_id="5071">TRT World</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="Newsmax2.us@SD" site_id="5fb81660b7ad2d002dcb7335">Newsmax2</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="ZeeCinema.in@APAC" site_id="5f52f2b3-e45a-40a5-bcf3-2dd75a5543f8">Zee Cinema</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="StarTrek.us@SD" site_id="5efbd39f8c4ce900075d7698">Star Trek</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="GREATmovies.uk@UK" site_id="664e9d95e8824b0c34762787">GREAT! movies</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="TheBobRossChannel.us@pluto" site_id="5f36d726234ce10007784f2a">The Bob Ross Channel</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="LiveNOWfromFOX.us@SD" site_id="6377ea0e13bb6b1757e14695">LiveNOW from FOX</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="ArirangTV.kr@SD" site_id="4c25cb31-4a19-4d5b-9926-a51a8b289ae5">Arirang TV HD</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="americasgottalent" site_id="200#99951457">America's Got Talent</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVAction.us@US" site_id="561d7d484dc7c8770484914a">Pluto TV Action</channel>
-  <channel site="www3.nhk.or.jp" lang="en" xmltv_id="NHKWorldJapan.jp@SD" site_id="0">NHK World Japan</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="RealWild.us@SD" site_id="63584a0cf8e2be1350f802a4">Real Wild</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="BBCNews.uk@NorthAmerica" site_id="646fab0e43d6d6838db81a6a">BBC News (North America)</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="HistoryTV18.in@HD" site_id="143133">History TV18 HD</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="newkfood" site_id="68b9f5a3d60e5dd29263c7ac">NEW KFOOD</channel>
-  <channel site="tataplay.com" lang="en" xmltv_id="Foodxp.uk@SD" site_id="1030">Food XP</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="News18JKLH.in@SD" site_id="143611">News18 Jammu Kashmir Ladakh Himachal Haryana</channel>
-  <channel site="i.mjh.nz" site_id="SamsungTVPlus/gb#GBBB5000002PL" lang="en" xmltv_id="WildPlanet">Wild Planet</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="TopGear.uk@SD" site_id="6308f121ac9983739c8a29bd">Top Gear</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="BloombergOriginals.us@US" site_id="68fafe0dae4af1c7478fbeec">Bloomberg Originals</channel>
-  <channel site="airtelxstream.in" lang="en" xmltv_id="NDTVProfit.in@SD" site_id="LIVETV_LIVETVCHANNEL_NDTV_PROFIT_PRIME">NDTV Profit Prime</channel>
-  <channel site="plex.tv" site_id="5fc705dda2236e002d69f211" lang="en" xmltv_id="ScrippsNews.us@SD">Scripps News</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="RiverMonsters" site_id="RAKUTEN1#UK:.River.Monsters.be">UK: River Monsters</channel>
-  <channel site="zee5.com" lang="en" xmltv_id="ZeeMalayalamNews.in@SD" site_id="0-9-9z583539">ZEE News Malayalam</channel>
-  <channel site="tataplay.com" lang="en" xmltv_id="FirstIndiaNews.in@SD" site_id="650">First India Rajasthan</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="HumorMill.us@SD" site_id="5fd115b7b7ef8d002dcf1814">Humor Mill</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="XITEReggaeVibes.nl@US" site_id="68800f0c4033a6a442ad923d">XITE Reggae Vibes</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeeMadhyaPradeshChhattisgarh.in@SD" site_id="144455">Zee Madhya Pradesh Chhattisgarh</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="WillowSports.us@SD" site_id="66fbf9cf128ab3f65b259bcb">Willow Sports</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="newkpop" site_id="60d4edd7b2fdec002c14112d">NEW K-POP</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="Bharat24.in@SD" site_id="142710">Bharat 24</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="TODAYAllDay.us@SD" site_id="5fc70600598c41002da3dd39">TODAY All Day</channel>
-  <channel site="mewatch.sg" lang="en" xmltv_id="CNA.sg@SD" site_id="97072">CNA</channel>
-  <channel site="virgintvgo.virginmedia.com" lang="en" xmltv_id="CNBCEurope.uk@HD" site_id="352">CNBC HD</channel>
-  <channel site="distro.tv" lang="en" xmltv_id="CGTNDocumentary.cn@SD" site_id="95228">CGTN Documentary</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="MrBeanLiveAction.uk@SD" site_id="671a924b79fce6628115432c">Mr. Bean Live Action</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="pbsfood" site_id="650299cdec4e38daa56e9c7c">PBS Food</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="DocumentaryPlus.us@SD" site_id="62f42e6cad0081c6ef405723">Documentary+</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="curiositynow" site_id="64831c8be3541c909e96d240">Curiosity Now</channel>
-  <channel site="airtelxstream.in" lang="en" xmltv_id="NHBollyRaga" site_id="RUNNTV_LIVECHANNEL_41">NH BollyRaga</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="XITEHits.nl@US" site_id="688002cd996f1a2fb393a6e3">XITE Hits</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="News18Kannada.in@SD" site_id="143612">News18 Kannada</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="Pop.uk@SD" site_id="664e9f11e8824b0c34762789">POP</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="CNBCTV18.in@SD" site_id="142743">CNBC TV18</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="TV9Kannada.in@SD" site_id="144029">TV9 Kannada</channel>
-  <channel site="sky.com" lang="en" xmltv_id="SkyNews.uk@HD" site_id="4050">Sky News HD</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="plutotvtrendingnow" site_id="673247127d5da5000817b4d6">Pluto TV Trending Now</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="BansalNews.in@SD" site_id="142702">Bansal News</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="XITERockxMetal.nl@US" site_id="68800806996f1a2fb393a6e5">XITE Rock x Metal</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="EuronewsEnglish.fr@SD" site_id="60089d90f682a3002c348299">Euronews</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="sonyonefaves" site_id="6920df415cbe620c1f9b6bab">Sony One | FAVES</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="IndiaNews.in@SD" site_id="143190">India News</channel>
-  <channel site="starhubtvplus.com" site_id="b4554ec6-37d5-4936-943d-229e9df528e8" lang="en" xmltv_id="CGTN.cn@SD">CGTN</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="snlvault" site_id="5fc70600598c41002da3dd34">SNL Vault</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="USATODAY.us@SD" site_id="60df3e18541143002f3b8607">USA TODAY</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="TwentyFourNews.in@SD" site_id="144032">Twenty Four</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="plutotvsci-fi" site_id="5b4fc274694c027be6ed3eea">Pluto TV Sci-Fi</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="crunchyroll" site_id="65652f7fc0fc88000883537a">Crunchyroll</channel>
-  <channel site="tataplay.com" lang="en" xmltv_id="B4UMusic.in@India" site_id="9">B4U Music</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="LoveNature.ca@SD" site_id="60995eb136c72d002da7bbcb">Love Nature</channel>
-  <channel site="watch.whaletvplus.com" lang="ko" xmltv_id="travelon" site_id="956148002287389573">Travel ON</channel>
-  <channel site="tataplay.com" lang="en" xmltv_id="ZeeKannadaNews.in@SD" site_id="1287">Zee Kannada News</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="PublicMusic.in@SD" site_id="143687">Public Music</channel>
-  <channel site="distro.tv" lang="en" xmltv_id="HorizonSports.us@SD" site_id="11063">Horizon Sports</channel>
-  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="InTrouble.nl@SD" site_id="878087694210044785">INTROUBLE</channel>
-  <channel site="plex.tv" site_id="61aa97d4113e1e5137fd5325" lang="en" xmltv_id="StingrayGreatestHolidayHits.us@SD">Greatest Holiday Hits</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="BBCTravel.us@US" site_id="65622eddb7d737841f30a4fd">BBC Travel</channel>
-  <channel site="airtelxstream.in" lang="en" xmltv_id="News9Live.in@SD" site_id="LIVETV_LIVETVCHANNEL_NEWS9">NEWS9</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="RakutenTVThrillers" site_id="RAKUTEN1#UK:.Thrillers.-.Rakuten.TV.be">UK: Thrillers - Rakuten TV</channel>
-  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="InWonder.nl@SD" site_id="878089883754168603">INWONDER</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="BloombergTV.us@Plus" site_id="54ff7ba69222cb1c2624c584">Bloomberg TV+</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="90skidstv2" site_id="6452c77ed3fdde00080eb3a8">90s Kids TV 2</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="KairaliWe.in@SD" site_id="143248">Kairali We</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="UniversalCrime.us@East" site_id="6549341853fc9700083901ac">Universal Crime</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="AMCThrillers.us@SD" site_id="5fc705e2a2236e002d69f36d">AMC Thrillers</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="MrBeanAnimated.uk@SD" site_id="66a2e7fe94b6a49cb5054d7b">Mr. Bean</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="nbcsportsnow" site_id="6549306c83595c000815a696">NBC Sports NOW</channel>
-  <channel site="distro.tv" lang="en" xmltv_id="YRFMusic.in@SD" site_id="126108">YRF Music</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DDMalayalam.in@SD" site_id="142791">DD Malayalam</channel>
-  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="travelandfoodtv" site_id="968837716807123414">Travel &amp; Food TV</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="BloombergOriginals.us@Global" site_id="61d73c3ca7b7c7f703418518">Bloomberg Originals</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="JustforLaughsGags.us@SD" site_id="64704954e536e0faaf10be9f">Just For Laughs Gags</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVRetroKid.us@CA" site_id="6408b41b83f58900081d91ad">Pluto TV Retro Kid</channel>
-  <channel site="starhubtvplus.com" lang="en" xmltv_id="DW.de@English" site_id="37494f1f-0748-4150-bfbc-eb24b0bf1a34">DW</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="IndiaToday.in@SD" site_id="143197">INDIA TODAY</channel>
-  <channel site="i.mjh.nz" site_id="Roku/epg#roku-ed1ad60fa9a05f34bf5d4e8b09460d6b" lang="en" xmltv_id="KContentbyCJENM.us">About K-Content by CJ ENM</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="GBNews.uk@SD" site_id="66be955c8711311880995282">GB News</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="animationplus" site_id="674f6a6cf44561420465f9f3">Animation+</channel>
-  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="RedBullTV.at@SD" site_id="968808735454013033">Red Bull TV Europe</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="historywarfare" site_id="650b60deb2413c46bf584d86">History &amp; Warfare</channel>
-  <channel site="airtelxstream.in" lang="en" xmltv_id="NHBollyFlix" site_id="RUNNTV_LIVECHANNEL_40">NH BollyFlix</channel>
-  <channel site="tataplay.com" lang="en" xmltv_id="NewsXWorld.in@HD" site_id="1487">NewsX World</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="AnimeAllDay.us@US" site_id="5812b7d3249444e05d09cc49">Pluto TV Anime</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="News18Kerala.in@SD" site_id="143613">News18 Kerala</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVCrimeDrama.us@SD" site_id="65a6a7a00c7ff50008cba07b">Pluto TV Crime Drama</channel>
-  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="TerraMaterWILD.de@English" site_id="931186243466302960">Terra Mater Wild</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="AnimeAllDay.us@UK" site_id="62a2e8d8a1c8650007e95bac">Pluto TV Anime</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="TheBobRossChannel.us@SD" site_id="5efe1de6e0b3f5003f5d9f88">The Bob Ross Channel</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="OnePiece.us@SD" site_id="5f7790b3ed0c88000720b241">One Piece</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="FUELTV.at@SD" site_id="62d15f16001c04178f555e40">FUEL TV</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="ThePinkPanther.us@SD" site_id="6876f76054325376973fd314">Pink Panther</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="MTVPlutoTV.us@US" site_id="5ca672f515a62078d2ec0ad2">MTV Pluto TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="PublicTV.in@SD" site_id="143688">Public TV</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="betcomedymovies" site_id="68c32d88f56983aba40052bd">BET Comedy Movies</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="powerrangers" site_id="644a69895b1d51b6a8d18609">Power Rangers</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="RepublicKannada.in@SD" site_id="142883">R. Kannada</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="MTVBiggestPop.us@US" site_id="5d14fd1a252d35decbc4080c">MTV Biggest Pop</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="bbccomedy" site_id="65622fb65dbccec83a87b643">BBC Comedy</channel>
-  <channel site="plex.tv" site_id="669994d717c9985deeb74e3b" lang="en" xmltv_id="beINSPORTSXTRA.us@Australia">beIN SPORTS XTRA</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="News18India.in@SD" site_id="143610">News18 India</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="xite90" site_id="6889430a3b7708975e7c07e3">XITE 90s Throwback</channel>
-  <channel site="tataplay.com" lang="en" xmltv_id="SwadeshNews.in@SD" site_id="1274">Swadesh News</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SuryaTV.in@SD" site_id="143888">Surya TV</channel>
-  <channel site="tataplay.com" lang="en" xmltv_id="Travelxp.in@4KHDR" site_id="923">TravelXP 4K HDR</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="YahooFinance.us@SD" site_id="5f170f01b898490041b49dd1">Yahoo Finance</channel>
-  <channel site="freeview.co.uk" lang="en" xmltv_id="CNAOriginals.sg@SD" site_id="64257#16164">CNA Originals</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="MoreTVSitcoms.us@SD" site_id="6132619f9ddaa50007e7dd86">More TV Sitcoms</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="WION.in@SD" site_id="144087">WION</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="TV5Kannada.in@SD" site_id="144024">TV5 Kannada</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="HellsKitchen.us@UK" site_id="68dcb9f59beaa3a402966db8">Hell's Kitchen</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="RakutenViki" site_id="60d4edd8b2fdec002c14112f">Rakuten Viki</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="ComedyCentralPlutoTV.us@US" site_id="5ca671f215a62078d2ec0abf">Comedy Central Pluto TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="NDTV24x7.in@SD" site_id="154895">NDTV 24x7</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="MusicIndia.in@SD" site_id="143563">Music India</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="Avatar.us" site_id="656df599c0fc8800089c75ab">Avatar</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="StingraySmoothJazz.ca@SD" site_id="62ee784852f7d73061eec493">Smooth Jazz</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="grahamnortonshow" site_id="68dcbb869beaa3a402966dba">The Graham Norton Show</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="plutotvanimemovies" site_id="67ed8f7e443f0671bc2b2368">Pluto TV Anime Movies</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ETNow.in@SD" site_id="143021">ET Now</channel>
-  <channel site="plex.tv" site_id="66a2c1370b91165254efdb3c" lang="en" xmltv_id="atthemovies">At the Movies</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="NBCNewsNOW.us@SD" site_id="5fc70600dd53a6002d8f93ca">NBC News NOW</channel>
-  <channel site="rt.com" lang="en" xmltv_id="RT.ru@SD" site_id="news">RT News</channel>
-  <channel site="plex.tv" site_id="62ee6eae271f393d2d9f7096" lang="en" xmltv_id="StingrayTodaysKPop.ca@SD">Today's K-Pop</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="CBCNewsNetwork.ca@SD" site_id="64c91830ea7db2f52688c52c">CBC News</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="BBCFood.us@SD" site_id="630905af0417b7074a4ad95e">BBC Food</channel>
-  <channel site="plex.tv" site_id="62fbf197c67d52bddf74cc87" lang="en" xmltv_id="StingrayMovieMusic">Movie Music by Stingray</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="TimesNowNavbharat.in@SD" site_id="144007">Times Now Navbharat</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DDIndia.in@SD" site_id="158251">DD India</channel>
-  <channel site="tataplay.com" lang="en" xmltv_id="RealNewsKerala.in@SD" site_id="1018">Real News Kerala</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="lovepetsuk" site_id="682dfe1b47a628d2f56948ce">Love Pets</channel>
-  <channel site="pluto.tv" site_id="5bb1ad55268cae539bcedb08" lang="en" xmltv_id="ThePetCollective.us@US">The Pet Collective</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="beINSPORTSXTRA.us@SD" site_id="60a53634126de9002e694bc4">beIN SPORTS XTRA</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="kimsconvenience" site_id="6707d359da81682f2d1e683c">Kim's Convenience</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="GoodNewsToday.in@SD" site_id="143090">Good News Today</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="60minutes" site_id="66b646f9cd0d3100086af83c">60 Minutes</channel>
-  <channel site="epgshare01.online" lang="en" xmltv_id="RakutenTVActionMovies.es@UK" site_id="RAKUTEN1#UK:.Action.Movies.-.Rakuten.TV.be">UK: Action Movies - Rakuten TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="TV9Bharatvarsh.in@SD" site_id="144027">TV9 Bharatvarsh</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="AajTak.in@SD" site_id="142507">Aaj Tak</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="StoriesbyAMC.us@SD" site_id="5fc705e2a2236e002d69f3ba">Stories by AMC</channel>
-  <channel site="plex.tv" site_id="63dea56a2a2abb171ff6dadf" lang="en" xmltv_id="AnimexHIDIVE.us@SD">ANIME x HIDIVE</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="InspectorGadget.us@UK" site_id="5d765786aad587cf4d0e2bf6">Inspector Gadget</channel>
-  <channel site="tv.yandex.ru" lang="ru" xmltv_id="RTDocumentary.ru@English" site_id="1258">RT Doc</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="outersphere" site_id="641496bf238e21f260e7844a">OuterSphere by Lionsgate</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVHistory.us@US" site_id="5a4d35dfa5c02e717a234f86">Pluto TV History</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="CNNHeadlines.us@SD" site_id="66b4fcc2530e39ea2ee79545">CNN Headlines</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="NewsX.in@SD" site_id="143624">NewsX</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="discoveryturbotv" site_id="6373bfe48e2036e4410ddb82">Discovery Turbo TV</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="FunnyAF.us@SD" site_id="580e87ff497c73ba2f321dd3">Funny AF</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="RepublicBharat.in@SD" site_id="143724">Republic Bharat</channel>
-  <channel site="plex.tv" site_id="65622ac05dbccec83a87b641" lang="en" xmltv_id="BBCSciFi">BBC Sci-Fi</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="gogogadget!" site_id="667f3852efa2a10008e1e514">Go Go Gadget!</channel>
-  <channel site="plex.tv" lang="en" xmltv_id="BBCEarth.uk@US" site_id="6414a73254c537d12d8073d7">BBC Earth</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ManoramaNews.in@SD" site_id="159016">Manorama News</channel>
-  <channel site="plex.tv" site_id="6623c78128a167c6e5b3079c" lang="en" xmltv_id="MovieSphere.us@AU">MOVIESPHERE</channel>
-  <channel site="airtelxstream.in" lang="en" xmltv_id="IndiaTVSpeedNews.in@HD" site_id="LIVETV_LIVETVCHANNEL_INDIA_TV_SPEED_NEWS">INDIA TV SPEED NEWS</channel>
-  <channel site="pluto.tv" lang="fi" xmltv_id="key-and-peele-fi" site_id="65e6d18818036500082911b5">Key &amp; Peele</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVCrimeMovies.us@SD" site_id="5f4d8594eb979c0007706de7">Pluto TV Crime Movies</channel>
-  <channel site="plex.tv" site_id="66fd3e25216b603e031725fe" lang="en" xmltv_id="stingrayzenlife-uk">ZenLIFE by Stingray</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVComedyMovies" site_id="5c363c2411c5ca053f198f97">Pluto TV Comedy Movies</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="SouthPark.us@CA" site_id="62bdb1c5e25122000798ac79">South Park</channel>
+  <channel site="plex.tv" site_id="68826aa6b6b2b3f8bed60007" lang="en" xmltv_id="ctvmovies">CTV Movies</channel>
   <channel site="watch.whaletvplus.com" lang="en" xmltv_id="INFAST.nl@SD" site_id="878085677857115004">INFAST</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="sonyonefaves" site_id="6920df415cbe620c1f9b6bab">Sony One | FAVES</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/gb#GBBB5000002PL" lang="en" xmltv_id="WildPlanet">Wild Planet</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="anime247" site_id="686452b8fbd6d9b449de2be3">Anime 24/7</channel>
+  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="JustforLaughsTV" site_id="672540845069111078">Just For Laughs TV</channel>
+  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="DroneTV" site_id="925710235225102102">Drone TV</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="BBCFood.us@SD" site_id="630905af0417b7074a4ad95e">BBC Food</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="crunchyroll" site_id="65652f7fc0fc88000883537a">Crunchyroll</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="ParamountMovieChannel.us@SD" site_id="5cb0cae7a461406ffe3f5213">Paramount Movie Channel</channel>
+  <channel site="pluto.tv" site_id="5bb1ad55268cae539bcedb08" lang="en" xmltv_id="ThePetCollective.us@US">The Pet Collective</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="NDTV24x7.in@SD" site_id="154895">NDTV 24x7</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="NickPlutoTV.us@US" site_id="5ca673e0d0bd6c2689c94ce3">Nickelodeon Pluto TV</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="MTVPlutoTV.us@US" site_id="5ca672f515a62078d2ec0ad2">MTV Pluto TV</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="GREATmovies.uk@UK" site_id="664e9d95e8824b0c34762787">GREAT! movies</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="BloombergOriginals.us@US" site_id="68fafe0dae4af1c7478fbeec">Bloomberg Originals</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="Mythbusters.us@UK" site_id="65cd278697fb4731f54ecae5">Mythbusters</channel>
+  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="discoveringchina" site_id="989293714931712087">Discovering China</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="DocumentaryPlus.us@SD" site_id="62f42e6cad0081c6ef405723">Documentary+</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="lovepetsuk" site_id="682dfe1b47a628d2f56948ce">Love Pets</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="spongebob-squarepants-ca" site_id="63f87d057533d80008ab9549">SpongeBob SquarePants</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="RakutenViki" site_id="60d4edd8b2fdec002c14112f">Rakuten Viki</channel>
+  <channel site="tataplay.com" lang="en" xmltv_id="B4UMusic.in@India" site_id="9">B4U Music</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="BBCTravel.us@US" site_id="65622eddb7d737841f30a4fd">BBC Travel</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="DocumentaryPlus.us@UK" site_id="614e286b2bac097ffd6fd6ab">Documentary+</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="CNNOriginals.us@SD" site_id="66ad6025cb5d3b7fb5011c2d">CNN Originals</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="plutotvanimemovies" site_id="67ed8f7e443f0671bc2b2368">Pluto TV Anime Movies</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="RiverMonsters" site_id="RAKUTEN1#UK:.River.Monsters.be">UK: River Monsters</channel>
+  <channel site="plex.tv" site_id="669994d717c9985deeb74e3b" lang="en" xmltv_id="beINSPORTSXTRA.us@Australia">beIN SPORTS XTRA</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="MrBeanAnimated.uk@SD" site_id="66a2e7fe94b6a49cb5054d7b">Mr. Bean</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVRetroKid.us@CA" site_id="6408b41b83f58900081d91ad">Pluto TV Retro Kid</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="CNNNews18.in@SD" site_id="142747">CNN-News18</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DDSports.in@SD" site_id="158255">DD Sports</channel>
+  <channel site="virgintvgo.virginmedia.com" lang="en" xmltv_id="CNBCEurope.uk@HD" site_id="352">CNBC HD</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="CNNInternational.us@MENA" site_id="66c45afaa72e7b0008a2b153">CNNi</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="News18India.in@SD" site_id="143610">News18 India</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="AnimeAllDay.us@UK" site_id="62a2e8d8a1c8650007e95bac">Pluto TV Anime</channel>
+  <channel site="distro.tv" lang="en" xmltv_id="HorizonSports.us@SD" site_id="11063">Horizon Sports</channel>
+  <channel site="tataplay.com" lang="en" xmltv_id="KappaTV.in@SD" site_id="377">Kappa TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SuryaTV.in@SD" site_id="143888">Surya TV</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="newkfood" site_id="68b9f5a3d60e5dd29263c7ac">NEW KFOOD</channel>
+  <channel site="airtelxstream.in" lang="en" xmltv_id="IndiaTVSpeedNews.in@HD" site_id="LIVETV_LIVETVCHANNEL_INDIA_TV_SPEED_NEWS">INDIA TV SPEED NEWS</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="TODAYAllDay.us@SD" site_id="5fc70600598c41002da3dd39">TODAY All Day</channel>
+  <channel site="mewatch.sg" lang="en" xmltv_id="foodon" site_id="558273">FoodON</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="Newsmax2.us@SD" site_id="5fb81660b7ad2d002dcb7335">Newsmax2</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="LoveNature.ca@SD" site_id="60995eb136c72d002da7bbcb">Love Nature</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="VevoPop.us@SD" site_id="5d93b635b43dd1a399b39eee">Vevo Pop</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="StoriesbyAMC.us@Pluto" site_id="5e8254118601b80007b4b7ae">Stories by AMC</channel>
+  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="AdventureEarth.de@SD" site_id="931186243466302969">Adventure Earth</channel>
+  <channel site="tataplay.com" lang="en" xmltv_id="SwadeshNews.in@SD" site_id="1274">Swadesh News</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="TheAddamsFamily.us@SD" site_id="689fb7110a486aeba3c7917c">The Addams Family</channel>
+  <channel site="plex.tv" site_id="66fd3e25216b603e031725fe" lang="en" xmltv_id="stingrayzenlife-uk">ZenLIFE by Stingray</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="90skidstv2" site_id="6452c77ed3fdde00080eb3a8">90s Kids TV 2</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="MusicIndia.in@SD" site_id="143563">Music India</channel>
+  <channel site="xumo.tv" lang="en" xmltv_id="universalmovies" site_id="0#99991621">Universal Movies</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="USATODAY.us@SD" site_id="60df3e18541143002f3b8607">USA TODAY</channel>
+  <channel site="airtelxstream.in" lang="en" xmltv_id="NDTVProfit.in@SD" site_id="LIVETV_LIVETVCHANNEL_NDTV_PROFIT_PRIME">NDTV Profit Prime</channel>
+  <channel site="sky.com" lang="en" xmltv_id="SkyNews.uk@HD" site_id="4050">Sky News HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="Zoom.in@SD" site_id="157600">Zoom</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="IndiaNews.in@SD" site_id="143190">India News</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVAnimation.us@UK" site_id="612f761008a9e50007984ba0">Pluto TV Animation</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVComedyMovies" site_id="5c363c2411c5ca053f198f97">Pluto TV Comedy Movies</channel>
+  <channel site="plex.tv" site_id="66a2c1370b91165254efdb3c" lang="en" xmltv_id="atthemovies">At the Movies</channel>
+  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="RedBullTV.at@SD" site_id="968808735454013033">Red Bull TV Europe</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="Avatar.us" site_id="656df599c0fc8800089c75ab">Avatar</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="pbstravel" site_id="684c201a3496598cf4003fbc">PBS Travel</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="BloombergOriginals.us@Global" site_id="61d73c3ca7b7c7f703418518">Bloomberg Originals</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVMovies.us@UK" site_id="5ad8d3a31b95267e225e4e09">Pluto TV Movies</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="StarTrek.us@SD" site_id="5efbd39f8c4ce900075d7698">Star Trek</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeeDelhiNCRHaryana.in@SD" site_id="144448">Zee Delhi NCR Haryana</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="TheBobRossChannel.us@pluto" site_id="5f36d726234ce10007784f2a">The Bob Ross Channel</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="StoriesbyAMC.us@SD" site_id="5fc705e2a2236e002d69f3ba">Stories by AMC</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="BloombergTV.us@Asia" site_id="f946f3d4-96c3-4e0f-924d-edac62433fd2">Bloomberg Television HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeeMadhyaPradeshChhattisgarh.in@SD" site_id="144455">Zee Madhya Pradesh Chhattisgarh</channel>
+  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="chinatravel" site_id="989293714931712088">China Travel</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="ComedyCentralPlutoTV.us@US" site_id="5ca671f215a62078d2ec0abf">Comedy Central Pluto TV</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="Naruto.us@US" site_id="5da0c85bd2c9c10009370984">Naruto</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="pbsscience" site_id="66469eecdad45e1759c1c06b">PBS Science</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="MissionImpossible.us@SD" site_id="5f77977bd924d80007eee60c">Mission Impossible</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="gogogadget!" site_id="667f3852efa2a10008e1e514">Go Go Gadget!</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="TimesNow.in@SD" site_id="144006">Times Now</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="UniversalCrime.us@East" site_id="6549341853fc9700083901ac">Universal Crime</channel>
+  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="InTrouble.nl@SD" site_id="878087694210044785">INTROUBLE</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="ComedyCentralPlutoTV.us@CA" site_id="64f8a408bd341e000818fcda">Comedy Central</channel>
+  <channel site="airtelxstream.in" lang="en" xmltv_id="JantaTV.in@SD" site_id="LIVETV_LIVETVCHANNEL_JANTA_TV">Janta TV</channel>
+  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="RedBullTV.at@AU" site_id="979187723418476851">Red Bull TV Australia</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="ComedyCentralAnimation.us@CA" site_id="64f8a949f5b5e4000862467c">Comedy Central Animation</channel>
+  <channel site="tataplay.com" lang="en" xmltv_id="B4UMovies.in@India" site_id="7">B4U Movies</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="PublicMusic.in@SD" site_id="143687">Public Music</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="LiveNOWfromFOX.us@SD" site_id="6377ea0e13bb6b1757e14695">LiveNOW from FOX</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="TimesNowNavbharat.in@SD" site_id="144007">Times Now Navbharat</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="dinos24/7" site_id="673bf05ddaad7f0008ac7a5c">Dinos 24/7</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeeUttarPradeshUttarakhand.in@SD" site_id="144480">Zee Uttar Pradesh Uttarakhand</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="sonyonecomedytv" site_id="6920e0045cbe620c1f9b6bad">Sony One | Comedy TV</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="FoxNewsChannel.us@SD" site_id="eb856acf-437e-470f-9161-eabd52e3de02">Fox News Channel</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeeBharat.in@SD" site_id="144450">Zee Bharat</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="nbcsportsnow" site_id="6549306c83595c000815a696">NBC Sports NOW</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVHistory.us@US" site_id="5a4d35dfa5c02e717a234f86">Pluto TV History</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="XITEReggaeVibes.nl@US" site_id="68800f0c4033a6a442ad923d">XITE Reggae Vibes</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVPokemon.us@SD" site_id="6675c7868768aa0008d7f1c7">Pokémon</channel>
+  <channel site="tataplay.com" lang="en" xmltv_id="RealNewsKerala.in@SD" site_id="1018">Real News Kerala</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="IndiaToday.in@SD" site_id="143197">INDIA TODAY</channel>
+  <channel site="airtelxstream.in" lang="en" xmltv_id="NHBollyFlix" site_id="RUNNTV_LIVECHANNEL_40">NH BollyFlix</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="HistoryTV18.in@HD" site_id="143133">History TV18 HD</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="NewsMalayalam24x7.in@SD" site_id="166320">News Malayalam 24x7</channel>
+  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="watchmojo" site_id="523509741847643710">WatchMojo</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="AMCThrillers.us@SD" site_id="5fc705e2a2236e002d69f36d">AMC Thrillers</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="France24.fr@English" site_id="678fe7959407a53556d3e8eb">FRANCE 24</channel>
+  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="AutenticHistory.de@SD" site_id="931186243466302968">Autentic History</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="GustoTV.ca@SD" site_id="5f8746eabd529300418246d9">GUSTOTV</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="powerrangers" site_id="644a69895b1d51b6a8d18609">Power Rangers</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="thesherlockholmeschannel" site_id="66ce3fc059062698a13c39e1">The Sherlock Holmes Channel</channel>
+  <channel site="plex.tv" site_id="606cbf167e9765002c2a6131" lang="en" xmltv_id="MovieSphere.us@UK">MOVIESPHERE</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="BBCEarth.uk@US" site_id="6414a73254c537d12d8073d7">BBC Earth</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="WillowSports.us@SD" site_id="66fbf9cf128ab3f65b259bcb">Willow Sports</channel>
+  <channel site="distro.tv" lang="en" xmltv_id="4KTravelTV" site_id="83817">4K TRAVEL TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="AajTak.in@SD" site_id="142507">Aaj Tak</channel>
+  <channel site="tataplay.com" lang="en" xmltv_id="ZeeKannadaNews.in@SD" site_id="1287">Zee Kannada News</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DDIndia.in@SD" site_id="158251">DD India</channel>
+  <channel site="plex.tv" site_id="60d324f59adce5002c41dbc5" lang="en" xmltv_id="StingrayNaturescape.ca@US">Stingray Naturescape</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="RepublicTV.in@SD" site_id="143723">Republic TV</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="XITEHits.nl@UK" site_id="68965bb7e4a79cd0c3f845d8">XITE Hits</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="BloombergTV.us@Plus" site_id="54ff7ba69222cb1c2624c584">Bloomberg TV+</channel>
+  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="cgtnglobalbiz" site_id="989293714931712086">Global Biz</channel>
+  <channel site="watch.whaletvplus.com" site_id="1022125030546936771" lang="en" xmltv_id="bollywood4u">Bollywood 4U</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="plutotvtrendingnow" site_id="673247127d5da5000817b4d6">Pluto TV Trending Now</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="PopUp.uk@SD" site_id="665e48c419c3bb1f606d86ab">POP UP</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="00sreplay" site_id="62ba60f059624e000781c436">00s Replay</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="ThePinkPanther.us@SD" site_id="6876f76054325376973fd314">Pink Panther</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="curiositynow" site_id="64831c8be3541c909e96d240">Curiosity Now</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="ParamountPlusPicks.us@SD" site_id="5ff8c708653d080007361b14">Paramount+ Picks</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="AmericasTestKitchen.us@SD" site_id="5e84f54a82f05300080e6746">America's Test Kitchen</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVStaffPicks.us@SD" site_id="5f4d863b98b41000076cd061">Pluto TV Staff Picks</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVCrimeMovies.us@SD" site_id="5f4d8594eb979c0007706de7">Pluto TV Crime Movies</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="FunnyAF.us@SD" site_id="580e87ff497c73ba2f321dd3">Funny AF</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVCrimeDrama.us@SD" site_id="65a6a7a00c7ff50008cba07b">Pluto TV Crime Drama</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="newkpop" site_id="60d4edd7b2fdec002c14112d">NEW K-POP</channel>
+  <channel site="i.mjh.nz" site_id="Roku/epg#roku-ed1ad60fa9a05f34bf5d4e8b09460d6b" lang="en" xmltv_id="KContentbyCJENM.us">About K-Content by CJ ENM</channel>
+  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="lovewine" site_id="999420644834214638">Love Wine</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ReporterTV.in@SD" site_id="85096">Reporter</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="MirrorNow.in@SD" site_id="143543">Mirror Now</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="TVLandSitcoms.us@SD" site_id="61bd0b57872c650008ed2e38">TV Land Sitcoms</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="CNNHeadlines.us@SD" site_id="66b4fcc2530e39ea2ee79545">CNN Headlines</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="RakutenTVActionMovies.es@UK" site_id="RAKUTEN1#UK:.Action.Movies.-.Rakuten.TV.be">UK: Action Movies - Rakuten TV</channel>
+  <channel site="tataplay.com" lang="en" xmltv_id="Travelxp.in@4KHDR" site_id="923">TravelXP 4K HDR</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="NBCNewsNOW.us@SD" site_id="5fc70600dd53a6002d8f93ca">NBC News NOW</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="Portlandia.us@SD" site_id="61d735fea7b7c7f703418512">Portlandia</channel>
+  <channel site="i.mjh.nz" site_id="SamsungTVPlus/gb#GBBD230000420" lang="en" xmltv_id="RabbidsInvasion">Rabbids Invasion</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="DDBharati.in@SD" site_id="142779">DD Bharati</channel>
-  <channel site="pluto.tv" lang="da" xmltv_id="key-and-peele-dk" site_id="65cba715dc10a40008034917">Key &amp; Peele</channel>
-  <channel site="pluto.tv" lang="en" xmltv_id="Vevo2K.us@SD" site_id="5fd7bca3e0a4ee0007a38e8c">Vevo 2K</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="ZeeCinema.in@APAC" site_id="5f52f2b3-e45a-40a5-bcf3-2dd75a5543f8">Zee Cinema</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="XITEHits.nl@US" site_id="688002cd996f1a2fb393a6e3">XITE Hits</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="TV5Kannada.in@SD" site_id="144024">TV5 Kannada</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ABPNews.in@SD" site_id="158138">ABP News</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="JustforLaughsGags.us@SD" site_id="64704954e536e0faaf10be9f">Just For Laughs Gags</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="pbsfood" site_id="650299cdec4e38daa56e9c7c">PBS Food</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="WION.in@SD" site_id="144087">WION</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeeNews.in@SD" site_id="159298">Zee News</channel>
+  <channel site="freeview.co.uk" lang="en" xmltv_id="CNAOriginals.sg@SD" site_id="64257#16164">CNA Originals</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="F1Channel.ie@US" site_id="6896595a58a6658b3d6a501a">F1 Channel</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVSherlock.us@UK" site_id="5dc2c00abfed110009d97243">Pluto TV Sherlock</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="ReutersTV.us@SD" site_id="5eea71d65252710041e0ccbc">Reuters TV</channel>
+  <channel site="plex.tv" site_id="62fbf197c67d52bddf74cc87" lang="en" xmltv_id="StingrayMovieMusic">Movie Music by Stingray</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="CBSNews247.us@SD" site_id="6571f43a1d2aae780d597196">CBS News</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="betcomedymovies" site_id="68c32d88f56983aba40052bd">BET Comedy Movies</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="CNBCTV18PrimeHD.in@SD" site_id="142744">CNBC TV18 Prime</channel>
+  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="LoveThePlanet.es@SD" site_id="999420644834214639">Love The Planet</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="BansalNews.in@SD" site_id="142702">Bansal News</channel>
+  <channel site="distro.tv" lang="en" xmltv_id="BritAsiaTV.uk@SD" site_id="102778">BritAsiaTV</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="CBCNewsNetwork.ca@SD" site_id="64c91830ea7db2f52688c52c">CBC News</channel>
+  <channel site="plex.tv" site_id="65622ac05dbccec83a87b641" lang="en" xmltv_id="BBCSciFi">BBC Sci-Fi</channel>
+  <channel site="airtelxstream.in" lang="en" xmltv_id="DDNational.in@HD" site_id="LIVETV_LIVETVCHANNEL_DD_NATIONAL_HD">DD National HD</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="ABCNewsLive.us@SD" site_id="6508be683a0d700008c534e4">ABC News Live</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="kimsconvenience" site_id="6707d359da81682f2d1e683c">Kim's Convenience</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="sonyoneactionhits" site_id="692111d750fe592fd6d5b7da">Sony One | Action Hits</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="RakutenTVDramaMovies.es@UK" site_id="RAKUTEN1#UK:.Drama.Movies.-.Rakuten.TV.be">UK: Drama Movies - Rakuten TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SansadTV1.in@SD" site_id="166275">Sansad TV 1 HD</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="MoreTVSitcoms.us@SD" site_id="6132619f9ddaa50007e7dd86">More TV Sitcoms</channel>
+  <channel site="plex.tv" site_id="66a2818ce1a2934adfe851e5" lang="en" xmltv_id="pawsclaws">Paws &amp; Claws</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="GBNews.uk@SD" site_id="66be955c8711311880995282">GB News</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="TED.us@SD" site_id="62ab5aabbb869dd0df6a3487">TED</channel>
+  <channel site="tataplay.com" lang="en" xmltv_id="NewsXWorld.in@HD" site_id="1487">NewsX World</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="GlobalNews.ca@SD" site_id="62cbef9ebb857100072fc187">Global News National</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="pluto-tv-adventure-ca" site_id="653bdb0fbdf3cf00089cc395">Pluto TV Adventure</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="TopGear.uk@SD" site_id="6308f121ac9983739c8a29bd">Top Gear</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="WildEarth.uk@SD" site_id="60d4edddb2fdec002c141135">WildEarth</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="EuronewsEnglish.fr@SD" site_id="60089d90f682a3002c348299">Euronews</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="ShemarooBollywood.us@Plex" site_id="62d1a58e520656fda09e609d">Shemaroo Bollywood</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="90skids" site_id="6452c814939a590008567a3b">90's Kids</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="AlJazeera.qa@English" site_id="159135">Al Jazeera English</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="InspectorGadget.us@UK" site_id="5d765786aad587cf4d0e2bf6">Inspector Gadget</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="TinyPop.uk@SD" site_id="664e9fade8824b0c3476278b">Tiny Pop</channel>
+  <channel site="distro.tv" lang="en" xmltv_id="YRFMusic.in@SD" site_id="126108">YRF Music</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="OutsideTV.us@SD" site_id="629e522ed1bc5f1b16c6b98d">Outside</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="MrBeanLiveAction.uk@SD" site_id="671a924b79fce6628115432c">Mr. Bean Live Action</channel>
+  <channel site="plex.tv" site_id="5fb84bc1b7ad2d002dcb735f" lang="en" xmltv_id="MovieSphere.us@US">MOVIESPHERE</channel>
+  <channel site="xumo.tv" lang="en" xmltv_id="nbccomedyvault" site_id="150#99951244">NBC Comedy Vault</channel>
+  <channel site="plex.tv" site_id="5fc705dda2236e002d69f211" lang="en" xmltv_id="ScrippsNews.us@SD">Scripps News</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="PowerTV.in@SD" site_id="143669">Power TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="NewsX.in@SD" site_id="143624">NewsX</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="TV9Kannada.in@SD" site_id="144029">TV9 Kannada</channel>
+  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="TerraMaterWILD.de@English" site_id="931186243466302960">Terra Mater Wild</channel>
+  <channel site="tataplay.com" lang="en" xmltv_id="SwarajExpressSMBC.in@SD" site_id="577">Swaraj Express SMBC</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVAction.us@US" site_id="561d7d484dc7c8770484914a">Pluto TV Action</channel>
+  <channel site="distro.tv" lang="en" xmltv_id="BloombergTV.us@US" site_id="48682">Bloomberg Television</channel>
+  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="InWonder.nl@SD" site_id="878089883754168603">INWONDER</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="AsianetSuvarnaNews.in@SD" site_id="142682">Asianet Suvarna News</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="plutotvsci-fi" site_id="5b4fc274694c027be6ed3eea">Pluto TV Sci-Fi</channel>
+  <channel site="xumo.tv" lang="en" xmltv_id="americasgottalent" site_id="200#99951457">America's Got Talent</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="universalaction" site_id="654933e253fc970008390114">Universal Action</channel>
+  <channel site="zee5.com" lang="en" xmltv_id="ZeeMalayalamNews.in@SD" site_id="0-9-9z583539">ZEE News Malayalam</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="TheBobRossChannel.us@SD" site_id="5efe1de6e0b3f5003f5d9f88">The Bob Ross Channel</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="xite90" site_id="6889430a3b7708975e7c07e3">XITE 90s Throwback</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeeBusiness.in@SD" site_id="144439">Zee Business</channel>
+  <channel site="tvhebdo.com" site_id="cnbc/CNBC" lang="fr" xmltv_id="CNBC.us@SD">CNBC</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="GoUSATV.us@SD" site_id="654d5db7ff9919cc3e31e961">GoUSA TV</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="RetroCrush.us@SD" site_id="5ef4e1b40d9ad000423c442a">RetroCrush</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="RepublicBharat.in@SD" site_id="143724">Republic Bharat</channel>
+  <channel site="watch.whaletvplus.com" lang="en" xmltv_id="INWILD.nl@SD" site_id="910031136947176350">INWILD</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="pbsretro" site_id="65fb337f00433c8a0799ce98">PBS Retro</channel>
+  <channel site="plex.tv" site_id="6227c215c9f485cc7afe8c41" lang="en" xmltv_id="surfertv">SURFER tv</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="XITERockxMetal.nl@US" site_id="68800806996f1a2fb393a6e5">XITE Rock x Metal</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="sonyonethrillertv" site_id="6920da7250fe592fd6d5b7d3">Sony One | Thriller TV</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVPokemon.us@UK" site_id="6683cd71a1d7ad000866ec6a">Pokémon</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="animationplus" site_id="674f6a6cf44561420465f9f3">Animation+</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DDMalayalam.in@SD" site_id="142791">DD Malayalam</channel>
+  <channel site="pluto.tv" lang="en" xmltv_id="PlutoTVComedy.us@US" site_id="5a4d3a00ad95e4718ae8d8db">Pluto TV Comedy</channel>
+  <channel site="distro.tv" lang="en" xmltv_id="WildTV.ca@SD" site_id="139667">Wild TV</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="beINSPORTSXTRA.us@SD" site_id="60a53634126de9002e694bc4">beIN SPORTS XTRA</channel>
+  <channel site="tataplay.com" lang="en" xmltv_id="Foodxp.uk@SD" site_id="1030">Food XP</channel>
+  <channel site="tataplay.com" lang="en" xmltv_id="Travelxp.in@SD" site_id="55">Travelxp</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SansadTV2.in@HD" site_id="143761">Sansad TV 2 HD</channel>
+  <channel site="plex.tv" lang="en" xmltv_id="pbshistory" site_id="65721f23b10e9d22a882bde0">PBS History</channel>
 </channels>
