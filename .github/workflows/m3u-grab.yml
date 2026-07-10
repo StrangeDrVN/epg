@@ -1,0 +1,88 @@
+name: Automated M3U EPG Grabber
+
+on:
+  schedule:
+    # Runs automatically every day at 00:00 UTC (Default Setting)
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    # Allows you to manually trigger the workflow from the GitHub Actions tab with custom options
+    inputs:
+      m3u_url:
+        description: 'Custom M3U Playlist URL'
+        required: true
+        default: 'https://iptv-org.github.io/iptv/countries/in.m3u'
+      days:
+        description: 'Number of days to grab (e.g., 2 or 3)'
+        required: true
+        default: '2'
+      keep_channels_xml:
+        description: 'Retain channels.xml in the final output? (true/false)'
+        required: true
+        default: 'true'
+
+jobs:
+  grab-epg:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0 # Fetch all history so we can switch branches smoothly
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '20' # Matches project engine requirements
+          cache: 'npm'
+
+      - name: Install Project Dependencies
+        run: npm ci
+
+      - name: Initialize EPG Database Map
+        run: npm run api:load # Generates foundational maps before grabbing
+
+      - name: Execute M3U Grab Engine
+        env:
+          M3U_URL: ${{ github.event.inputs.m3u_url || 'https://iptv-org.github.io/iptv/countries/in.m3u' }}
+          GRAB_DAYS: ${{ github.event.inputs.days || '2' }}
+        run: |
+          npx tsx scripts/commands/epg/m3u-grab.ts --url "$M3U_URL" --days $GRAB_DAYS
+
+      - name: Post-Processing Cleanups
+        env:
+          KEEP_CHANNELS: ${{ github.event.inputs.keep_channels_xml || 'true' }}
+        run: |
+          if [ "$KEEP_CHANNELS" = "false" ]; then
+            echo "Removing channels.xml asset as requested by configuration overrides..."
+            rm -f output/channels.xml
+          fi
+
+      - name: Deploy Assets to Public Branch
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # 1. Stash the generated assets safely outside the git working directory
+          mkdir -p /tmp/epg-output
+          cp -r output/* /tmp/epg-output/
+          
+          # 2. Switch over to the public branch (create it if it doesn't exist yet)
+          git checkout public || git checkout -b public
+          
+          # 3. Wipe out old branch files completely so it remains a pure asset directory
+          git rm -rf .
+          
+          # 4. Bring back the newly generated compilation files into the root folder
+          cp -r /tmp/epg-output/* .
+          
+          # 5. Track files and push updates to the remote repository
+          git add .
+          
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(epg): daily automated worker assets compilation [skip ci]"
+            git push origin public --force
+            echo "Successfully pushed worker assets to the 'public' branch!"
+          else
+            echo "No structural content modifications identified. Skipping deployment cycles."
+          fi
