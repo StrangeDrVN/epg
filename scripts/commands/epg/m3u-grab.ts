@@ -31,7 +31,15 @@ interface SyncOptions {
 const options: SyncOptions = program.opts()
 const OUTPUT_DIR = path.join(process.cwd(), 'output')
 
-// Helper function to escape special XML characters
+// Define site priorities (lower index = higher priority)
+const SITE_PRIORITY = ['dishtv.in', 'tataplay.com', 'airtelxstream.in']
+
+function getSitePriorityIndex(site: string | undefined): number {
+  if (!site) return Infinity
+  const index = SITE_PRIORITY.indexOf(site)
+  return index === -1 ? Infinity : index
+}
+
 function escapeXml(unsafe: string): string {
   return unsafe.replace(/[<>&'"]/g, (c) => {
     switch (c) {
@@ -62,31 +70,41 @@ async function main() {
 
   const targetTvgIds = extractTvgIds(m3uContent)
   
-  // 2. Load all available channels across the project workspace registries
+  // 2. Load all available channels across the workspace registries
   const allWorkspaceChannels = await loadWorkspaceChannels()
 
-  // 3. Intersect channels and compute metrics
-  const matchedChannels = new Collection<Channel>()
-  const trackedXmltvIds = new Set<string>()
+  // 3. Intersect channels, apply priority rules, and eliminate duplicates
+  const bestChannelMap = new Map<string, Channel>()
   const mappedM3uIds = new Set<string>()
 
   allWorkspaceChannels.forEach((channel: Channel) => {
     if (channel.xmltv_id && targetTvgIds.has(channel.xmltv_id)) {
       mappedM3uIds.add(channel.xmltv_id)
-      const matchKey = `${channel.xmltv_id}:${channel.site}:${channel.lang}`
-      if (!trackedXmltvIds.has(matchKey)) {
-        trackedXmltvIds.add(matchKey)
-        matchedChannels.add(channel)
+      
+      const existingMatch = bestChannelMap.get(channel.xmltv_id)
+      if (!existingMatch) {
+        // First time seeing this xmltv_id, store it
+        bestChannelMap.set(channel.xmltv_id, channel)
+      } else {
+        // Compare site priorities to pick the absolute best one
+        const currentPriority = getSitePriorityIndex(channel.site)
+        const existingPriority = getSitePriorityIndex(existingMatch.site)
+        
+        if (currentPriority < existingPriority) {
+          bestChannelMap.set(channel.xmltv_id, channel)
+        }
       }
     }
   })
+
+  const matchedChannels = new Collection<Channel>()
+  bestChannelMap.forEach((channel) => matchedChannels.add(channel))
 
   // Calculate statistics metrics
   const totalM3uChannels = targetTvgIds.size
   const totalMappedChannels = mappedM3uIds.size
   const totalUnmappedChannels = totalM3uChannels - totalMappedChannels
 
-  // Print tracking dashboard metrics block
   logger.info('--------------------------------------------')
   logger.info(` M3U Playlist Total Channels: ${totalM3uChannels}`)
   logger.info(` Channels Mapped to Sites:    ${totalMappedChannels}`)
@@ -112,7 +130,7 @@ async function main() {
     }
   }
 
-  // 5. Save dynamically filtered channel configuration file with XML sanitization
+  // 5. Save dynamically filtered channel configuration file
   const xmlChannelsPayload = matchedChannels.all().map(c => {
     const cleanName = escapeXml(c.name || '')
     return `  <channel site="${c.site}" site_id="${c.site_id}" lang="${c.lang}" xmltv_id="${c.xmltv_id}">${cleanName}</channel>`
@@ -134,10 +152,11 @@ async function main() {
   }
   await outputStorage.save('worker.json', JSON.stringify(workerMetadata, null, 2))
 
-  // 7. Invoke the grab pipeline natively
+  // 7. Invoke the grab pipeline natively with your custom speed-throttling rules
   logger.info(`Triggering grab engine to parse the next ${options.days} days...`)
   try {
-    const grabCommand = `npx tsx scripts/commands/epg/grab.ts --channels "output/channels.xml" --output "output/guide.xml" --days ${options.days} --gzip --json`
+    // Configured for ultra stability: 15 connections, 1000ms delay between hits
+    const grabCommand = `npx tsx scripts/commands/epg/grab.ts --channels "output/channels.xml" --output "output/guide.xml" --days ${options.days} --maxConnections 15 --delay 1000 --gzip --json`
     execSync(grabCommand, { stdio: 'inherit' })
   } catch (error) {
     logger.error('The core aggregator script encountered a hard error processing requests.')
