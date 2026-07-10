@@ -31,6 +31,20 @@ interface SyncOptions {
 const options: SyncOptions = program.opts()
 const OUTPUT_DIR = path.join(process.cwd(), 'output')
 
+// Helper function to escape special XML characters
+function escapeXml(unsafe: string): string {
+  return unsafe.replace(/[<>&'"]/g, (c) => {
+    switch (c) {
+      case '<': return '&lt;'
+      case '>': return '&gt;'
+      case '&': return '&amp;'
+      case '\'': return '&apos;'
+      case '"': return '&quot;'
+      default: return c
+    }
+  })
+}
+
 async function main() {
   const logger = new Logger()
   logger.start('Starting M3U EPG Grabber Architecture...')
@@ -47,17 +61,18 @@ async function main() {
   }
 
   const targetTvgIds = extractTvgIds(m3uContent)
-  logger.info(`Found ${targetTvgIds.size} unique tvg-id(s) inside the M3U playlist.`)
-
+  
   // 2. Load all available channels across the project workspace registries
   const allWorkspaceChannels = await loadWorkspaceChannels()
 
-  // 3. Intersect channels to only match the target M3U IDs
+  // 3. Intersect channels and compute metrics
   const matchedChannels = new Collection<Channel>()
   const trackedXmltvIds = new Set<string>()
+  const mappedM3uIds = new Set<string>()
 
   allWorkspaceChannels.forEach((channel: Channel) => {
     if (channel.xmltv_id && targetTvgIds.has(channel.xmltv_id)) {
+      mappedM3uIds.add(channel.xmltv_id)
       const matchKey = `${channel.xmltv_id}:${channel.site}:${channel.lang}`
       if (!trackedXmltvIds.has(matchKey)) {
         trackedXmltvIds.add(matchKey)
@@ -65,6 +80,18 @@ async function main() {
       }
     }
   })
+
+  // Calculate statistics metrics
+  const totalM3uChannels = targetTvgIds.size
+  const totalMappedChannels = mappedM3uIds.size
+  const totalUnmappedChannels = totalM3uChannels - totalMappedChannels
+
+  // Print tracking dashboard metrics block
+  logger.info('--------------------------------------------')
+  logger.info(` M3U Playlist Total Channels: ${totalM3uChannels}`)
+  logger.info(` Channels Mapped to Sites:    ${totalMappedChannels}`)
+  logger.info(` Channels Missing in EPG:     ${totalUnmappedChannels}`)
+  logger.info('--------------------------------------------')
 
   if (matchedChannels.count() === 0) {
     logger.error('No overlapping channel mappings found between your M3U and local site targets!')
@@ -85,9 +112,10 @@ async function main() {
     }
   }
 
-  // 5. Save dynamically filtered channel configuration file
+  // 5. Save dynamically filtered channel configuration file with XML sanitization
   const xmlChannelsPayload = matchedChannels.all().map(c => {
-    return `  <channel id="${c.xmltv_id}" site="${c.site}" site_id="${c.site_id}" lang="${c.lang}">${c.name}</channel>`
+    const cleanName = escapeXml(c.name || '')
+    return `  <channel site="${c.site}" site_id="${c.site_id}" lang="${c.lang}" xmltv_id="${c.xmltv_id}">${cleanName}</channel>`
   }).join('\n')
   
   const rawXmlFileContent = `<?xml version="1.0" encoding="UTF-8"?>\n<channels>\n${xmlChannelsPayload}\n</channels>`
@@ -182,7 +210,6 @@ function extractPastPrograms(xmlContent: string, m3uTvgIds: Set<string>): string
       const channelId = channelMatch[1]
       const startTime = startMatch[1]
 
-      // Keep it if it matches our active M3U filters AND its start block is older than right now
       if (m3uTvgIds.has(channelId) && startTime < rightNowString) {
         historicalBlocks.push(block)
       }
@@ -200,11 +227,9 @@ async function mergeHistoryAndRebuildAllFormats(guideXmlPath: string, historyXml
   const modifiedXml = activeXml.substring(0, closureIndex) + historyXml + '\n</tv>'
   await fs.writeFile(guideXmlPath, modifiedXml, 'utf-8')
 
-  // Parse unified structure to regenerate guide.json perfectly
   const parsedData = epgParser.parse(modifiedXml)
   await outputStorage.save('guide.json', JSON.stringify(parsedData, null, 2))
 
-  // Run a quick zip utility loop to regenerate the guide.xml.gz format out of the patched XML string
   const pako = require('pako')
   const bufferInput = Buffer.from(modifiedXml, 'utf-8')
   const compressedGzip = pako.gzip(bufferInput)
