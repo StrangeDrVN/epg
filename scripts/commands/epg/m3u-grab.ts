@@ -12,7 +12,10 @@ import fs from 'fs-extra'
 import dayjs from 'dayjs'
 
 program
-  .addOption(new Option('-u, --url <url>', 'M3U playlist URL from iptv-org/iptv').required())
+  .addOption(
+    new Option('-u, --url <url>', 'M3U playlist URL from iptv-org/iptv')
+      .makeOptionMandatory()
+  )
   .addOption(
     new Option('-d, --days <number>', 'Number of days to look ahead')
       .default(2)
