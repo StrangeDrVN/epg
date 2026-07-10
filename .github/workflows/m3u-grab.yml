@@ -29,12 +29,12 @@ jobs:
         uses: actions/checkout@v7
         with:
           fetch-depth: 0 # Fetch all history so we can switch branches smoothly
+          persist-credentials: true # Ensures token persists during tree wiping
 
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
           node-version: '20' # Matches project engine requirements
-          cache: 'npm'
 
       - name: Install Project Dependencies
         run: npm ci
@@ -59,6 +59,9 @@ jobs:
           fi
 
       - name: Deploy Assets to Public Branch
+        env:
+          # We pass the token directly as an environment variable to guarantee push access
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
@@ -81,7 +84,8 @@ jobs:
           
           if ! git diff --cached --quiet; then
             git commit -m "chore(epg): daily automated worker assets compilation [skip ci]"
-            git push origin public --force
+            # Explicitly inject authenticated remote URI to completely bypass token placement issues
+            git push https://x-token-auth:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git public --force
             echo "Successfully pushed worker assets to the 'public' branch!"
           else
             echo "No structural content modifications identified. Skipping deployment cycles."
