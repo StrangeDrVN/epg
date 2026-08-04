@@ -20,6 +20,10 @@ on:
         required: true
         default: 'true'
 
+concurrency:
+  group: m3u-grab-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   grab-epg:
     runs-on: ubuntu-latest
@@ -42,12 +46,18 @@ jobs:
       - name: Initialize EPG Database Map
         run: npm run api:load # Generates foundational maps before grabbing
 
-      - name: Execute M3U Grab Engine
+      - name: Generate M3U Filtered Target Channels
         env:
           M3U_URL: ${{ github.event.inputs.m3u_url || 'https://iptv-org.github.io/iptv/countries/in.m3u' }}
           GRAB_DAYS: ${{ github.event.inputs.days || '2' }}
         run: |
           npx tsx scripts/commands/epg/m3u-grab.ts --url "$M3U_URL" --days $GRAB_DAYS
+
+      - name: Execute EPG Grab Engine
+        env:
+          GRAB_DAYS: ${{ github.event.inputs.days || '2' }}
+        run: |
+          npm run grab -- --channels=output/channels.xml --output=output/guide.xml --days=$GRAB_DAYS --maxConnections=15 --delay=1000 --gzip --json
 
       - name: Post-Processing Cleanups
         env:
