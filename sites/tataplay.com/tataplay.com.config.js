@@ -2,7 +2,7 @@ const axios = require('axios')
 
 module.exports = {
   site: 'tataplay.com',
-  days: 1,
+  days: 3,
   delay: 8000,
   maxConnections: 1,
 
