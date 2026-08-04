@@ -1,15 +1,11 @@
 import { Logger, Collection } from '@freearhey/core'
 import { Storage } from '@freearhey/storage-js'
 import epgGrabber, { EPGGrabber } from 'epg-grabber'
-import epgParser from 'epg-parser'
 import { Channel } from '../../models'
 import { SITES_DIR } from '../../constants'
 import { Option, program } from 'commander'
 import axios from 'axios'
-import { execSync } from 'child_process'
 import path from 'path'
-import fs from 'fs-extra'
-import dayjs from 'dayjs'
 
 program
   .addOption(
@@ -32,7 +28,7 @@ const options: SyncOptions = program.opts()
 const OUTPUT_DIR = path.join(process.cwd(), 'output')
 
 // Define site priorities (lower index = higher priority)
-const SITE_PRIORITY = ['dishtv.in', 'airtelxstream.in', 'tataplay.com']
+const SITE_PRIORITY = ['zee5.com', 'dishtv.in', 'airtelxstream.in', 'tataplay.com']
 
 function getSitePriorityIndex(site: string | undefined): number {
   if (!site) return Infinity
@@ -55,7 +51,7 @@ function escapeXml(unsafe: string): string {
 
 async function main() {
   const logger = new Logger()
-  logger.start('Starting M3U EPG Grabber Architecture...')
+  logger.start('Starting M3U Channel Target Generator...')
 
   // 1. Fetch and Parse M3U for tvg-ids
   logger.info(`Fetching M3U playlist from: ${options.url}`)
@@ -69,7 +65,7 @@ async function main() {
   }
 
   const targetTvgIds = extractTvgIds(m3uContent)
-  
+
   // 2. Load all available channels across the workspace registries
   const allWorkspaceChannels = await loadWorkspaceChannels()
 
@@ -80,7 +76,7 @@ async function main() {
   allWorkspaceChannels.forEach((channel: Channel) => {
     if (channel.xmltv_id && targetTvgIds.has(channel.xmltv_id)) {
       mappedM3uIds.add(channel.xmltv_id)
-      
+
       const existingMatch = bestChannelMap.get(channel.xmltv_id)
       if (!existingMatch) {
         // First time seeing this xmltv_id, store it
@@ -89,7 +85,7 @@ async function main() {
         // Compare site priorities to pick the absolute best one
         const currentPriority = getSitePriorityIndex(channel.site)
         const existingPriority = getSitePriorityIndex(existingMatch.site)
-        
+
         if (currentPriority < existingPriority) {
           bestChannelMap.set(channel.xmltv_id, channel)
         }
@@ -116,32 +112,18 @@ async function main() {
     process.exit(1)
   }
 
-  // 4. Stash Yesterday's Programs from the Current Active XML Guide
-  const activeGuidePath = path.join(OUTPUT_DIR, 'guide.xml')
-  let historicalProgramsXml = ''
-
-  if (await fs.pathExists(activeGuidePath)) {
-    logger.info("Reading existing 'guide.xml' to extract historical programs...")
-    try {
-      const rawXmlData = await fs.readFile(activeGuidePath, 'utf-8')
-      historicalProgramsXml = extractPastPrograms(rawXmlData, targetTvgIds)
-    } catch (parseErr: any) {
-      logger.info(`Could not process old guide for history retention: ${parseErr.message}`)
-    }
-  }
-
-  // 5. Save dynamically filtered channel configuration file
+  // 4. Save dynamically filtered channel configuration file
   const xmlChannelsPayload = matchedChannels.all().map(c => {
     const cleanName = escapeXml(c.name || '')
     return `  <channel site="${c.site}" site_id="${c.site_id}" lang="${c.lang}" xmltv_id="${c.xmltv_id}">${cleanName}</channel>`
   }).join('\n')
-  
+
   const rawXmlFileContent = `<?xml version="1.0" encoding="UTF-8"?>\n<channels>\n${xmlChannelsPayload}\n</channels>`
-  
+
   const outputStorage = new Storage(OUTPUT_DIR)
   await outputStorage.save('channels.xml', rawXmlFileContent)
 
-  // 6. Manifest worker.json metadata structure
+  // 5. Manifest worker.json metadata structure
   const workerMetadata = {
     channels: 'channels.xml',
     guide: {
@@ -152,29 +134,7 @@ async function main() {
   }
   await outputStorage.save('worker.json', JSON.stringify(workerMetadata, null, 2))
 
-  // 7. Invoke the grab pipeline natively with your custom speed-throttling rules
-  logger.info(`Triggering grab engine to parse the next ${options.days} days...`)
-  try {
-    // Configured for ultra stability: 15 connections, 1000ms delay between hits
-    const grabCommand = `npx tsx scripts/commands/epg/grab.ts --channels "output/channels.xml" --output "output/guide.xml" --days ${options.days} --maxConnections 15 --delay 1000 --gzip --json`
-    execSync(grabCommand, { stdio: 'inherit' })
-  } catch (error) {
-    logger.error('The core aggregator script encountered a hard error processing requests.')
-    process.exit(1)
-  }
-
-  // 8. Stitch yesterday's historical XML blocks back into the fresh output
-  if (historicalProgramsXml) {
-    logger.info('Stitching historical program data back into the fresh guide matrix...')
-    try {
-      await mergeHistoryAndRebuildAllFormats(activeGuidePath, historicalProgramsXml, outputStorage)
-      logger.success('All unified formats compiled completely including history logs!')
-    } catch (mergeErr: any) {
-      logger.error(`Failed to inject history blocks into target outputs: ${mergeErr.message}`)
-    }
-  } else {
-    logger.success('Sync complete! (No historical data was found/merged this run).')
-  }
+  logger.success('Channels generation complete! Target saved to output/channels.xml')
 }
 
 function extractTvgIds(m3u: string): Set<string> {
@@ -209,50 +169,6 @@ async function loadWorkspaceChannels() {
     })
   }
   return channels
-}
-
-function extractPastPrograms(xmlContent: string, m3uTvgIds: Set<string>): string {
-  const programRegex = /<program[\s\S]*?<\/program>/g
-  const channelIdRegex = /channel="([^"]+)"/
-  const startRegex = /start="(\d{14})/ 
-  
-  let match
-  let historicalBlocks: string[] = []
-  const rightNowString = dayjs().format('YYYYMMDDHHmmss')
-
-  while ((match = programRegex.exec(xmlContent)) !== null) {
-    const block = match[0]
-    const channelMatch = block.match(channelIdRegex)
-    const startMatch = block.match(startRegex)
-
-    if (channelMatch && startMatch) {
-      const channelId = channelMatch[1]
-      const startTime = startMatch[1]
-
-      if (m3uTvgIds.has(channelId) && startTime < rightNowString) {
-        historicalBlocks.push(block)
-      }
-    }
-  }
-  return historicalBlocks.join('\n')
-}
-
-async function mergeHistoryAndRebuildAllFormats(guideXmlPath: string, historyXml: string, outputStorage: Storage) {
-  let activeXml = await fs.readFile(guideXmlPath, 'utf-8')
-  
-  const closureIndex = activeXml.lastIndexOf('</tv>')
-  if (closureIndex === -1) return
-
-  const modifiedXml = activeXml.substring(0, closureIndex) + historyXml + '\n</tv>'
-  await fs.writeFile(guideXmlPath, modifiedXml, 'utf-8')
-
-  const parsedData = epgParser.parse(modifiedXml)
-  await outputStorage.save('guide.json', JSON.stringify(parsedData, null, 2))
-
-  const pako = require('pako')
-  const bufferInput = Buffer.from(modifiedXml, 'utf-8')
-  const compressedGzip = pako.gzip(bufferInput)
-  await fs.writeFile(path.join(OUTPUT_DIR, 'guide.xml.gz'), compressedGzip)
 }
 
 main()
