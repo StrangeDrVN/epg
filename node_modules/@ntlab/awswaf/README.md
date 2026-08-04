@@ -1,0 +1,52 @@
+# AWS WAF
+
+Port of [AWS WAF (Amazon Web Services Web Application Firewall) Solver](https://github.com/xKiian/awswaf) using Axios,
+with some [changes](https://github.com/pytr-org/pytr/tree/master/pytr/awswaf) incorporated.
+
+## Usage
+
+```js
+const AwsWaf = require('@ntlab/awswaf');
+const axios = require('axios');
+const cheerio = require('cheerio');
+
+(async function run() {
+    let awsWafToken;
+    const headers = {
+        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36'
+    }
+    const url = 'https://example.com/';
+    const f = async (m = 'head') => {
+        let waf;
+        await axios[m](url, {headers})
+            .then(res => {
+                console.log('Token is not needed...');
+            })
+            .catch(err => {
+                if (err instanceof axios.AxiosError && err.status === 405) {
+                    waf = err.response;
+                }
+            });
+        if (waf) {
+            if (m === 'head') {
+                await f('get');
+            } else if (waf.data) {
+                const $ = cheerio.load(waf.data);
+                const challengeJs = $('script[src]')
+                    .toArray()
+                    .map(s => $(s).attr('src'))
+                    .filter(s => s.includes('challenge.js'))
+                if (challengeJs.length) {
+                    const [, endpoint] = challengeJs[0].match(/(https:\/\/[^"]+)\/challenge\.js/);
+                    const waf = new AwsWaf(endpoint, 'example.com', headers['user-agent']);
+                    awsWafToken = await waf.getToken();
+                }
+            }
+        }
+    }
+    await f();
+    if (awsWafToken) {
+        console.log(`Got token ${awsWafToken}...`);
+    }
+})();
+```

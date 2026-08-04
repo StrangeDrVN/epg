@@ -1,0 +1,528 @@
+/**
+ * The MIT License (MIT)
+ *
+ * Copyright (c) 2026 Toha <tohenk@yahoo.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of
+ * this software and associated documentation files (the "Software"), to deal in
+ * the Software without restriction, including without limitation the rights to
+ * use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+ * of the Software, and to permit persons to whom the Software is furnished to do
+ * so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
+const axios = require('axios');
+const crypto = require('crypto');
+const fs = require('fs');
+const path = require('path');
+const zlib = require('zlib');
+
+/**
+ * AWS WAF challenge token solver.
+ *
+ * @author Toha <tohenk@yahoo.com>
+ * @see https://github.com/xKiian/awswaf
+ * @see https://github.com/pytr-org/pytr/tree/master/pytr/awswaf
+ */
+class AwsWaf {
+
+    solver = {}
+
+    /**
+     * Constructor.
+     *
+     * @param {string} endpoint WAF endpoint URL including https:// prefix
+     * @param {string} domain WAF protected domain
+     * @param {?string} user_agent User agent string
+     */
+    constructor(endpoint, domain, user_agent) {
+        /** @type {string} */
+        this.endpoint = endpoint;
+        /** @type {string} */
+        this.domain = domain;
+        /** @type {Record<string, string>} */
+        this.headers = {
+            'user-agent': user_agent || 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36',
+            'sec-ch-ua': '"Google Chrome";v="149", "Chromium";v="149", "Not)A;Brand";v="24"',
+            'sec-ch-ua-mobile': '?0',
+            'sec-ch-ua-platform': '"Windows"',
+            'sec-fetch-dest': 'empty',
+            'sec-fetch-mode': 'cors',
+            'sec-fetch-site': 'cross-site',
+            'accept-language': 'en-US,en;q=0.9',
+        }
+        /** @type {string} */
+        this.keyAlgorithm = 'aes-256-gcm';
+        /** @type {Buffer} */
+        this.key = Buffer.from('6f71a512b1e035eaab53d8be73120d3fb68a0ca346b9560aab3e5cdf753d5e98', 'hex');
+        /** @type {any[]} */
+        this.gpus = JSON.parse(fs.readFileSync(path.join(__dirname, 'webgl.json')));
+        // register solution solver
+        this.addSolver('h72f957df656e80ba55f5d8ce2e8c7ccb59687dba3bfb273d54b08a261b2f3002', this.compute_scrypt_nonce);
+        this.addSolver('h7b0c470f0cfe3a80a9e26526ad185f484f6817d0832712a4a37a908786a6a67f', this.hash_pow);
+        this.addSolver('ha9faaffd31b4d5ede2a2e19d2d7fd525f66fee61911511960dcbb52d3c48ce25', this.network_bandwidth);
+    }
+
+    /**
+     * Register challenge solution solver.
+     *
+     * @param {string} hash Solution solver hash
+     * @param {Function} fn Solution solver function
+     */
+    addSolver(hash, fn) {
+        this.solver[hash] = fn.bind(this);
+    }
+
+    /**
+     * Fetch AWS WAF challenge token.
+     *
+     * @returns {Promise<string|undefined>}
+     */
+    async getToken() {
+        try {
+            await this.getChallenges();
+            const inputs = await axios.get(`${this.endpoint}/inputs?client=browser`, {headers: this.headers})
+                .then(res => res.data)
+                .catch(console.error);
+            let payload;
+            if (payload = this.buildPayload(inputs)) {
+                let endpointUrl;
+                const endpoint = this.getEndpointName(inputs.challenge_type);
+                if (endpoint === 'mp_verify') {
+                    endpointUrl = `${this.endpoint}/mp_verify`;
+                    const solution = payload.solution;
+                    const [solution_field, solution_metadata] = this.challenges.mp_field_names;
+                    payload.solution = null;
+                    payload = {
+                        [solution_field]: [null, solution],
+                        [solution_metadata]: [null, JSON.stringify(payload)],
+                    }
+                } else {
+                    endpointUrl = `${this.endpoint}/verify`;
+                }
+                const res = await axios.post(endpointUrl, payload, {headers: this.headers})
+                    .then(res => res.data)
+                    .catch(console.error);
+                return res?.token;
+            }
+        } catch (err) {
+            console.error(err);
+        }
+    }
+
+    /**
+     * Get challenge javascript metadata.
+     *
+     * @returns {void}
+     */
+    async getChallenges() {
+        const challenge = await axios.get(`${this.endpoint}/challenge.js`, {headers: this.headers})
+            .then(res => res.data)
+            .catch(console.error);
+        this.challenges = this.parseChallenge(challenge);
+    }
+
+    /**
+     * Parse challenge javascript and extract challenge types, mp field names, and
+     * bandwidth sizes.
+     *
+     * @param {string} content Javascript content
+     * @returns {object}
+     */
+    parseChallenge(content) {
+        const res = {};
+        let match, i = 0;
+        for (match of content.matchAll(/'(h[0-9a-f]{8,})'[+].*?=\s*'((?:mp_)?verify)'/g)) {
+            if (res.challenge_types === undefined) {
+                res.challenge_types = {};
+            }
+            res.challenge_types[match[1]] = match[2];
+        }
+        if (match = content.match(/'verify'\s*,\s*'\w+'\s*:\s*'(solution_\w+)'\s*,\s*'\w+'\s*:\s*'(solution_\w+)'/)) {
+            res.mp_field_names = [match[1], match[2]];
+        } else {
+            res.mp_field_names = ['solution_data', 'solution_metadata'];
+        }
+        for (const re of [
+            /case\s+0x1:return\s+(0x[0-9a-f]+);/,
+            /case\s+0x2:return[^;]*\((0x[0-9a-f]+),(0x[0-9a-f]+)\);/,
+            /case\s+0x3:return[^;]*\((0x[0-9a-f]+),(0x[0-9a-f]+)\);/,
+            /case\s+0x4:return[^;]*\((0x[0-9a-f]+),(0x[0-9a-f]+)\);/,
+            /case\s+0x5:return[^;]*\((0x[0-9a-f]+),(0x[0-9a-f]+)\)/,
+        ]) {
+            if (match = content.match(re)) {
+                if (res.bandwidth_sizes === undefined) {
+                    res.bandwidth_sizes = {};
+                }
+                if (i++ === 0) {
+                    res.bandwidth_sizes[i] = parseInt(match[1]);
+                } else {
+                    res.bandwidth_sizes[i] = parseInt(match[1]) * parseInt(match[2]);
+                }
+            }
+        }
+
+        return res;
+    }
+
+    /**
+     * Build solution payload to sent to the endpoint.
+     *
+     * @param {object} inputs The inputs
+     * @returns {object|undefined}
+     */
+    buildPayload(inputs) {
+        if (inputs.challenge_type) {
+            const challenge_type = inputs.challenge_type;
+            let solver = this.solver[challenge_type];
+            if (solver === undefined && this.getEndpointName(challenge_type) === 'mp_verify') {
+                solver = this.network_bandwidth;
+            }
+            if (solver === undefined) {
+                throw new Error(`Unknown challenge type: ${challenge_type}`);
+            }
+            const [checksum, fingerprint] = this.getFingerprint();
+            const solution = solver(inputs.challenge.input, checksum, inputs.difficulty, this.challenges.bandwidth_sizes);
+
+            return {
+                challenge: inputs.challenge,
+                checksum: checksum,
+                solution: solution,
+                signals: [{name: 'Zoey', value: {Present: fingerprint}}],
+                existing_token: null,
+                client: 'Browser',
+                domain: this.domain,
+                metrics: [
+                    {name: '2', value: this.randUniform(0, 1), unit: '2'},
+                    {name: '100', value: 0, unit: '2'},
+                    {name: '101', value: 0, unit: '2'},
+                    {name: '102', value: 0, unit: '2'},
+                    {name: '103', value: 8, unit: '2'},
+                    {name: '104', value: 0, unit: '2'},
+                    {name: '105', value: 0, unit: '2'},
+                    {name: '106', value: 0, unit: '2'},
+                    {name: '107', value: 0, unit: '2'},
+                    {name: '108', value: 1, unit: '2'},
+                    {name: 'undefined', value: 0, unit: '2'},
+                    {name: '110', value: 0, unit: '2'},
+                    {name: '111', value: 2, unit: '2'},
+                    {name: '112', value: 0, unit: '2'},
+                    {name: 'undefined', value: 0, unit: '2'},
+                    {name: '3', value: 4, unit: '2'},
+                    {name: '7', value: 0, unit: '4'},
+                    {name: '1', value: this.randUniform(10, 20), unit: '2'},
+                    {name: '4', value: 36.5, unit: '2'},
+                    {name: '5', value: this.randUniform(0, 1), unit: '2'},
+                    {name: '6', value: this.randUniform(50, 60), unit: '2'},
+                    {name: '0', value: this.randUniform(130, 140), unit: '2'},
+                    {name: '8', value: 1, unit: '4'},
+                ],
+            }
+        }
+    }
+
+    /**
+     * Resolve challenge type hash to endpoint name using prefix matching.
+     *
+     * @param {string} challenge_type
+     * @returns {string}
+     */
+    getEndpointName(challenge_type) {
+        if (this.challenges?.challenge_types) {
+            if (this.challenges.challenge_types[challenge_type]) {
+                return this.challenges.challenge_types[challenge_type];
+            }
+            for (const [prefix, endpoint] of Object.entries(this.challenges.challenge_types)) {
+                if (challenge_type.startsWith(prefix)) {
+                    return endpoint;
+                }
+            }
+        }
+
+        return 'verify';
+    }
+
+    /**
+     * Get encrypted browser fingerprint along with checksum.
+     *
+     * @returns {string[]}
+     */
+    getFingerprint() {
+        const ts = new Date().getTime();
+        const gpu = this.choice(this.gpus);
+        const bins = new Uint16Array(256)
+            .map((v, i) => i === 0 || i === 255 ? this.randRange(14473, 16573) : this.randRange(0, 40));
+        const fp = {
+            metrics: {
+                fp2: 1,
+                browser: 0,
+                capabilities: 1,
+                gpu: 7,
+                dnt: 0,
+                math: 0,
+                screen: 0,
+                navigator: 0,
+                auto: 1,
+                stealth: 0,
+                subtle: 0,
+                canvas: 5,
+                formdetector: 1,
+                be: 0,
+            },
+            start: ts,
+            flashVersion: null,
+            plugins: [
+                {name: 'PDF Viewer', str: 'PDF Viewer '},
+                {name: 'Chrome PDF Viewer', str: 'Chrome PDF Viewer '},
+                {name: 'Chromium PDF Viewer', str: 'Chromium PDF Viewer '},
+                {name: 'Microsoft Edge PDF Viewer', str: 'Microsoft Edge PDF Viewer '},
+                {name: 'WebKit built-in PDF', str: 'WebKit built-in PDF '},
+            ],
+            dupedPlugins: [
+                'PDF Viewer Chrome PDF Viewer Chromium PDF Viewer ',
+                'Microsoft Edge PDF Viewer WebKit built-in PDF ||1920-1080-1032-24-*-*-*',
+            ],
+            screenInfo: '1920-1080-1032-24-*-*-*',
+            referrer: '',
+            userAgent: this.headers['user-agent'],
+            location: '',
+            webDriver: false,
+            capabilities: {
+                css: {
+                    textShadow: 1,
+                    WebkitTextStroke: 1,
+                    boxShadow: 1,
+                    borderRadius: 1,
+                    borderImage: 1,
+                    opacity: 1,
+                    transform: 1,
+                    transition: 1,
+                },
+                js: {
+                    audio: true,
+                    geolocation: this.choice([true, false]),
+                    localStorage: 'supported',
+                    touch: false,
+                    video: true,
+                    webWorker: this.choice([true, false]),
+                },
+                elapsed: 1,
+            },
+            gpu: {
+                vendor: gpu['webgl'][0]['webgl_unmasked_vendor'],
+                model: gpu['webgl_unmasked_renderer'],
+                extensions: gpu['webgl'][0]['webgl_extensions'].split(';'),
+            },
+            dnt: null,
+            math: {tan: '-1.4214488238747245', sin: '0.8178819121159085', cos: '-0.5753861119575491'},
+            automation: {
+                wd: {properties: {document: [], window: [], navigator: []}},
+                phantom: {properties: {window: []}},
+            },
+            stealth: {t1: 0, t2: 0, i: 1, mte: 0, mtd: false},
+            crypto: {
+                crypto: 1,
+                subtle: 1,
+                encrypt: true,
+                decrypt: true,
+                wrapKey: true,
+                unwrapKey: true,
+                sign: true,
+                verify: true,
+                digest: true,
+                deriveBits: true,
+                deriveKey: true,
+                getRandomValues: true,
+                randomUUID: true,
+            },
+            canvas: {hash: this.randRange(645172295, 735192295), emailHash: null, histogramBins: bins},
+            formDetected: false,
+            numForms: 0,
+            numFormElements: 0,
+            be: {si: false},
+            end: ts + 1,
+            errors: [],
+            version: '2.4.0',
+            id: crypto.randomUUID(),
+        }
+        const [checksum, data] = this.encodeWithCrc(fp);
+
+        return [checksum, this.encrypt(data)];
+    }
+
+    /**
+     * Create JSON data payload with CRC32 checksum.
+     *
+     * @param {object} data 
+     * @returns {string[]}
+     */
+    encodeWithCrc(data) {
+        const str = JSON.stringify(data);
+        const crc = zlib.crc32(str);
+        const checksum = crc.toString(16).toUpperCase();
+
+        return [checksum, [checksum, str].join('#')];
+    }
+
+    /**
+     * Perform AES-256-GCM encryption.
+     *
+     * @param {string} plaintext Text to encrypt
+     * @param {string} encoding Text encoding
+     * @returns {string}
+     */
+    encrypt(plaintext, encoding = 'utf8') {
+        const cipheriv = crypto.randomBytes(12);
+        const cipher = crypto.createCipheriv(this.keyAlgorithm, this.key, cipheriv);
+        const ciphertext = cipher.update(plaintext, encoding, 'hex');
+        const tag = cipher.final('hex');
+
+        return [cipheriv.toString('base64'), tag, ciphertext].join('::');
+    }
+
+    /**
+     * Perform AES-256-GCM decryption.
+     *
+     * @param {string} encrypted Encrypted text
+     * @param {string} encoding Text encoding
+     * @returns {string}
+     */
+    decrypt(encrypted, encoding = 'utf8') {
+        const [iv, tag, ciphertext] = encrypted.split('::');
+        const dechiperiv = Buffer.from(iv, 'base64');
+        const decipher = crypto.createDecipheriv(this.keyAlgorithm, this.key, dechiperiv);
+        const decrypted = decipher.update(ciphertext + tag, 'base64', encoding);
+
+        return decrypted + decipher.final(encoding);
+    }
+
+    /**
+     * Get random value from array elements.
+     *
+     * @param {any[]} choices Array inputs
+     * @returns {any}
+     */
+    choice(choices) {
+        return choices[Math.floor(Math.random() * choices.length)];
+    }
+
+    /**
+     * Get random number between min and max range inclusively.
+     *
+     * @param {number} min Start number
+     * @param {number} max Stop number
+     * @returns {number}
+     */
+    randRange(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    /**
+     * Get random float number between min and max range inclusively.
+     *
+     * @param {number} min Start number
+     * @param {number} max Stop number
+     * @returns {number}
+     */
+    randUniform(min, max) {
+        return Math.random() * (max - min + 1) + min;
+    }
+
+    /**
+     * Create sized zero string.
+     *
+     * @param {number} size String size
+     * @returns {string}
+     */
+    zeros(size) {
+        return String.fromCharCode(0).repeat(size);
+    }
+
+    /**
+     * Check zero buffer validity.
+     *
+     * @param {NonSharedBuffer} digest Digest
+     * @param {number} difficulty Difficulty
+     * @returns {boolean}
+     */
+    check(digest, difficulty) {
+        if (digest) {
+            const divider = 8;
+            const full = Math.trunc(difficulty / divider);
+            const rem = difficulty % divider;
+            if (digest.slice(0, full).toString() !== this.zeros(full)) {
+                return false;
+            }
+            if (rem && digest[full] >> (divider - rem)) {
+                return false;
+            }
+
+            return true;
+        }
+    }
+
+    /**
+     * @param {string} challenge
+     * @param {string} salt
+     * @param {number} difficulty
+     * @returns {string}
+     */
+    compute_scrypt_nonce(challenge, salt, difficulty) {
+        const prefix = challenge + salt, N = 128, r = 8, p = 1, keylen = 16;
+        let i = 0;
+        while (true) {
+            const digest = crypto.scryptSync(`${prefix}${++i}`, salt, keylen, {N, r, p});
+            if (this.check(digest, difficulty)) {
+                return i.toString();
+            }
+        }
+    }
+
+    /**
+     * @param {string} challenge
+     * @param {string} salt
+     * @param {number} difficulty
+     * @returns {string}
+     */
+    hash_pow(challenge, salt, difficulty) {
+        const prefix = challenge + salt;
+        let i = 0;
+        while (true) {
+            const hash = crypto.createHash('sha256');
+            const digest = hash.update(`${prefix}${++i}`).digest();
+            if (this.check(digest, difficulty)) {
+                return i.toString();
+            }
+        }
+    }
+
+    /**
+     * NetworkBandwidth challenge — returns base64-encoded zero buffer sized by difficulty.
+     *
+     * @param {string} challenge
+     * @param {string} salt
+     * @param {number} difficulty
+     * @returns {string}
+     */
+    network_bandwidth(challenge, salt, difficulty, bandwidth_sizes) {
+        if (!bandwidth_sizes) {
+            bandwidth_sizes = {1: 0x400, 2: 0xA * 0x400, 3: 0x64 * 0x400, 4: 0x100000, 5: 0xA * 0x100000};
+        }
+        const size = bandwidth_sizes[difficulty] ? bandwidth_sizes[difficulty] : 0x400;
+
+        return Buffer.from(this.zeros(size)).toString('base64');
+    }
+}
+
+module.exports = AwsWaf;
