@@ -225,10 +225,12 @@ async function main() {
     if (!channel.site || !channel.site_id || !channel.name) continue
 
     const siteConfig = await loadJs(channel.getConfigPath())
+    const hasCustomLimits = Boolean(siteConfig.delay || siteConfig.maxConnections)
     const config = merge({}, defaultConfig, siteConfig)
     if (typeof options.delay === 'number') {
       config.delay = Math.max(config.delay ?? 0, options.delay)
     }
+    ;(config as any).hasCustomLimits = hasCustomLimits
 
     if (!channel.xmltv_id) channel.xmltv_id = channel.site_id
 
@@ -292,44 +294,48 @@ async function main() {
   const requests = interleavedQueue.map((queueItem: QueueItem) => {
     const { channel, config, date } = queueItem
     const siteKey = channel.site || 'default'
-    const siteLimiter = getSiteLimiter(siteKey, config.maxConnections)
 
-    return globalLimit(() =>
-      siteLimiter(async () => {
-        if (!channel.logo) {
-          if (config.logo) {
-            channel.logo = await grabber.loadLogo(channel, date)
-          } else {
-            channel.logo = getLogoForChannel(channel)
+    const executeGrab = async () => {
+      if (!channel.logo) {
+        if (config.logo) {
+          channel.logo = await grabber.loadLogo(channel, date)
+        } else {
+          channel.logo = getLogoForChannel(channel)
+        }
+      }
+
+      channels.add(channel)
+
+      const channelPrograms = await grabber.grab(
+        channel,
+        date,
+        config,
+        (context: epgGrabber.Types.GrabCallbackContext, error: Error | null) => {
+          logger.info(
+            `  [${i}/${total}] ${context.channel.site} (${context.channel.lang}) - ${context.channel.xmltv_id
+            } - ${context.date.format('MMM D, YYYY')} (${context.programs.length} programs)`
+          )
+          if (i < total) i++
+
+          if (error) {
+            logger.info(`    ERR: ${error.message}`)
           }
         }
+      )
 
-        channels.add(channel)
+      const _programs = new Collection<epgGrabber.Program>(channelPrograms).map<Program>(
+        program => new Program(program.toObject())
+      )
 
-        const channelPrograms = await grabber.grab(
-          channel,
-          date,
-          config,
-          (context: epgGrabber.Types.GrabCallbackContext, error: Error | null) => {
-            logger.info(
-              `  [${i}/${total}] ${context.channel.site} (${context.channel.lang}) - ${context.channel.xmltv_id
-              } - ${context.date.format('MMM D, YYYY')} (${context.programs.length} programs)`
-            )
-            if (i < total) i++
+      programs.concat(_programs)
+    }
 
-            if (error) {
-              logger.info(`    ERR: ${error.message}`)
-            }
-          }
-        )
+    if ((config as any).hasCustomLimits) {
+      const siteLimiter = getSiteLimiter(siteKey, config.maxConnections)
+      return siteLimiter(executeGrab)
+    }
 
-        const _programs = new Collection<epgGrabber.Program>(channelPrograms).map<Program>(
-          program => new Program(program.toObject())
-        )
-
-        programs.concat(_programs)
-      })
-    )
+    return globalLimit(executeGrab)
   })
 
   await Promise.all(requests)
