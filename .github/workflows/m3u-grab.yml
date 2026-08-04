@@ -79,6 +79,7 @@ jobs:
           # 1. Stash the generated assets safely outside the git working directory
           mkdir -p /tmp/epg-output
           cp -r output/* /tmp/epg-output/
+          rm -rf output
           
           # 2. Switch over to the public branch (create it if it doesn't exist yet)
           git checkout public || git checkout -b public
@@ -87,6 +88,7 @@ jobs:
           git rm -rf .
           
           # 4. Bring back the newly generated compilation files into the root folder
+          echo "node_modules/" > .gitignore
           cp -r /tmp/epg-output/* .
           
           # 5. Track files and push updates to the remote repository
