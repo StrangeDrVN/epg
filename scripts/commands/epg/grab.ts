@@ -294,8 +294,8 @@ async function main() {
     const siteKey = channel.site || 'default'
     const siteLimiter = getSiteLimiter(siteKey, config.maxConnections)
 
-    return globalLimit(() =>
-      siteLimiter(async () => {
+    return siteLimiter(() =>
+      globalLimit(async () => {
         if (!channel.logo) {
           if (config.logo) {
             channel.logo = await grabber.loadLogo(channel, date)
