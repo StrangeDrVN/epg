@@ -3,6 +3,8 @@ const axios = require('axios')
 module.exports = {
   site: 'tataplay.com',
   days: 1,
+  delay: 8000,
+  maxConnections: 3,
 
   url({ date }) {
     return `https://tm.tapi.videoready.tv/content-detail/pub/api/v2/channels/schedule?date=${date.format(
