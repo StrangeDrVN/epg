@@ -103,7 +103,7 @@ async function main() {
   const logger = new Logger({ level: options.debug ? LOG_LEVELS['debug'] : LOG_LEVELS['info'] })
 
   logger.info('starting...')
-  const globalConfig: epgGrabber.Types.SiteConfig = {}
+  const globalConfig: any = {}
 
   if (typeof options.timeout === 'number')
     merge(globalConfig, { request: { timeout: options.timeout } })
@@ -124,7 +124,6 @@ async function main() {
 
   if (typeof options.output === 'string') globalConfig.output = options.output
   if (typeof options.days === 'number') globalConfig.days = options.days
-  if (typeof options.delay === 'number') globalConfig.delay = options.delay
   if (typeof options.maxConnections === 'number')
     globalConfig.maxConnections = options.maxConnections
   if (typeof options.curl === 'boolean') globalConfig.curl = options.curl
@@ -225,7 +224,11 @@ async function main() {
     channel.index = index++
     if (!channel.site || !channel.site_id || !channel.name) continue
 
-    const config = merge({}, defaultConfig, await loadJs(channel.getConfigPath()))
+    const siteConfig = await loadJs(channel.getConfigPath())
+    const config = merge({}, defaultConfig, siteConfig)
+    if (typeof options.delay === 'number') {
+      config.delay = Math.max(config.delay ?? 0, options.delay)
+    }
 
     if (!channel.xmltv_id) channel.xmltv_id = channel.site_id
 
@@ -243,8 +246,17 @@ async function main() {
     })
   }
 
-  const maxConnections = globalConfig.maxConnections || defaultConfig.maxConnections
-  const limit = pLimit(maxConnections)
+  const globalMaxConnections = globalConfig.maxConnections || defaultConfig.maxConnections
+  const globalLimit = pLimit(globalMaxConnections)
+  const siteLimiters = new Map<string, ReturnType<typeof pLimit>>()
+
+  function getSiteLimiter(site: string, siteMaxConn?: number): ReturnType<typeof pLimit> {
+    if (!siteLimiters.has(site)) {
+      const conn = siteMaxConn ? Math.min(siteMaxConn, globalMaxConnections) : globalMaxConnections
+      siteLimiters.set(site, pLimit(conn))
+    }
+    return siteLimiters.get(site)!
+  }
 
   const channels = new Collection<Channel>()
   const programs = new Collection<Program>()
@@ -256,45 +268,69 @@ async function main() {
   const timer = new Timer()
   timer.start()
 
-  const requests = queue.all().map((queueItem: QueueItem) =>
-    limit(async () => {
-      const { channel, config, date } = queueItem
+  // Interleave queue items round-robin across sites to prevent slot starvation
+  const queueBySite = new Map<string, QueueItem[]>()
+  queue.all().forEach((item: QueueItem) => {
+    const siteKey = item.channel.site || 'default'
+    const list = queueBySite.get(siteKey) || []
+    list.push(item)
+    queueBySite.set(siteKey, list)
+  })
 
-      if (!channel.logo) {
-        if (config.logo) {
-          channel.logo = await grabber.loadLogo(channel, date)
-        } else {
-          channel.logo = getLogoForChannel(channel)
-        }
+  const interleavedQueue: QueueItem[] = []
+  const siteQueues = Array.from(queueBySite.values())
+  const maxItems = siteQueues.length ? Math.max(...siteQueues.map(q => q.length)) : 0
+
+  for (let step = 0; step < maxItems; step++) {
+    for (const siteQueue of siteQueues) {
+      if (step < siteQueue.length) {
+        interleavedQueue.push(siteQueue[step])
       }
+    }
+  }
 
-      channels.add(channel)
+  const requests = interleavedQueue.map((queueItem: QueueItem) => {
+    const { channel, config, date } = queueItem
+    const siteKey = channel.site || 'default'
+    const siteLimiter = getSiteLimiter(siteKey, config.maxConnections)
 
-      const channelPrograms = await grabber.grab(
-        channel,
-        date,
-        config,
-        (context: epgGrabber.Types.GrabCallbackContext, error: Error | null) => {
-          logger.info(
-            `  [${i}/${total}] ${context.channel.site} (${context.channel.lang}) - ${
-              context.channel.xmltv_id
-            } - ${context.date.format('MMM D, YYYY')} (${context.programs.length} programs)`
-          )
-          if (i < total) i++
-
-          if (error) {
-            logger.info(`    ERR: ${error.message}`)
+    return globalLimit(() =>
+      siteLimiter(async () => {
+        if (!channel.logo) {
+          if (config.logo) {
+            channel.logo = await grabber.loadLogo(channel, date)
+          } else {
+            channel.logo = getLogoForChannel(channel)
           }
         }
-      )
 
-      const _programs = new Collection<epgGrabber.Program>(channelPrograms).map<Program>(
-        program => new Program(program.toObject())
-      )
+        channels.add(channel)
 
-      programs.concat(_programs)
-    })
-  )
+        const channelPrograms = await grabber.grab(
+          channel,
+          date,
+          config,
+          (context: epgGrabber.Types.GrabCallbackContext, error: Error | null) => {
+            logger.info(
+              `  [${i}/${total}] ${context.channel.site} (${context.channel.lang}) - ${context.channel.xmltv_id
+              } - ${context.date.format('MMM D, YYYY')} (${context.programs.length} programs)`
+            )
+            if (i < total) i++
+
+            if (error) {
+              logger.info(`    ERR: ${error.message}`)
+            }
+          }
+        )
+
+        const _programs = new Collection<epgGrabber.Program>(channelPrograms).map<Program>(
+          program => new Program(program.toObject())
+        )
+
+        programs.concat(_programs)
+      })
+    )
+  })
 
   await Promise.all(requests)
 
