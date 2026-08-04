@@ -32,7 +32,7 @@ const options: SyncOptions = program.opts()
 const OUTPUT_DIR = path.join(process.cwd(), 'output')
 
 // Define site priorities (lower index = higher priority)
-const SITE_PRIORITY = ['dishtv.in', 'tataplay.com', 'airtelxstream.in']
+const SITE_PRIORITY = ['dishtv.in', 'airtelxstream.in', 'tataplay.com']
 
 function getSitePriorityIndex(site: string | undefined): number {
   if (!site) return Infinity
