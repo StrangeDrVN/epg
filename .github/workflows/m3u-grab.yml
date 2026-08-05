@@ -76,9 +76,9 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
-          # 1. Stash the generated assets safely outside the git working directory
-          mkdir -p /tmp/epg-output
-          cp -r output/* /tmp/epg-output/
+          # 1. Stash the generated output directory safely outside git working directory
+          mkdir -p /tmp/epg-stash
+          cp -r output /tmp/epg-stash/
           rm -rf output
           
           # 2. Switch over to the public branch (create it if it doesn't exist yet)
@@ -88,9 +88,9 @@ jobs:
           git rm -rfq .
           git clean -fdx -q
           
-          # 4. Bring back the newly generated compilation files into the root folder
+          # 4. Bring back the output folder into the public branch
           echo "node_modules/" > .gitignore
-          cp -r /tmp/epg-output/* .
+          cp -r /tmp/epg-stash/output .
           
           # 5. Track files and push updates to the remote repository
           git add .
