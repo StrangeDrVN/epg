@@ -57,7 +57,7 @@ jobs:
         env:
           GRAB_DAYS: ${{ github.event.inputs.days || '2' }}
         run: |
-          npm run grab -- --channels=output/channels.xml --output=output/guide.xml --days=$GRAB_DAYS --maxConnections=15 --delay=1000 --gzip --json
+          npm run grab -- --channels=output/channels.xml --output=output/guide.xml --days=$GRAB_DAYS --maxConnections=15 --gzip --json
 
       - name: Post-Processing Cleanups
         env:
@@ -78,18 +78,19 @@ jobs:
           
           # 1. Stash the generated assets safely outside the git working directory
           mkdir -p /tmp/epg-output
-          cp -r output/* /tmp/epg-output/
+          cp -r output /tmp/epg-output/
           rm -rf output
           
           # 2. Switch over to the public branch (create it if it doesn't exist yet)
           git checkout public || git checkout -b public
           
           # 3. Wipe out old branch files completely so it remains a pure asset directory
-          git rm -rf .
+          git rm -rfq .
+          git clean -fdx -q
           
-          # 4. Bring back the newly generated compilation files into the root folder
+          # 4. Bring back the newly generated compilation files into the output folder
           echo "node_modules/" > .gitignore
-          cp -r /tmp/epg-output/* .
+          cp -r /tmp/epg-output/output .
           
           # 5. Track files and push updates to the remote repository
           git add .
