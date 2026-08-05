@@ -28,7 +28,7 @@ const options: SyncOptions = program.opts()
 const OUTPUT_DIR = path.join(process.cwd(), 'output')
 
 // Define site priorities (lower index = higher priority)
-const SITE_PRIORITY = ['zee5.com', 'dishtv.in', 'airtelxstream.in', 'tataplay.com']
+const SITE_PRIORITY = ['zee5.com', 'dishtv.in', 'airtelxstream.in', 'tataplay.com', 'watch.whaletvplus.com', 'plex.tv']
 
 function getSitePriorityIndex(site: string | undefined): number {
   if (!site) return Infinity
