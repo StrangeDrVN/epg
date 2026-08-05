@@ -57,7 +57,7 @@ jobs:
         env:
           GRAB_DAYS: ${{ github.event.inputs.days || '2' }}
         run: |
-          npm run grab -- --channels=output/channels.xml --output=output/guide.xml --days=$GRAB_DAYS --maxConnections=15 --gzip --json
+          npm run grab -- --channels=output/channels.xml --output=output/guide.xml --days=$GRAB_DAYS --maxConnections=15 --delay=1000 --gzip --json
 
       - name: Post-Processing Cleanups
         env:
