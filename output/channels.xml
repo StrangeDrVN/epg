@@ -58,13 +58,13 @@
   <channel site="dishtv.in" site_id="158148" lang="en" xmltv_id="ColorsGujarati.in@SD">Colors Gujarati</channel>
   <channel site="dishtv.in" site_id="142751" lang="en" xmltv_id="ColorsGujaratiCinema.in@SD">Colors Gujarati Cinema</channel>
   <channel site="dishtv.in" site_id="158150" lang="en" xmltv_id="ColorsInfinity.in@HD">Colors Infinity HD</channel>
+  <channel site="dishtv.in" site_id="157578" lang="en" xmltv_id="ColorsInfinity.in@SD">Colors Infinity</channel>
   <channel site="dishtv.in" site_id="158235" lang="en" xmltv_id="ColorsKannada.in@HD">Colors Kannada HD</channel>
   <channel site="dishtv.in" site_id="157579" lang="en" xmltv_id="ColorsKannada.in@SD">Colors Kannada</channel>
   <channel site="dishtv.in" site_id="142752" lang="en" xmltv_id="ColorsKannadaCinema.in@SD">Colors Kannada Cinema</channel>
   <channel site="dishtv.in" site_id="158237" lang="en" xmltv_id="ColorsMarathi.in@HD">Colors Marathi HD</channel>
   <channel site="dishtv.in" site_id="157580" lang="en" xmltv_id="ColorsMarathi.in@SD">Colors Marathi</channel>
   <channel site="dishtv.in" site_id="158240" lang="en" xmltv_id="ColorsSuper.in@SD">Colors Super</channel>
-  <channel site="dishtv.in" site_id="158241" lang="en" xmltv_id="ColorsTamil.in@HD">Colors Tamil HD</channel>
   <channel site="dishtv.in" site_id="142772" lang="en" xmltv_id="Dangal2.in@SD">Dangal 2</channel>
   <channel site="dishtv.in" site_id="142771" lang="en" xmltv_id="DangalTV.in@SD">Dangal</channel>
   <channel site="dishtv.in" site_id="142776" lang="en" xmltv_id="DDArunPrabha.in@SD">DD Arun Prabha</channel>
@@ -110,6 +110,7 @@
   <channel site="dishtv.in" site_id="159013" lang="en" xmltv_id="EpicTV.in@SD">Epic TV</channel>
   <channel site="dishtv.in" site_id="143021" lang="en" xmltv_id="ETNow.in@SD">ET Now</channel>
   <channel site="dishtv.in" site_id="143022" lang="en" xmltv_id="ETNowSwadesh.in@SD">ET Now Swadesh</channel>
+  <channel site="dishtv.in" site_id="143023" lang="en" xmltv_id="ETVAbhiruchi.in@SD">ETV Abhiruchi</channel>
   <channel site="dishtv.in" site_id="143024" lang="en" xmltv_id="ETVAndhraPradesh.in@SD">ETV Andhra Pradesh</channel>
   <channel site="dishtv.in" site_id="143029" lang="en" xmltv_id="ETVLife.in@SD">ETV Life</channel>
   <channel site="dishtv.in" site_id="143032" lang="en" xmltv_id="ETVTelangana.in@SD">ETV Telangana</channel>
@@ -275,6 +276,7 @@
   <channel site="dishtv.in" site_id="179440" lang="en" xmltv_id="SonyMax1.in@SD">Sony MAX 1</channel>
   <channel site="dishtv.in" site_id="143801" lang="en" xmltv_id="SonyMax2.in@SD">SONY MAX 2</channel>
   <channel site="dishtv.in" site_id="143803" lang="en" xmltv_id="SonyPix.in@HD">SONY PIX HD</channel>
+  <channel site="dishtv.in" site_id="143802" lang="en" xmltv_id="SonyPix.in@SD">Sony Pix</channel>
   <channel site="dishtv.in" site_id="153079" lang="en" xmltv_id="SonySportsTen3Hindi.in@SD">Sony Sports Ten 3 Hindi</channel>
   <channel site="dishtv.in" site_id="157974" lang="en" xmltv_id="SonyWah.in@SD">Sony Wah</channel>
   <channel site="dishtv.in" site_id="159130" lang="en" xmltv_id="StarBharat.in@SD">Star Bharat</channel>
@@ -284,6 +286,7 @@
   <channel site="dishtv.in" site_id="143817" lang="en" xmltv_id="StarGoldSelect.in@HD">Star Gold Select HD</channel>
   <channel site="dishtv.in" site_id="158822" lang="en" xmltv_id="StarGoldThrills.in@SD">Star Gold Thrills</channel>
   <channel site="dishtv.in" site_id="143819" lang="en" xmltv_id="StarJalsha.in@HD">Star Jalsha HD</channel>
+  <channel site="dishtv.in" site_id="179620" lang="en" xmltv_id="StarMaa.in@HD">Star Maa HD</channel>
   <channel site="dishtv.in" site_id="143826" lang="en" xmltv_id="StarMaaMovies.in@HD">Star Maa Movies HD</channel>
   <channel site="dishtv.in" site_id="143829" lang="en" xmltv_id="StarMovies.in@HD">Star Movies HD</channel>
   <channel site="dishtv.in" site_id="143830" lang="en" xmltv_id="StarMoviesSelect.in@HD">Star Movies Select HD</channel>
@@ -296,6 +299,7 @@
   <channel site="dishtv.in" site_id="143845" lang="en" xmltv_id="StarSports2.in@HD">Star Sports 2 HD</channel>
   <channel site="dishtv.in" site_id="143808" lang="en" xmltv_id="StarSports2Hindi.in@HD">Star Sports 2 Hindi HD</channel>
   <channel site="dishtv.in" site_id="143807" lang="en" xmltv_id="StarSports2Hindi.in@SD">Star Sports 2 Hindi</channel>
+  <channel site="dishtv.in" site_id="143809" lang="en" xmltv_id="StarSportsKhel.in@SD">Star Sports Khel</channel>
   <channel site="dishtv.in" site_id="143849" lang="en" xmltv_id="StarSportsSelect1.in@HD">Star Sports Select 1 HD</channel>
   <channel site="dishtv.in" site_id="143851" lang="en" xmltv_id="StarSportsSelect2.in@HD">Star Sports Select 2 HD</channel>
   <channel site="dishtv.in" site_id="143856" lang="en" xmltv_id="StarUtsavMovies.in@SD">Star Utsav Movies</channel>
@@ -341,6 +345,7 @@
   <channel site="zee5.com" site_id="0-9-zeecinema" lang="en" xmltv_id="ZeeCinema.in@SD">Zee Cinema</channel>
   <channel site="zee5.com" site_id="0-9-176" lang="en" xmltv_id="ZeeClassic.in@SD">Zee Classic</channel>
   <channel site="zee5.com" site_id="0-9-zeekalinganews" lang="en" xmltv_id="ZeeDelhiNCRHaryana.in@SD">Zee Delhi NCR Haryana</channel>
+  <channel site="zee5.com" site_id="0-9-zeekannada" lang="en" xmltv_id="ZeeKannada.in@HD">Zee Kannada HD</channel>
   <channel site="zee5.com" site_id="0-9-zeemadhyapradeshchat" lang="en" xmltv_id="ZeeMadhyaPradeshChhattisgarh.in@SD">Zee Madhya Pradesh Chhattisgarh</channel>
   <channel site="zee5.com" site_id="0-9-zeemarathi" lang="en" xmltv_id="ZeeMarathi.in@HD">Zee Marathi HD</channel>
   <channel site="zee5.com" site_id="0-9-9z5383486" lang="en" xmltv_id="ZeeMarathi.in@SD">Zee Marathi</channel>
@@ -428,7 +433,10 @@
   <channel site="tataplay.com" site_id="180" lang="en" xmltv_id="AnjanTV.in@SD">Anjan TV</channel>
   <channel site="tataplay.com" site_id="953" lang="en" xmltv_id="AsianetPlus.in@SD">Asianet Plus</channel>
   <channel site="tataplay.com" site_id="910" lang="en" xmltv_id="CnewsBharat.in@SD">C News Bharat</channel>
+  <channel site="tataplay.com" site_id="128" lang="en" xmltv_id="ETVCinema.in@SD">ETV Cinema</channel>
   <channel site="tataplay.com" site_id="1341" lang="en" xmltv_id="ETVCinema.in@HD">ETV Cinema HD</channel>
+  <channel site="tataplay.com" site_id="352" lang="en" xmltv_id="ETVPlus.in@SD">ETV Plus</channel>
+  <channel site="tataplay.com" site_id="1342" lang="en" xmltv_id="ETVPlus.in@HD">ETV Plus HD</channel>
   <channel site="tataplay.com" site_id="791" lang="en" xmltv_id="FatehTV.in@SD">Fateh TV</channel>
   <channel site="tataplay.com" site_id="650" lang="en" xmltv_id="FirstIndiaNews.in@SD">First India Rajasthan</channel>
   <channel site="tataplay.com" site_id="117" lang="en" xmltv_id="FoodFood.in@SD">Food Food</channel>
