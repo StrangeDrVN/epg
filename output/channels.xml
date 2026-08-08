@@ -65,6 +65,7 @@
   <channel site="dishtv.in" site_id="158237" lang="en" xmltv_id="ColorsMarathi.in@HD">Colors Marathi HD</channel>
   <channel site="dishtv.in" site_id="157580" lang="en" xmltv_id="ColorsMarathi.in@SD">Colors Marathi</channel>
   <channel site="dishtv.in" site_id="158240" lang="en" xmltv_id="ColorsSuper.in@SD">Colors Super</channel>
+  <channel site="dishtv.in" site_id="158241" lang="en" xmltv_id="ColorsTamil.in@HD">Colors Tamil HD</channel>
   <channel site="dishtv.in" site_id="142772" lang="en" xmltv_id="Dangal2.in@SD">Dangal 2</channel>
   <channel site="dishtv.in" site_id="142771" lang="en" xmltv_id="DangalTV.in@SD">Dangal</channel>
   <channel site="dishtv.in" site_id="142776" lang="en" xmltv_id="DDArunPrabha.in@SD">DD Arun Prabha</channel>
@@ -276,7 +277,6 @@
   <channel site="dishtv.in" site_id="179440" lang="en" xmltv_id="SonyMax1.in@SD">Sony MAX 1</channel>
   <channel site="dishtv.in" site_id="143801" lang="en" xmltv_id="SonyMax2.in@SD">SONY MAX 2</channel>
   <channel site="dishtv.in" site_id="143803" lang="en" xmltv_id="SonyPix.in@HD">SONY PIX HD</channel>
-  <channel site="dishtv.in" site_id="143802" lang="en" xmltv_id="SonyPix.in@SD">Sony Pix</channel>
   <channel site="dishtv.in" site_id="153079" lang="en" xmltv_id="SonySportsTen3Hindi.in@SD">Sony Sports Ten 3 Hindi</channel>
   <channel site="dishtv.in" site_id="157974" lang="en" xmltv_id="SonyWah.in@SD">Sony Wah</channel>
   <channel site="dishtv.in" site_id="159130" lang="en" xmltv_id="StarBharat.in@SD">Star Bharat</channel>
