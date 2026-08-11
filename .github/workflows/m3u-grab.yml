@@ -88,9 +88,9 @@ jobs:
           git rm -rfq .
           git clean -fdx -q
           
-          # 4. Bring back the output folder into the public branch
+          # 4. Bring files to root of the public branch
           echo "node_modules/" > .gitignore
-          cp -r /tmp/epg-stash/output .
+          cp -r /tmp/epg-stash/output/* .
           
           # 5. Track files and push updates to the remote repository
           git add .
