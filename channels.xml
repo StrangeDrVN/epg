@@ -17,7 +17,6 @@
   <channel site="dishtv.in" site_id="160750" lang="en" xmltv_id="AllTimeMovies.in@SD">All Time Movies</channel>
   <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_ANB_NEWS" lang="en" xmltv_id="ANBNews.in@SD">ANB News</channel>
   <channel site="zee5.com" site_id="0-9-tvpictureshd" lang="en" xmltv_id="Andpictures.in@HD">&amp;Pictures HD</channel>
-  <channel site="zee5.com" site_id="0-9-pictures" lang="en" xmltv_id="Andpictures.in@SD">&amp;Pictures</channel>
   <channel site="zee5.com" site_id="0-9-209" lang="en" xmltv_id="AndxplorHD.in@HD">&amp;xplorHD</channel>
   <channel site="zee5.com" site_id="0-9-bigganga" lang="en" xmltv_id="AnmolCinema2.in@SD">Anmol Cinema 2</channel>
   <channel site="zee5.com" site_id="0-9-zeeanmolcinema" lang="en" xmltv_id="AnmolCinema.in@SD">Anmol Cinema</channel>
@@ -102,7 +101,6 @@
   <channel site="dishtv.in" site_id="142990" lang="en" xmltv_id="DisneyJunior.in@SD">Disney Junior</channel>
   <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_DIVYAVANI_TV" lang="en" xmltv_id="DivyavaniTV.in@SD">Divyavani TV</channel>
   <channel site="dishtv.in" site_id="143015" lang="en" xmltv_id="DY365.in@SD">DY365</channel>
-  <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_E24" lang="en" xmltv_id="E24.in@SD">E24</channel>
   <channel site="dishtv.in" site_id="143018" lang="en" xmltv_id="Enterr10Bangla.in@SD">Enterr10 Bangla</channel>
   <channel site="dishtv.in" site_id="157803" lang="en" xmltv_id="EpicBhojpuri.in@SD">Epic Bhojpuri</channel>
   <channel site="dishtv.in" site_id="159097" lang="en" xmltv_id="EpicMusic.in@SD">Epic Music</channel>
@@ -346,7 +344,6 @@
   <channel site="zee5.com" site_id="0-9-zeepunjabharyanahima" lang="en" xmltv_id="ZeePunjabHaryanaHimachal.in@SD">Zee Punjab Haryana Himachal Pradesh</channel>
   <channel site="zee5.com" site_id="0-9-zeerajasthannews" lang="en" xmltv_id="ZeeRajasthan.in@SD">Zee Rajasthan News</channel>
   <channel site="zee5.com" site_id="0-9-zeetalkies" lang="en" xmltv_id="ZeeTalkies.in@HD">Zee Talkies HD</channel>
-  <channel site="zee5.com" site_id="0-9-zeetvhd" lang="en" xmltv_id="ZeeTV.in@HD">Zee TV HD</channel>
   <channel site="zee5.com" site_id="0-9-channel_265145625" lang="en" xmltv_id="ZeeUttarPradeshUttarakhand.in@SD">Zee News Uttar Pradesh Uttrakhand</channel>
   <channel site="zee5.com" site_id="0-9-zeeyuva" lang="en" xmltv_id="ZeeYuva.in@SD">Zee Yuva</channel>
   <channel site="zee5.com" site_id="0-9-348" lang="en" xmltv_id="ZeeZest.in@HD">Zee Zest HD</channel>
