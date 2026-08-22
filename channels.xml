@@ -144,6 +144,7 @@
   <channel site="dishtv.in" site_id="143212" lang="en" xmltv_id="IsaiAruvi.in@SD">Isai Aruvi</channel>
   <channel site="dishtv.in" site_id="143213" lang="en" xmltv_id="IshwarBhaktiTV.in@SD">Ishwar TV</channel>
   <channel site="dishtv.in" site_id="143217" lang="en" xmltv_id="JaihindTV.in@SD">Jaihind TV</channel>
+  <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_JAI_MAHARASHTRA" lang="en" xmltv_id="JaiMaharashtra.in@SD">JAI MAHARASHTRA</channel>
   <channel site="dishtv.in" site_id="143221" lang="en" xmltv_id="JanamTV.in@SD">Janam TV</channel>
   <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_JANTA_TV" lang="en" xmltv_id="JantaTV.in@SD">Janta TV</channel>
   <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_JAN_TV" lang="en" xmltv_id="JanTV.in@SD">JAN TV</channel>
@@ -214,6 +215,7 @@
   <channel site="dishtv.in" site_id="154897" lang="en" xmltv_id="NTVTelugu.in@SD">NTV</channel>
   <channel site="dishtv.in" site_id="143639" lang="en" xmltv_id="OdishaTV.in@SD">OTV</channel>
   <channel site="dishtv.in" site_id="143642" lang="en" xmltv_id="ParasGold.in@SD">Paras Gold One</channel>
+  <channel site="dishtv.in" site_id="143646" lang="en" xmltv_id="PeaceofMindTV.in@SD">Peace of Mind</channel>
   <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_PEARS_TV" lang="en" xmltv_id="PearTV.in@SD">PEAR TV</channel>
   <channel site="dishtv.in" site_id="143650" lang="en" xmltv_id="Pitaara.in@SD">Pitaara</channel>
   <channel site="zee5.com" site_id="0-9-203" lang="en" xmltv_id="PolimerNews.in@SD">Polimer News</channel>
@@ -449,6 +451,7 @@
   <channel site="tataplay.com" site_id="117" lang="en" xmltv_id="FoodFood.in@SD">Food Food</channel>
   <channel site="tataplay.com" site_id="1084" lang="en" xmltv_id="IndiaDailyLive.in@SD">India Daily 24x7</channel>
   <channel site="tataplay.com" site_id="222" lang="en" xmltv_id="IndiaNewsMadhyaPradeshChhattisgarh.in@SD">India News MP CG</channel>
+  <channel site="tataplay.com" site_id="685" lang="en" xmltv_id="IndiaVoice.in@SD">India Voice</channel>
   <channel site="tataplay.com" site_id="701" lang="en" xmltv_id="JantantraTV.in@SD">Jantantra TV</channel>
   <channel site="tataplay.com" site_id="372" lang="en" xmltv_id="JeevanTV.in@SD">Jeevan TV</channel>
   <channel site="tataplay.com" site_id="377" lang="en" xmltv_id="KappaTV.in@SD">Kappa TV</channel>
