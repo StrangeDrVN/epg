@@ -93,7 +93,6 @@
   <channel site="dishtv.in" site_id="142803" lang="en" xmltv_id="DDSahyadri.in@SD">DD Sahyadri</channel>
   <channel site="dishtv.in" site_id="142804" lang="en" xmltv_id="DDSaptagiri.in@SD">DD Saptagiri</channel>
   <channel site="dishtv.in" site_id="158255" lang="en" xmltv_id="DDSports.in@SD">DD Sports</channel>
-  <channel site="dishtv.in" site_id="142797" lang="en" xmltv_id="DDTamil.in@SD">DD TAMIL</channel>
   <channel site="dishtv.in" site_id="142806" lang="en" xmltv_id="DDTripura.in@SD">DD Tripura</channel>
   <channel site="dishtv.in" site_id="142808" lang="en" xmltv_id="DDUrdu.in@SD">DD Urdu</channel>
   <channel site="dishtv.in" site_id="142807" lang="en" xmltv_id="DDUttarPradesh.in@SD">DD UP</channel>
@@ -279,7 +278,6 @@
   <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_SHUBHSANDESH_TV" lang="en" xmltv_id="ShubhsandeshTV.in@SD">Shubhsandesh TV</channel>
   <channel site="dishtv.in" site_id="143783" lang="en" xmltv_id="ShubhTV.in@SD">Shubh TV</channel>
   <channel site="dishtv.in" site_id="143791" lang="en" xmltv_id="SirippoliTV.in@SD">Sirippoli</channel>
-  <channel site="dishtv.in" site_id="143800" lang="en" xmltv_id="SonyBBCEarth.in@HD">SONY BBC Earth HD</channel>
   <channel site="dishtv.in" site_id="159096" lang="en" xmltv_id="SonyEntertainmentTelevision.in@HD">SET HD</channel>
   <channel site="dishtv.in" site_id="157970" lang="en" xmltv_id="SonyMarathi.in@SD">Sony Marathi</channel>
   <channel site="dishtv.in" site_id="179440" lang="en" xmltv_id="SonyMax1.in@SD">Sony MAX 1</channel>
@@ -360,6 +358,7 @@
   <channel site="zee5.com" site_id="0-9-zeepunjabharyanahima" lang="en" xmltv_id="ZeePunjabHaryanaHimachal.in@SD">Zee Punjab Haryana Himachal Pradesh</channel>
   <channel site="zee5.com" site_id="0-9-zeerajasthannews" lang="en" xmltv_id="ZeeRajasthan.in@SD">Zee Rajasthan News</channel>
   <channel site="zee5.com" site_id="0-9-zeetalkies" lang="en" xmltv_id="ZeeTalkies.in@HD">Zee Talkies HD</channel>
+  <channel site="zee5.com" site_id="0-9-zeetamil" lang="en" xmltv_id="ZeeTamil.in@HD">Zee Tamil HD</channel>
   <channel site="zee5.com" site_id="0-9-channel_265145625" lang="en" xmltv_id="ZeeUttarPradeshUttarakhand.in@SD">Zee News Uttar Pradesh Uttrakhand</channel>
   <channel site="zee5.com" site_id="0-9-zeeyuva" lang="en" xmltv_id="ZeeYuva.in@SD">Zee Yuva</channel>
   <channel site="zee5.com" site_id="0-9-348" lang="en" xmltv_id="ZeeZest.in@HD">Zee Zest HD</channel>
@@ -386,6 +385,7 @@
   <channel site="dishtv.in" site_id="142784" lang="en" xmltv_id="DDHaryana.in@SD">DD Haryana</channel>
   <channel site="dishtv.in" site_id="142794" lang="en" xmltv_id="DDMizoram.in@SD">DD MIZORAM</channel>
   <channel site="dishtv.in" site_id="142795" lang="en" xmltv_id="DDNagaland.in@SD">DD NAGALAND</channel>
+  <channel site="dishtv.in" site_id="209540" lang="en" xmltv_id="DDTamil.in@HD">DD TAMIL HD</channel>
   <channel site="dishtv.in" site_id="142809" lang="en" xmltv_id="DDUttarakhand.in@SD">DD Uttrakhand</channel>
   <channel site="dishtv.in" site_id="142881" lang="en" xmltv_id="GoldminesMovies.in@SD">Goldmines Movies</channel>
   <channel site="dishtv.in" site_id="143096" lang="en" xmltv_id="GujaratFirst.in@SD">Gujarat First</channel>
