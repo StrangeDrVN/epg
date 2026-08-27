@@ -26,6 +26,7 @@
   <channel site="dishtv.in" site_id="142649" lang="en" xmltv_id="AradanaTV.in@SD">Aradana TV</channel>
   <channel site="dishtv.in" site_id="142650" lang="en" xmltv_id="ArgusNews.in@SD">Argus</channel>
   <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_ARYAN_TV_NATIONAL" lang="en" xmltv_id="AryanTVNational.in@SD">ARYAN TV NATIONAL</channel>
+  <channel site="dishtv.in" site_id="142673" lang="en" xmltv_id="Asianet.in@HD">Asianet HD</channel>
   <channel site="dishtv.in" site_id="142668" lang="en" xmltv_id="Asianet.in@SD">Asianet</channel>
   <channel site="dishtv.in" site_id="158302" lang="en" xmltv_id="AsianetMovies.in@HD">Asianet Movies HD</channel>
   <channel site="dishtv.in" site_id="142677" lang="en" xmltv_id="AsianetMovies.in@SD">Asianet Movies</channel>
@@ -172,6 +173,7 @@
   <channel site="dishtv.in" site_id="143310" lang="en" xmltv_id="MazhavilManorama.in@SD">Mazhavil Manorama</channel>
   <channel site="dishtv.in" site_id="143345" lang="en" xmltv_id="MediaOne.in@SD">MediaOne</channel>
   <channel site="dishtv.in" site_id="143540" lang="en" xmltv_id="Mh1News.in@SD">MH1 News</channel>
+  <channel site="dishtv.in" site_id="143538" lang="en" xmltv_id="MHOneShraddha.in@SD">MH One Shraddha</channel>
   <channel site="dishtv.in" site_id="143543" lang="en" xmltv_id="MirrorNow.in@SD">Mirror Now</channel>
   <channel site="dishtv.in" site_id="147570" lang="en" xmltv_id="MNX.in@HD">MNX HD</channel>
   <channel site="dishtv.in" site_id="147571" lang="en" xmltv_id="MoviesNow.in@HD">Movies Now HD</channel>
@@ -291,6 +293,7 @@
   <channel site="dishtv.in" site_id="158298" lang="en" xmltv_id="StarGoldRomance.in@SD">Star Gold Romance</channel>
   <channel site="dishtv.in" site_id="143817" lang="en" xmltv_id="StarGoldSelect.in@HD">Star Gold Select HD</channel>
   <channel site="dishtv.in" site_id="158822" lang="en" xmltv_id="StarGoldThrills.in@SD">Star Gold Thrills</channel>
+  <channel site="dishtv.in" site_id="143819" lang="en" xmltv_id="StarJalsha.in@HD">Star Jalsha HD</channel>
   <channel site="dishtv.in" site_id="179620" lang="en" xmltv_id="StarMaa.in@HD">Star Maa HD</channel>
   <channel site="dishtv.in" site_id="143826" lang="en" xmltv_id="StarMaaMovies.in@HD">Star Maa Movies HD</channel>
   <channel site="dishtv.in" site_id="143829" lang="en" xmltv_id="StarMovies.in@HD">Star Movies HD</channel>
@@ -471,6 +474,7 @@
   <channel site="tataplay.com" site_id="829" lang="en" xmltv_id="SadhnaNewsMadhyaPradeshChhattisgarh.in@SD">Sadhna News MP CG</channel>
   <channel site="tataplay.com" site_id="827" lang="en" xmltv_id="SadhnaPlusNews.in@SD">Sadhna Plus News</channel>
   <channel site="tataplay.com" site_id="447" lang="en" xmltv_id="SadhnaTV.in@SD">Sadhna TV</channel>
+  <channel site="tataplay.com" site_id="1281" lang="en" xmltv_id="SamacharPlus24x7.in@SD">Samachar 24 News</channel>
   <channel site="tataplay.com" site_id="1284" lang="en" xmltv_id="SanaPlus.in@SD">Sana Plus TV</channel>
   <channel site="tataplay.com" site_id="1285" lang="en" xmltv_id="SanaTV.in@SD">Sana TV</channel>
   <channel site="tataplay.com" site_id="457" lang="en" xmltv_id="Shalom.in@SD">Shalom TV</channel>
