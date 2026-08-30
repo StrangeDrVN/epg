@@ -333,6 +333,7 @@
   <channel site="zee5.com" site_id="0-9-259" lang="en" xmltv_id="TV9Kannada.in@SD">TV9 Kannada</channel>
   <channel site="zee5.com" site_id="0-9-257" lang="en" xmltv_id="TV9Marathi.in@SD">TV9 Marathi</channel>
   <channel site="zee5.com" site_id="0-9-258" lang="en" xmltv_id="TV9Telugu.in@SD">TV9 Telugu</channel>
+  <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_TV13_GUJARATI" lang="en" xmltv_id="TV13Gujarati.in@SD">TV13 GUJARATI</channel>
   <channel site="dishtv.in" site_id="144440" lang="en" xmltv_id="Unite8Sports1.in@SD">Unite8 Sports 1</channel>
   <channel site="dishtv.in" site_id="142635" lang="en" xmltv_id="Unite8Sports2.in@SD">Unite8 Sports 2</channel>
   <channel site="dishtv.in" site_id="144047" lang="en" xmltv_id="V6News.in@SD">V6 News</channel>
