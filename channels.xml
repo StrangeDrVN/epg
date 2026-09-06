@@ -100,7 +100,6 @@
   <channel site="dishtv.in" site_id="143038" lang="en" xmltv_id="FaktMarathi.in@SD">Fakt Marathi</channel>
   <channel site="dishtv.in" site_id="143087" lang="en" xmltv_id="Goldmines.in@SD">Goldmines</channel>
   <channel site="dishtv.in" site_id="143089" lang="en" xmltv_id="GoldminesBollywood.in@SD">Goldmines Bollywood</channel>
-  <channel site="dishtv.in" site_id="143091" lang="en" xmltv_id="GoodnessTV.in@SD">Goodness TV</channel>
   <channel site="zee5.com" site_id="0-9-255" lang="en" xmltv_id="GoodNewsToday.in@SD">Good News Today</channel>
   <channel site="dishtv.in" site_id="202705" lang="en" xmltv_id="GTCNews.in@SD">GTC News HD</channel>
   <channel site="dishtv.in" site_id="202704" lang="en" xmltv_id="GTCPunjabi.in@SD">GTC Punjabi HD</channel>
@@ -109,8 +108,6 @@
   <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_HARVEST_TV_24X7" lang="en" xmltv_id="HarvestTV.in@SD">Harvest TV 24x7</channel>
   <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_HINDI_KHABAR" lang="en" xmltv_id="HindiKhabar.in@SD">Hindi Khabar</channel>
   <channel site="dishtv.in" site_id="143133" lang="en" xmltv_id="HistoryTV18.in@HD">History TV18 HD</channel>
-  <channel site="dishtv.in" site_id="143132" lang="en" xmltv_id="HistoryTV18.in@SD">History TV18</channel>
-  <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_HNN" lang="en" xmltv_id="HNN24x7.in@SD">HNN</channel>
   <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_HORNBILL" lang="en" xmltv_id="HornbillTV.in@SD">HORNBILL</channel>
   <channel site="dishtv.in" site_id="143150" lang="en" xmltv_id="HungamaTV.in@SD">Hungama</channel>
   <channel site="dishtv.in" site_id="143156" lang="en" xmltv_id="IBC24.in@SD">IBC24</channel>
@@ -130,7 +127,6 @@
   <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_JAN_TV" lang="en" xmltv_id="JanTV.in@SD">JAN TV</channel>
   <channel site="dishtv.in" site_id="143226" lang="en" xmltv_id="JayaMax.in@SD">Jaya Max</channel>
   <channel site="dishtv.in" site_id="143230" lang="en" xmltv_id="JinvaniChannel.in@SD">Jinvani</channel>
-  <channel site="dishtv.in" site_id="143215" lang="en" xmltv_id="JMovie.in@SD">J Movies</channel>
   <channel site="dishtv.in" site_id="143238" lang="en" xmltv_id="Jonack.in@SD">Jonack</channel>
   <channel site="dishtv.in" site_id="143239" lang="en" xmltv_id="JothiTV.in@SD">Jothi TV</channel>
   <channel site="dishtv.in" site_id="143246" lang="en" xmltv_id="KairaliNews.in@SD">Kairali News</channel>
@@ -266,13 +262,26 @@
   <channel site="dishtv.in" site_id="143791" lang="en" xmltv_id="SirippoliTV.in@SD">Sirippoli</channel>
   <channel site="dishtv.in" site_id="159124" lang="en" xmltv_id="Sonic.in@SD">Sonic</channel>
   <channel site="dishtv.in" site_id="157968" lang="en" xmltv_id="SonyAath.in@SD">Sony AATH</channel>
+  <channel site="dishtv.in" site_id="143800" lang="en" xmltv_id="SonyBBCEarth.in@HD">SONY BBC Earth HD</channel>
   <channel site="dishtv.in" site_id="159096" lang="en" xmltv_id="SonyEntertainmentTelevision.in@HD">SET HD</channel>
   <channel site="dishtv.in" site_id="157970" lang="en" xmltv_id="SonyMarathi.in@SD">Sony Marathi</channel>
   <channel site="dishtv.in" site_id="179440" lang="en" xmltv_id="SonyMax1.in@SD">Sony MAX 1</channel>
   <channel site="dishtv.in" site_id="143801" lang="en" xmltv_id="SonyMax2.in@SD">SONY MAX 2</channel>
+  <channel site="dishtv.in" site_id="159098" lang="en" xmltv_id="SonyMax.in@HD">SONY MAX HD</channel>
   <channel site="dishtv.in" site_id="157590" lang="en" xmltv_id="SonyMax.in@SD">SONY MAX</channel>
   <channel site="dishtv.in" site_id="157973" lang="en" xmltv_id="SonyPal.in@SD">SONY PAL</channel>
   <channel site="dishtv.in" site_id="143803" lang="en" xmltv_id="SonyPix.in@HD">SONY PIX HD</channel>
+  <channel site="dishtv.in" site_id="159099" lang="en" xmltv_id="SonySAB.in@HD">Sony SAB HD</channel>
+  <channel site="dishtv.in" site_id="159126" lang="en" xmltv_id="SonySportsTen1.in@HD">Sony Sports Ten 1 HD</channel>
+  <channel site="dishtv.in" site_id="157591" lang="en" xmltv_id="SonySportsTen1.in@SD">Sony Sports Ten 1</channel>
+  <channel site="dishtv.in" site_id="159127" lang="en" xmltv_id="SonySportsTen2.in@HD">Sony Sports Ten 2 HD</channel>
+  <channel site="dishtv.in" site_id="157592" lang="en" xmltv_id="SonySportsTen2.in@SD">Sony Sports Ten 2</channel>
+  <channel site="dishtv.in" site_id="159128" lang="en" xmltv_id="SonySportsTen3Hindi.in@HD">Sony Sports Ten 3 Hindi HD</channel>
+  <channel site="dishtv.in" site_id="153079" lang="en" xmltv_id="SonySportsTen3Hindi.in@SD">Sony Sports Ten 3 Hindi</channel>
+  <channel site="dishtv.in" site_id="143805" lang="en" xmltv_id="SonySportsTen4.in@Tamil">Sony Sports Ten 4 Tamil</channel>
+  <channel site="dishtv.in" site_id="149166" lang="en" xmltv_id="SonySportsTen4.in@Telugu">Sony Sports Ten 4 Telugu</channel>
+  <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_SONY_SPORTS_TEN_5_HD" lang="en" xmltv_id="SonySportsTen5.in@HD">SONY SPORTS TEN 5 HD</channel>
+  <channel site="dishtv.in" site_id="157593" lang="en" xmltv_id="SonySportsTen5.in@SD">Sony Sports Ten 5</channel>
   <channel site="dishtv.in" site_id="157974" lang="en" xmltv_id="SonyWah.in@SD">Sony Wah</channel>
   <channel site="dishtv.in" site_id="159100" lang="en" xmltv_id="SonyYay.in@SD">SONY YAY</channel>
   <channel site="dishtv.in" site_id="159130" lang="en" xmltv_id="StarBharat.in@SD">Star Bharat</channel>
@@ -443,7 +452,6 @@
   <channel site="tataplay.com" site_id="650" lang="en" xmltv_id="FirstIndiaNews.in@SD">First India Rajasthan</channel>
   <channel site="tataplay.com" site_id="117" lang="en" xmltv_id="FoodFood.in@SD">Food Food</channel>
   <channel site="tataplay.com" site_id="1084" lang="en" xmltv_id="IndiaDailyLive.in@SD">India Daily 24x7</channel>
-  <channel site="tataplay.com" site_id="222" lang="en" xmltv_id="IndiaNewsMadhyaPradeshChhattisgarh.in@SD">India News MP CG</channel>
   <channel site="tataplay.com" site_id="685" lang="en" xmltv_id="IndiaVoice.in@SD">India Voice</channel>
   <channel site="tataplay.com" site_id="701" lang="en" xmltv_id="JantantraTV.in@SD">Jantantra TV</channel>
   <channel site="tataplay.com" site_id="372" lang="en" xmltv_id="JeevanTV.in@SD">Jeevan TV</channel>
