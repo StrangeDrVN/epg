@@ -50,6 +50,7 @@
   <channel site="dishtv.in" site_id="158148" lang="en" xmltv_id="ColorsGujarati.in@SD">Colors Gujarati</channel>
   <channel site="dishtv.in" site_id="158150" lang="en" xmltv_id="ColorsInfinity.in@HD">Colors Infinity HD</channel>
   <channel site="dishtv.in" site_id="158235" lang="en" xmltv_id="ColorsKannada.in@HD">Colors Kannada HD</channel>
+  <channel site="dishtv.in" site_id="158237" lang="en" xmltv_id="ColorsMarathi.in@HD">Colors Marathi HD</channel>
   <channel site="dishtv.in" site_id="158241" lang="en" xmltv_id="ColorsTamil.in@HD">Colors Tamil HD</channel>
   <channel site="dishtv.in" site_id="142772" lang="en" xmltv_id="Dangal2.in@SD">Dangal 2</channel>
   <channel site="dishtv.in" site_id="142771" lang="en" xmltv_id="DangalTV.in@SD">Dangal</channel>
@@ -184,7 +185,6 @@
   <channel site="dishtv.in" site_id="90009" lang="en" xmltv_id="News24.in@SD">News24</channel>
   <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_NEWS24_MPCG" lang="en" xmltv_id="News24MPChhattisgarh.in@SD">News24 MPCG</channel>
   <channel site="dishtv.in" site_id="143595" lang="en" xmltv_id="NewsLive.in@SD">News Live</channel>
-  <channel site="dishtv.in" site_id="166320" lang="en" xmltv_id="NewsMalayalam24x7.in@SD">News Malayalam 24x7</channel>
   <channel site="dishtv.in" site_id="143596" lang="en" xmltv_id="NewsNation.in@SD">News Nation</channel>
   <channel site="dishtv.in" site_id="143623" lang="en" xmltv_id="NewsTamil24x7.in@SD">NewsTamil 24x7</channel>
   <channel site="dishtv.in" site_id="143602" lang="en" xmltv_id="NewsTimeBangla.in@SD">News Time Bangla</channel>
@@ -295,8 +295,6 @@
   <channel site="dishtv.in" site_id="143818" lang="en" xmltv_id="StarJalsha.in@SD">Star Jalsha</channel>
   <channel site="dishtv.in" site_id="179620" lang="en" xmltv_id="StarMaa.in@HD">Star Maa HD</channel>
   <channel site="dishtv.in" site_id="143826" lang="en" xmltv_id="StarMaaMovies.in@HD">Star Maa Movies HD</channel>
-  <channel site="dishtv.in" site_id="143829" lang="en" xmltv_id="StarMovies.in@HD">Star Movies HD</channel>
-  <channel site="dishtv.in" site_id="143830" lang="en" xmltv_id="StarMoviesSelect.in@HD">Star Movies Select HD</channel>
   <channel site="dishtv.in" site_id="143832" lang="en" xmltv_id="StarPlus.in@HD">STAR PLUS HD</channel>
   <channel site="dishtv.in" site_id="143834" lang="en" xmltv_id="StarPravah.in@HD">Star Pravah HD</channel>
   <channel site="dishtv.in" site_id="143838" lang="en" xmltv_id="StarSports1Hindi.in@HD">Star Sports 1 HD Hindi</channel>
