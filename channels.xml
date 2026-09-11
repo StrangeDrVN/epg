@@ -149,7 +149,9 @@
   <channel site="dishtv.in" site_id="147769" lang="en" xmltv_id="MazhavilManorama.in@HD">Mazhavil Manorama HD</channel>
   <channel site="dishtv.in" site_id="143310" lang="en" xmltv_id="MazhavilManorama.in@SD">Mazhavil Manorama</channel>
   <channel site="dishtv.in" site_id="143345" lang="en" xmltv_id="MediaOne.in@SD">MediaOne</channel>
+  <channel site="dishtv.in" site_id="143539" lang="en" xmltv_id="Mh1Music.in@SD">MHONE</channel>
   <channel site="dishtv.in" site_id="143540" lang="en" xmltv_id="Mh1News.in@SD">MH1 News</channel>
+  <channel site="dishtv.in" site_id="143536" lang="en" xmltv_id="MHOneDilSe.in@SD">MH One Dil Se</channel>
   <channel site="dishtv.in" site_id="143538" lang="en" xmltv_id="MHOneShraddha.in@SD">MH One Shraddha</channel>
   <channel site="dishtv.in" site_id="143543" lang="en" xmltv_id="MirrorNow.in@SD">Mirror Now</channel>
   <channel site="dishtv.in" site_id="147570" lang="en" xmltv_id="MNX.in@HD">MNX HD</channel>
@@ -219,6 +221,7 @@
   <channel site="dishtv.in" site_id="143693" lang="en" xmltv_id="PuthuyugamTV.in@SD">Puthu Yugam</channel>
   <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_RAFTAAR_MEDIA" lang="en" xmltv_id="RaftaarMedia.in@SD">RAFTAAR MEDIA</channel>
   <channel site="dishtv.in" site_id="143704" lang="en" xmltv_id="RajDigitalPlus.in@SD">Raj Digital Plus</channel>
+  <channel site="dishtv.in" site_id="143706" lang="en" xmltv_id="RajMusixMalayalam.in@SD">Raj Musix Malayalam</channel>
   <channel site="dishtv.in" site_id="143707" lang="en" xmltv_id="RajMusixTamil.in@SD">Raj Musix Tamil</channel>
   <channel site="dishtv.in" site_id="143708" lang="en" xmltv_id="RajMusixTelugu.in@SD">Raj Musix Telugu</channel>
   <channel site="dishtv.in" site_id="143709" lang="en" xmltv_id="RajNews.in@SD">Raj News</channel>
@@ -346,7 +349,6 @@
   <channel site="zee5.com" site_id="0-9-216" lang="en" xmltv_id="ZeeBiskope.in@SD">Zee Biskope</channel>
   <channel site="zee5.com" site_id="0-9-zeeclassic" lang="en" xmltv_id="ZeeBollywood.in@SD">Zee Bollywood</channel>
   <channel site="zee5.com" site_id="0-9-zeebusiness" lang="en" xmltv_id="ZeeBusiness.in@SD">Zee Business</channel>
-  <channel site="zee5.com" site_id="0-9-zeecinemahd" lang="en" xmltv_id="ZeeCinema.in@HD">Zee Cinema HD</channel>
   <channel site="zee5.com" site_id="0-9-zeecinema" lang="en" xmltv_id="ZeeCinema.in@SD">Zee Cinema</channel>
   <channel site="zee5.com" site_id="0-9-176" lang="en" xmltv_id="ZeeClassic.in@SD">Zee Classic</channel>
   <channel site="zee5.com" site_id="0-9-zeekalinganews" lang="en" xmltv_id="ZeeDelhiNCRHaryana.in@SD">Zee Delhi NCR Haryana</channel>
@@ -492,7 +494,6 @@
   <channel site="watch.whaletvplus.com" site_id="878085677857115004" lang="en" xmltv_id="INFAST.nl@SD">INFAST</channel>
   <channel site="watch.whaletvplus.com" site_id="910031136947176350" lang="en" xmltv_id="INWILD.nl@SD">INWILD</channel>
   <channel site="zee5.com" site_id="0-9-261" lang="en" xmltv_id="News9Live.in@SD">News 9</channel>
-  <channel site="zee5.com" site_id="0-9-zeeaction" lang="en" xmltv_id="ZeeAction.in@SD">Zee Action</channel>
   <channel site="zee5.com" site_id="0-9-9z583539" lang="en" xmltv_id="ZeeMalayalamNews.in@SD">ZEE News Malayalam</channel>
   <channel site="zee5.com" site_id="0-9-9z583533" lang="en" xmltv_id="ZeeTamilNews.in@SD">ZEE News Tamil</channel>
 </channels>
