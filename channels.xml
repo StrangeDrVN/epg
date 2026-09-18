@@ -50,6 +50,7 @@
   <channel site="dishtv.in" site_id="158237" lang="en" xmltv_id="ColorsMarathi.in@HD">Colors Marathi HD</channel>
   <channel site="dishtv.in" site_id="158240" lang="en" xmltv_id="ColorsSuper.in@SD">Colors Super</channel>
   <channel site="dishtv.in" site_id="158241" lang="en" xmltv_id="ColorsTamil.in@HD">Colors Tamil HD</channel>
+  <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_CVR_NEWS" lang="en" xmltv_id="CVRNews.in@SD">CVR NEWS</channel>
   <channel site="dishtv.in" site_id="142772" lang="en" xmltv_id="Dangal2.in@SD">Dangal 2</channel>
   <channel site="dishtv.in" site_id="142771" lang="en" xmltv_id="DangalTV.in@SD">Dangal</channel>
   <channel site="dishtv.in" site_id="142776" lang="en" xmltv_id="DDArunPrabha.in@SD">DD Arun Prabha</channel>
@@ -76,6 +77,7 @@
   <channel site="dishtv.in" site_id="142801" lang="en" xmltv_id="DDRajasthan.in@SD">DD Rajasthan</channel>
   <channel site="dishtv.in" site_id="142803" lang="en" xmltv_id="DDSahyadri.in@SD">DD Sahyadri</channel>
   <channel site="dishtv.in" site_id="142804" lang="en" xmltv_id="DDSaptagiri.in@SD">DD Saptagiri</channel>
+  <channel site="dishtv.in" site_id="158312" lang="en" xmltv_id="DDSports.in@HD">DD Sports HD</channel>
   <channel site="dishtv.in" site_id="158255" lang="en" xmltv_id="DDSports.in@SD">DD Sports</channel>
   <channel site="dishtv.in" site_id="142806" lang="en" xmltv_id="DDTripura.in@SD">DD Tripura</channel>
   <channel site="dishtv.in" site_id="142808" lang="en" xmltv_id="DDUrdu.in@SD">DD Urdu</channel>
@@ -94,11 +96,13 @@
   <channel site="dishtv.in" site_id="143021" lang="en" xmltv_id="ETNow.in@SD">ET Now</channel>
   <channel site="dishtv.in" site_id="143024" lang="en" xmltv_id="ETVAndhraPradesh.in@SD">ETV Andhra Pradesh</channel>
   <channel site="dishtv.in" site_id="143025" lang="en" xmltv_id="ETVBalBharat.in@SD">ETV Bal Bharat</channel>
+  <channel site="dishtv.in" site_id="143029" lang="en" xmltv_id="ETVLife.in@SD">ETV Life</channel>
   <channel site="dishtv.in" site_id="143032" lang="en" xmltv_id="ETVTelangana.in@SD">ETV Telangana</channel>
   <channel site="dishtv.in" site_id="143028" lang="en" xmltv_id="ETVTelugu.in@HD">ETV HD</channel>
   <channel site="dishtv.in" site_id="143038" lang="en" xmltv_id="FaktMarathi.in@SD">Fakt Marathi</channel>
   <channel site="dishtv.in" site_id="143087" lang="en" xmltv_id="Goldmines.in@SD">Goldmines</channel>
   <channel site="dishtv.in" site_id="143089" lang="en" xmltv_id="GoldminesBollywood.in@SD">Goldmines Bollywood</channel>
+  <channel site="dishtv.in" site_id="143091" lang="en" xmltv_id="GoodnessTV.in@SD">Goodness TV</channel>
   <channel site="zee5.com" site_id="0-9-255" lang="en" xmltv_id="GoodNewsToday.in@SD">Good News Today</channel>
   <channel site="dishtv.in" site_id="202705" lang="en" xmltv_id="GTCNews.in@SD">GTC News HD</channel>
   <channel site="dishtv.in" site_id="202704" lang="en" xmltv_id="GTCPunjabi.in@SD">GTC Punjabi HD</channel>
@@ -126,6 +130,7 @@
   <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_JANTA_TV" lang="en" xmltv_id="JantaTV.in@SD">Janta TV</channel>
   <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_JAN_TV" lang="en" xmltv_id="JanTV.in@SD">JAN TV</channel>
   <channel site="dishtv.in" site_id="143226" lang="en" xmltv_id="JayaMax.in@SD">Jaya Max</channel>
+  <channel site="dishtv.in" site_id="143227" lang="en" xmltv_id="JayaPlus.in@SD">Jaya Plus</channel>
   <channel site="dishtv.in" site_id="143230" lang="en" xmltv_id="JinvaniChannel.in@SD">Jinvani</channel>
   <channel site="dishtv.in" site_id="143238" lang="en" xmltv_id="Jonack.in@SD">Jonack</channel>
   <channel site="dishtv.in" site_id="143239" lang="en" xmltv_id="JothiTV.in@SD">Jothi TV</channel>
@@ -135,6 +140,7 @@
   <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_MURASU" lang="en" xmltv_id="KalaignarMurasu.in@SD">Murasu</channel>
   <channel site="dishtv.in" site_id="143249" lang="en" xmltv_id="KalaignarTV.in@SD">Kalaignar TV</channel>
   <channel site="dishtv.in" site_id="143250" lang="en" xmltv_id="KalingaTV.in@SD">Kalinga TV</channel>
+  <channel site="dishtv.in" site_id="143252" lang="en" xmltv_id="KanakNews.in@SD">Kanak News</channel>
   <channel site="dishtv.in" site_id="143259" lang="en" xmltv_id="KaumudyTV.in@SD">Kaumudy TV</channel>
   <channel site="dishtv.in" site_id="143265" lang="en" xmltv_id="KhushbooBangla.in@SD">Khushboo Bangla</channel>
   <channel site="dishtv.in" site_id="143283" lang="en" xmltv_id="LivingIndiaNews.in@SD">Living India News</channel>
@@ -183,6 +189,9 @@
   <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_NEWS24_MPCG" lang="en" xmltv_id="News24MPChhattisgarh.in@SD">News24 MPCG</channel>
   <channel site="dishtv.in" site_id="143595" lang="en" xmltv_id="NewsLive.in@SD">News Live</channel>
   <channel site="dishtv.in" site_id="143596" lang="en" xmltv_id="NewsNation.in@SD">News Nation</channel>
+  <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_NEWS_STATE_MADHYA_PRADESH_CHHATTISGARH" lang="en" xmltv_id="NewsStateMPCHG.in@SD">News State Madhya Pradesh Chhattisgarh</channel>
+  <channel site="dishtv.in" site_id="169169" lang="en" xmltv_id="NewsStatePunjabHaryanaHimachal.in@SD">News State Punjab Haryana Himachal</channel>
+  <channel site="dishtv.in" site_id="143601" lang="en" xmltv_id="NewsStateUPUK.in@SD">News State UK UP</channel>
   <channel site="dishtv.in" site_id="143623" lang="en" xmltv_id="NewsTamil24x7.in@SD">NewsTamil 24x7</channel>
   <channel site="dishtv.in" site_id="143625" lang="en" xmltv_id="Nickelodeon.in@SD">Nick</channel>
   <channel site="dishtv.in" site_id="159121" lang="en" xmltv_id="NickHDPlus.in@HD">Nick HD+</channel>
@@ -199,6 +208,7 @@
   <channel site="dishtv.in" site_id="143665" lang="en" xmltv_id="PolimerTV.in@SD">Polimer TV</channel>
   <channel site="dishtv.in" site_id="143669" lang="en" xmltv_id="PowerTV.in@SD">Power TV</channel>
   <channel site="dishtv.in" site_id="143671" lang="en" xmltv_id="PragNews.in@SD">Prag News</channel>
+  <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_PRARTHANA_BHAWAN" lang="en" xmltv_id="PrarthanaBhawanTV.in@SD">Prarthana Bhawan</channel>
   <channel site="dishtv.in" site_id="143674" lang="en" xmltv_id="PratidinTime.in@SD">Pratidin Time</channel>
   <channel site="dishtv.in" site_id="143676" lang="en" xmltv_id="PravahPicture.in@HD">Pravah Picture HD</channel>
   <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_CHANNEL_36_UP_UK" lang="en" xmltv_id="Prime9News.in@SD">Prime 9 Plus</channel>
@@ -253,6 +263,7 @@
   <channel site="dishtv.in" site_id="143713" lang="en" xmltv_id="SanskarTV.in@SD">Sanskar</channel>
   <channel site="dishtv.in" site_id="143763" lang="en" xmltv_id="SantvaniChannel.in@SD">Santvani TV</channel>
   <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_SARV_DHARAM_SANGAM" lang="en" xmltv_id="SarvDharamSangam.in@SD">Sarv Dharam Sangam</channel>
+  <channel site="dishtv.in" site_id="143765" lang="en" xmltv_id="SathiyamTV.in@SD">Sathiyam TV</channel>
   <channel site="dishtv.in" site_id="143766" lang="en" xmltv_id="SatsangTV.in@SD">Satsang</channel>
   <channel site="dishtv.in" site_id="158861" lang="en" xmltv_id="ShemarooJosh.in@SD">Shemaroo Josh</channel>
   <channel site="dishtv.in" site_id="143777" lang="en" xmltv_id="ShemarooMarathiBana.in@SD">Shemaroo Marathibana</channel>
@@ -339,6 +350,7 @@
   <channel site="zee5.com" site_id="0-9-216" lang="en" xmltv_id="ZeeBiskope.in@SD">Zee Biskope</channel>
   <channel site="zee5.com" site_id="0-9-zeebusiness" lang="en" xmltv_id="ZeeBusiness.in@SD">Zee Business</channel>
   <channel site="zee5.com" site_id="0-9-zeecinema" lang="en" xmltv_id="ZeeCinema.in@SD">Zee Cinema</channel>
+  <channel site="zee5.com" site_id="0-9-zeecinemalu" lang="en" xmltv_id="ZeeCinemalu.in@HD">Zee Cinemalu HD</channel>
   <channel site="zee5.com" site_id="0-9-176" lang="en" xmltv_id="ZeeClassic.in@SD">Zee Classic</channel>
   <channel site="zee5.com" site_id="0-9-zeekalinganews" lang="en" xmltv_id="ZeeDelhiNCRHaryana.in@SD">Zee Delhi NCR Haryana</channel>
   <channel site="zee5.com" site_id="0-9-zeekannada" lang="en" xmltv_id="ZeeKannada.in@HD">Zee Kannada HD</channel>
@@ -349,6 +361,7 @@
   <channel site="zee5.com" site_id="0-9-zeerajasthannews" lang="en" xmltv_id="ZeeRajasthan.in@SD">Zee Rajasthan News</channel>
   <channel site="zee5.com" site_id="0-9-9z5383489" lang="en" xmltv_id="ZeeTalkies.in@SD">Zee Talkies</channel>
   <channel site="zee5.com" site_id="0-9-zeetamil" lang="en" xmltv_id="ZeeTamil.in@HD">Zee Tamil HD</channel>
+  <channel site="zee5.com" site_id="0-9-zeetelugu" lang="en" xmltv_id="ZeeTelugu.in@HD">Zee Telugu HD</channel>
   <channel site="zee5.com" site_id="0-9-zeetvhd" lang="en" xmltv_id="ZeeTV.in@HD">Zee TV HD</channel>
   <channel site="zee5.com" site_id="0-9-channel_265145625" lang="en" xmltv_id="ZeeUttarPradeshUttarakhand.in@SD">Zee News Uttar Pradesh Uttrakhand</channel>
   <channel site="zee5.com" site_id="0-9-zeeyuva" lang="en" xmltv_id="ZeeYuva.in@SD">Zee Yuva</channel>
@@ -391,6 +404,7 @@
   <channel site="dishtv.in" site_id="143297" lang="en" xmltv_id="MalaiMurasuTV.in@SD">Malaimurasu Seithikal</channel>
   <channel site="dishtv.in" site_id="143302" lang="en" xmltv_id="ManoranjanGrand.in@SD">Manoranjan Grand</channel>
   <channel site="dishtv.in" site_id="143303" lang="en" xmltv_id="ManoranjanMovies.in@SD">Manoranjan Movies</channel>
+  <channel site="dishtv.in" site_id="135691" lang="en" xmltv_id="MBCTV.in@SD">MBC TV</channel>
   <channel site="dishtv.in" site_id="159093" lang="en" xmltv_id="MTV.in@HD">MTV HD</channel>
   <channel site="dishtv.in" site_id="143563" lang="en" xmltv_id="MusicIndia.in@SD">Music India</channel>
   <channel site="dishtv.in" site_id="158851" lang="en" xmltv_id="NENews.in@SD">Ne News</channel>
@@ -403,9 +417,11 @@
   <channel site="dishtv.in" site_id="143624" lang="en" xmltv_id="NewsX.in@SD">NewsX</channel>
   <channel site="dishtv.in" site_id="143638" lang="en" xmltv_id="OscarMoviesBhojpuri.in@SD">Oscar Movies Bhojpuri</channel>
   <channel site="dishtv.in" site_id="143643" lang="en" xmltv_id="PasandTV.in@SD">Pasand</channel>
+  <channel site="dishtv.in" site_id="143670" lang="en" xmltv_id="PowervisionTV.in@SD">Powervision</channel>
   <channel site="dishtv.in" site_id="143757" lang="en" xmltv_id="SangeetBhojpuri.in@SD">Sangeet Bhojpuri</channel>
   <channel site="dishtv.in" site_id="143790" lang="en" xmltv_id="SiriKannada.in@SD">Siri Kannada</channel>
   <channel site="dishtv.in" site_id="142920" lang="en" xmltv_id="SongdewTV.in@SD">Songdew</channel>
+  <channel site="dishtv.in" site_id="143078" lang="en" xmltv_id="SunGemini.in@SD">Sun Gemini</channel>
   <channel site="dishtv.in" site_id="143890" lang="en" xmltv_id="SVBC2.in@SD">SVBC 2</channel>
   <channel site="dishtv.in" site_id="143889" lang="en" xmltv_id="SVBC.in@SD">SVBC</channel>
   <channel site="dishtv.in" site_id="144002" lang="en" xmltv_id="TheQIndia.us@SD">TheQ</channel>
