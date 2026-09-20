@@ -130,11 +130,9 @@
   <channel site="dishtv.in" site_id="143221" lang="en" xmltv_id="JanamTV.in@SD">Janam TV</channel>
   <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_JANTA_TV" lang="en" xmltv_id="JantaTV.in@SD">Janta TV</channel>
   <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_JAN_TV" lang="en" xmltv_id="JanTV.in@SD">JAN TV</channel>
-  <channel site="dishtv.in" site_id="143226" lang="en" xmltv_id="JayaMax.in@SD">Jaya Max</channel>
   <channel site="dishtv.in" site_id="143227" lang="en" xmltv_id="JayaPlus.in@SD">Jaya Plus</channel>
   <channel site="dishtv.in" site_id="143230" lang="en" xmltv_id="JinvaniChannel.in@SD">Jinvani</channel>
   <channel site="dishtv.in" site_id="143238" lang="en" xmltv_id="Jonack.in@SD">Jonack</channel>
-  <channel site="dishtv.in" site_id="143239" lang="en" xmltv_id="JothiTV.in@SD">Jothi TV</channel>
   <channel site="dishtv.in" site_id="143246" lang="en" xmltv_id="KairaliNews.in@SD">Kairali News</channel>
   <channel site="dishtv.in" site_id="143247" lang="en" xmltv_id="KairaliTV.in@SD">Kairali TV</channel>
   <channel site="dishtv.in" site_id="143248" lang="en" xmltv_id="KairaliWe.in@SD">Kairali We</channel>
@@ -211,7 +209,6 @@
   <channel site="dishtv.in" site_id="143671" lang="en" xmltv_id="PragNews.in@SD">Prag News</channel>
   <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_PRARTHANA_BHAWAN" lang="en" xmltv_id="PrarthanaBhawanTV.in@SD">Prarthana Bhawan</channel>
   <channel site="dishtv.in" site_id="143674" lang="en" xmltv_id="PratidinTime.in@SD">Pratidin Time</channel>
-  <channel site="dishtv.in" site_id="143676" lang="en" xmltv_id="PravahPicture.in@HD">Pravah Picture HD</channel>
   <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_CHANNEL_36_UP_UK" lang="en" xmltv_id="Prime9News.in@SD">Prime 9 Plus</channel>
   <channel site="dishtv.in" site_id="143681" lang="en" xmltv_id="PTCChakde.in@SD">PTC Chakde</channel>
   <channel site="dishtv.in" site_id="143682" lang="en" xmltv_id="PTCMusic.in@SD">PTC Music</channel>
@@ -231,7 +228,6 @@
   <channel site="dishtv.in" site_id="143706" lang="en" xmltv_id="RajMusixMalayalam.in@SD">Raj Musix Malayalam</channel>
   <channel site="dishtv.in" site_id="143707" lang="en" xmltv_id="RajMusixTamil.in@SD">Raj Musix Tamil</channel>
   <channel site="dishtv.in" site_id="143708" lang="en" xmltv_id="RajMusixTelugu.in@SD">Raj Musix Telugu</channel>
-  <channel site="dishtv.in" site_id="143709" lang="en" xmltv_id="RajNews.in@SD">Raj News</channel>
   <channel site="dishtv.in" site_id="143710" lang="en" xmltv_id="RajNewsKannada.in@SD">Raj News Kannada</channel>
   <channel site="dishtv.in" site_id="143711" lang="en" xmltv_id="RajNewsMalayalam.in@SD">Raj News Malayalam</channel>
   <channel site="dishtv.in" site_id="143712" lang="en" xmltv_id="RajNewsTelugu.in@SD">Raj News Telugu</channel>
@@ -244,7 +240,6 @@
   <channel site="dishtv.in" site_id="143724" lang="en" xmltv_id="RepublicBharat.in@SD">Republic Bharat</channel>
   <channel site="dishtv.in" site_id="142883" lang="en" xmltv_id="RepublicKannada.in@SD">R. Kannada</channel>
   <channel site="dishtv.in" site_id="143723" lang="en" xmltv_id="RepublicTV.in@SD">Republic TV</channel>
-  <channel site="dishtv.in" site_id="143729" lang="en" xmltv_id="RomedyNow.in@SD">Romedy Now</channel>
   <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_ROZANA_SPOKSMAN" lang="en" xmltv_id="RozanaSpokesman.in@SD">ROZANA SPOKESMAN</channel>
   <channel site="dishtv.in" site_id="142401" lang="en" xmltv_id="RTIndia.in@HD">RT</channel>
   <channel site="dishtv.in" site_id="143733" lang="en" xmltv_id="RupasiBangla.in@SD">Rupasi Bangla</channel>
@@ -296,9 +291,7 @@
   <channel site="dishtv.in" site_id="157593" lang="en" xmltv_id="SonySportsTen5.in@SD">Sony Sports Ten 5</channel>
   <channel site="dishtv.in" site_id="157974" lang="en" xmltv_id="SonyWah.in@SD">Sony Wah</channel>
   <channel site="dishtv.in" site_id="159100" lang="en" xmltv_id="SonyYay.in@SD">SONY YAY</channel>
-  <channel site="dishtv.in" site_id="158297" lang="en" xmltv_id="StarGold2.in@HD">Star Gold 2 HD</channel>
   <channel site="dishtv.in" site_id="143814" lang="en" xmltv_id="StarGold2.in@SD">Star Gold 2</channel>
-  <channel site="dishtv.in" site_id="158822" lang="en" xmltv_id="StarGoldThrills.in@SD">Star Gold Thrills</channel>
   <channel site="dishtv.in" site_id="143819" lang="en" xmltv_id="StarJalsha.in@HD">Star Jalsha HD</channel>
   <channel site="dishtv.in" site_id="143818" lang="en" xmltv_id="StarJalsha.in@SD">Star Jalsha</channel>
   <channel site="dishtv.in" site_id="179620" lang="en" xmltv_id="StarMaa.in@HD">Star Maa HD</channel>
@@ -397,8 +390,6 @@
   <channel site="dishtv.in" site_id="143102" lang="en" xmltv_id="HareKrsnaTV.in@SD">Hare Krsna</channel>
   <channel site="dishtv.in" site_id="143131" lang="en" xmltv_id="HinduDharmam.in@SD">HINDU DHARMAM</channel>
   <channel site="dishtv.in" site_id="143136" lang="en" xmltv_id="HMTV.in@SD">HMTV</channel>
-  <channel site="dishtv.in" site_id="143228" lang="en" xmltv_id="JayaTV.in@HD">Jaya TV</channel>
-  <channel site="dishtv.in" site_id="143237" lang="en" xmltv_id="JK24x7News.in@SD">JK 24x7 News</channel>
   <channel site="dishtv.in" site_id="143262" lang="en" xmltv_id="KhabrainAbhiTak.in@SD">Khabrain Abhi Tak</channel>
   <channel site="dishtv.in" site_id="143244" lang="en" xmltv_id="KNewsIndia.in@SD">K News India</channel>
   <channel site="dishtv.in" site_id="143271" lang="en" xmltv_id="KolkataTV.in@SD">Kolkata TV</channel>
@@ -472,7 +463,6 @@
   <channel site="tataplay.com" site_id="1378" lang="en" xmltv_id="NireekshanaTV.in@SD">Nireekshana TV</channel>
   <channel site="tataplay.com" site_id="894" lang="en" xmltv_id="NKTV24x7.in@SD">NKTV PLUS</channel>
   <channel site="tataplay.com" site_id="421" lang="en" xmltv_id="PeppersTV.in@SD">Peppers TV</channel>
-  <channel site="tataplay.com" site_id="1330" lang="en" xmltv_id="RajPariwar.in@SD">Raj Pariwar</channel>
   <channel site="tataplay.com" site_id="819" lang="en" xmltv_id="RDXGoa.in@SD">RDX Goa</channel>
   <channel site="tataplay.com" site_id="1018" lang="en" xmltv_id="RealNewsKerala.in@SD">Real News Kerala</channel>
   <channel site="tataplay.com" site_id="1132" lang="en" xmltv_id="RongeenTV.in@SD">Rongeen TV</channel>
