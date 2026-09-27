@@ -272,7 +272,6 @@
   <channel site="dishtv.in" site_id="159096" lang="en" xmltv_id="SonyEntertainmentTelevision.in@HD">SET HD</channel>
   <channel site="dishtv.in" site_id="157970" lang="en" xmltv_id="SonyMarathi.in@SD">Sony Marathi</channel>
   <channel site="dishtv.in" site_id="143801" lang="en" xmltv_id="SonyMax2.in@SD">SONY MAX 2</channel>
-  <channel site="dishtv.in" site_id="159098" lang="en" xmltv_id="SonyMax.in@HD">SONY MAX HD</channel>
   <channel site="dishtv.in" site_id="157590" lang="en" xmltv_id="SonyMax.in@SD">SONY MAX</channel>
   <channel site="dishtv.in" site_id="157973" lang="en" xmltv_id="SonyPal.in@SD">SONY PAL</channel>
   <channel site="dishtv.in" site_id="143803" lang="en" xmltv_id="SonyPix.in@HD">SONY PIX HD</channel>
@@ -289,7 +288,6 @@
   <channel site="dishtv.in" site_id="157593" lang="en" xmltv_id="SonySportsTen5.in@SD">Sony Sports Ten 5</channel>
   <channel site="dishtv.in" site_id="157974" lang="en" xmltv_id="SonyWah.in@SD">Sony Wah</channel>
   <channel site="dishtv.in" site_id="159100" lang="en" xmltv_id="SonyYay.in@SD">SONY YAY</channel>
-  <channel site="dishtv.in" site_id="143814" lang="en" xmltv_id="StarGold2.in@SD">Star Gold 2</channel>
   <channel site="dishtv.in" site_id="143819" lang="en" xmltv_id="StarJalsha.in@HD">Star Jalsha HD</channel>
   <channel site="dishtv.in" site_id="143818" lang="en" xmltv_id="StarJalsha.in@SD">Star Jalsha</channel>
   <channel site="dishtv.in" site_id="179620" lang="en" xmltv_id="StarMaa.in@HD">Star Maa HD</channel>
