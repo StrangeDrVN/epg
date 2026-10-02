@@ -52,6 +52,7 @@
   <channel site="dishtv.in" site_id="157577" lang="en" xmltv_id="ColorsBangla.in@SD">Colors Bangla</channel>
   <channel site="dishtv.in" site_id="142748" lang="en" xmltv_id="ColorsBanglaCinema.in@SD">Colors Bangla Cinema</channel>
   <channel site="dishtv.in" site_id="158147" lang="en" xmltv_id="ColorsCineplex.in@HD">Colors Cineplex HD</channel>
+  <channel site="dishtv.in" site_id="158146" lang="en" xmltv_id="ColorsCineplex.in@SD">Colors Cineplex</channel>
   <channel site="dishtv.in" site_id="142749" lang="en" xmltv_id="ColorsCineplexBollywood.in@SD">Colors Cineplex Bollywood</channel>
   <channel site="dishtv.in" site_id="142750" lang="en" xmltv_id="ColorsCineplexSuperhits.in@SD">Colors Cineplex Superhits</channel>
   <channel site="dishtv.in" site_id="158148" lang="en" xmltv_id="ColorsGujarati.in@SD">Colors Gujarati</channel>
@@ -309,7 +310,6 @@
   <channel site="dishtv.in" site_id="153079" lang="en" xmltv_id="SonySportsTen3Hindi.in@SD">Sony Sports Ten 3 Hindi</channel>
   <channel site="dishtv.in" site_id="143805" lang="en" xmltv_id="SonySportsTen4.in@Tamil">Sony Sports Ten 4 Tamil</channel>
   <channel site="dishtv.in" site_id="149166" lang="en" xmltv_id="SonySportsTen4.in@Telugu">Sony Sports Ten 4 Telugu</channel>
-  <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_SONY_SPORTS_TEN_5_HD" lang="en" xmltv_id="SonySportsTen5.in@HD">SONY SPORTS TEN 5 HD</channel>
   <channel site="dishtv.in" site_id="157593" lang="en" xmltv_id="SonySportsTen5.in@SD">Sony Sports Ten 5</channel>
   <channel site="dishtv.in" site_id="157974" lang="en" xmltv_id="SonyWah.in@SD">Sony Wah</channel>
   <channel site="dishtv.in" site_id="159100" lang="en" xmltv_id="SonyYay.in@SD">SONY YAY</channel>
