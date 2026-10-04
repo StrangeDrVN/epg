@@ -103,7 +103,6 @@
   <channel site="dishtv.in" site_id="142882" lang="en" xmltv_id="DhoomMusic.in@SD">Dhoom Music</channel>
   <channel site="dishtv.in" site_id="158843" lang="en" xmltv_id="DisneyChannel.in@HD">Disney Channel HD</channel>
   <channel site="dishtv.in" site_id="159012" lang="en" xmltv_id="DisneyChannel.in@SD">Disney Channel</channel>
-  <channel site="dishtv.in" site_id="142989" lang="en" xmltv_id="DisneyInternationalHD.in@SD">Disney International HD</channel>
   <channel site="dishtv.in" site_id="142990" lang="en" xmltv_id="DisneyJunior.in@SD">Disney Junior</channel>
   <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_DIVYAVANI_TV" lang="en" xmltv_id="DivyavaniTV.in@SD">Divyavani TV</channel>
   <channel site="dishtv.in" site_id="143015" lang="en" xmltv_id="DY365.in@SD">DY365</channel>
@@ -178,7 +177,6 @@
   <channel site="dishtv.in" site_id="143536" lang="en" xmltv_id="MHOneDilSe.in@SD">MH One Dil Se</channel>
   <channel site="dishtv.in" site_id="143538" lang="en" xmltv_id="MHOneShraddha.in@SD">MH One Shraddha</channel>
   <channel site="dishtv.in" site_id="143543" lang="en" xmltv_id="MirrorNow.in@SD">Mirror Now</channel>
-  <channel site="dishtv.in" site_id="143549" lang="en" xmltv_id="MNX.in@SD">MNX</channel>
   <channel site="dishtv.in" site_id="143558" lang="en" xmltv_id="MTV.in@SD">MTV</channel>
   <channel site="dishtv.in" site_id="143567" lang="en" xmltv_id="NambikkaiTV.in@SD">Nambikkai TV</channel>
   <channel site="dishtv.in" site_id="143574" lang="en" xmltv_id="NationalGeographic.in@HD">National Geographic Channel HD</channel>
@@ -281,7 +279,6 @@
   <channel site="dishtv.in" site_id="145426" lang="en" xmltv_id="SansadTV2.in@SD">Sansad TV 2</channel>
   <channel site="dishtv.in" site_id="143713" lang="en" xmltv_id="SanskarTV.in@SD">Sanskar</channel>
   <channel site="dishtv.in" site_id="143763" lang="en" xmltv_id="SantvaniChannel.in@SD">Santvani TV</channel>
-  <channel site="airtelxstream.in" site_id="LIVETV_LIVETVCHANNEL_SARV_DHARAM_SANGAM" lang="en" xmltv_id="SarvDharamSangam.in@SD">Sarv Dharam Sangam</channel>
   <channel site="dishtv.in" site_id="143765" lang="en" xmltv_id="SathiyamTV.in@SD">Sathiyam TV</channel>
   <channel site="dishtv.in" site_id="143766" lang="en" xmltv_id="SatsangTV.in@SD">Satsang</channel>
   <channel site="dishtv.in" site_id="158861" lang="en" xmltv_id="ShemarooJosh.in@SD">Shemaroo Josh</channel>
@@ -294,14 +291,12 @@
   <channel site="dishtv.in" site_id="143791" lang="en" xmltv_id="SirippoliTV.in@SD">Sirippoli</channel>
   <channel site="dishtv.in" site_id="159124" lang="en" xmltv_id="Sonic.in@SD">Sonic</channel>
   <channel site="dishtv.in" site_id="157968" lang="en" xmltv_id="SonyAath.in@SD">Sony AATH</channel>
-  <channel site="dishtv.in" site_id="143800" lang="en" xmltv_id="SonyBBCEarth.in@HD">SONY BBC Earth HD</channel>
   <channel site="dishtv.in" site_id="159096" lang="en" xmltv_id="SonyEntertainmentTelevision.in@HD">SET HD</channel>
   <channel site="dishtv.in" site_id="157970" lang="en" xmltv_id="SonyMarathi.in@SD">Sony Marathi</channel>
   <channel site="dishtv.in" site_id="143801" lang="en" xmltv_id="SonyMax2.in@SD">SONY MAX 2</channel>
   <channel site="dishtv.in" site_id="157590" lang="en" xmltv_id="SonyMax.in@SD">SONY MAX</channel>
   <channel site="dishtv.in" site_id="157973" lang="en" xmltv_id="SonyPal.in@SD">SONY PAL</channel>
   <channel site="dishtv.in" site_id="143803" lang="en" xmltv_id="SonyPix.in@HD">SONY PIX HD</channel>
-  <channel site="dishtv.in" site_id="159099" lang="en" xmltv_id="SonySAB.in@HD">Sony SAB HD</channel>
   <channel site="dishtv.in" site_id="159126" lang="en" xmltv_id="SonySportsTen1.in@HD">Sony Sports Ten 1 HD</channel>
   <channel site="dishtv.in" site_id="157591" lang="en" xmltv_id="SonySportsTen1.in@SD">Sony Sports Ten 1</channel>
   <channel site="dishtv.in" site_id="159127" lang="en" xmltv_id="SonySportsTen2.in@HD">Sony Sports Ten 2 HD</channel>
@@ -406,7 +401,6 @@
   <channel site="zee5.com" site_id="0-9-zeetvhd" lang="en" xmltv_id="ZeeTV.in@HD">Zee TV HD</channel>
   <channel site="zee5.com" site_id="0-9-zeetv" lang="en" xmltv_id="ZeeTV.in@SD">Zee TV</channel>
   <channel site="zee5.com" site_id="0-9-channel_265145625" lang="en" xmltv_id="ZeeUttarPradeshUttarakhand.in@SD">Zee News Uttar Pradesh Uttrakhand</channel>
-  <channel site="zee5.com" site_id="0-9-348" lang="en" xmltv_id="ZeeZest.in@HD">Zee Zest HD</channel>
   <channel site="zee5.com" site_id="0-9-zing" lang="en" xmltv_id="Zing.in@SD">Zing</channel>
   <channel site="dishtv.in" site_id="157600" lang="en" xmltv_id="Zoom.in@SD">Zoom</channel>
   <channel site="dishtv.in" site_id="142787" lang="en" xmltv_id="DDJharkhand.in@SD">DD JHARKHAND</channel>
